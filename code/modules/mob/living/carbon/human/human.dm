@@ -999,6 +999,13 @@
 
 	..()
 
+/mob/living/carbon/human/rejuvenate()
+	if(stat == DEAD)
+		if(client)
+			GLOB.alive_client_human_list += src
+		GLOB.alive_human_list += src
+	. = ..()
+
 /mob/living/carbon/human/proc/is_lung_ruptured()
 	var/datum/internal_organ/lungs/L = internal_organs_by_name["lungs"]
 	return L && L.organ_status >= ORGAN_BRUISED
