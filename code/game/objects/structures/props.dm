@@ -755,6 +755,37 @@
 	desc = "It contains non-potable water. A label on the side instructs you to boil before consumption. It smells vaguely like the showers on the Almayer."
 	icon_state = "watertank_old"
 
+/obj/structure/prop/vehicles
+	name = "van"
+	desc = "An old van, seems to be broken down."
+	icon = 'icons/obj/structures/props/vehicles.dmi'
+	icon_state = "van"
+	bound_height = 64
+	bound_width = 64
+	unslashable = TRUE
+	unacidable = TRUE
+
+/obj/structure/prop/vehicles/crawler
+	name = "colony crawler"
+	desc = "It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of Weyland Yutani."
+	icon_state = "crawler"
+	density = 1
+
+//overhead prop sets
+
+/obj/structure/prop/invuln/overhead
+	layer = ABOVE_FLY_LAYER
+	icon = 'icons/obj/structures/props/overhead_ducting.dmi'
+	icon_state = "flammable_pipe_1"
+
+/obj/structure/prop/invuln/overhead/flammable_pipe
+	name = "dense fuel line"
+	desc = "Likely to be incredibly flammable."
+	density = TRUE
+
+/obj/structure/prop/invuln/overhead/flammable_pipe/fly
+	density = FALSE
+
 //INVULNERABLE PROPS
 
 /obj/structure/prop/invuln
