@@ -396,7 +396,7 @@
 
 	apply_cooldown()
 
-//	cleanup_pounce_target()
+	cleanup_pounce_target()
 	current_pounce_target = A
 
 	if (windup)
@@ -444,8 +444,8 @@
 	LM.pass_flags = pounce_pass_flags
 	LM.collision_callbacks = pounce_callbacks
 //	LM.ignore_collision_behaviour = successful_parry
-//	RegisterSignal(A, COMSIG_PARENT_QDELETING, .proc/cleanup_pounce_target)
-//	RegisterSignal(owner, COMSIG_MOVABLE_POST_LAUNCH, .proc/handle_finish_launch, TRUE)
+	RegisterSignal(A, COMSIG_PARENT_QDELETING, .proc/cleanup_pounce_target)
+	RegisterSignal(owner, COMSIG_MOVABLE_POST_LAUNCH, .proc/handle_finish_launch, TRUE)
 
 	X.launch_towards(LM) //Victim, distance, speed
 
@@ -454,7 +454,7 @@
 
 	return
 
-/*/datum/action/xeno_action/activable/pounce/proc/handle_finish_launch()
+/datum/action/xeno_action/activable/pounce/proc/handle_finish_launch()
 	SIGNAL_HANDLER
 	var/mob/living/carbon/human/H = current_pounce_target
 
@@ -463,7 +463,7 @@
 		return
 	if(H.get_active_hand() && H.Adjacent(owner))
 		INVOKE_ASYNC(H, /mob.proc/do_click, owner, list())
-	var/turf/valid_turf
+/*	var/turf/valid_turf
 	var/direction_between = get_dir(owner, H)
 	for(var/dir in GLOB.cardinals)
 		if(dir & direction_between)
@@ -481,7 +481,7 @@
 		H.Move(valid_turf, get_dir(H, valid_turf))
 		owner.Move(prev_turf, get_dir(owner, prev_turf))
 	H.visible_message(SPAN_NOTICE("[H] parries [owner]'s [ability_name] and counter-attacks!"), SPAN_NOTICE("You parry [owner] and perform a counter attack!"))
-	return COMPONENT_ABORT_COLLISION_CALLBACKS
+	return COMPONENT_ABORT_COLLISION_CALLBACKS*/
 
 /datum/action/xeno_action/activable/pounce/proc/cleanup_pounce_target()
 	SIGNAL_HANDLER
@@ -490,7 +490,7 @@
 	UnregisterSignal(current_pounce_target, list(
 		COMSIG_PARENT_QDELETING
 	))
-	current_pounce_target = null*/
+	current_pounce_target = null
 
 // Massive, customizable spray_acid
 /datum/action/xeno_action/activable/spray_acid/use_ability(atom/A)
