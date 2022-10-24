@@ -51,6 +51,9 @@
 	tackle_min = 2
 	tackle_max = 6
 
+	var/linger_range = 5
+	var/linger_deviation = 0
+
 	icon_xenonid = 'icons/mob/xenonids/lurker.dmi'
 
 /mob/living/carbon/Xenomorph/Lurker/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
@@ -138,3 +141,13 @@
 	. = list()
 	var/invis_message = (invis_start_time == -1) ? "N/A" : "[(invis_duration-(world.time - invis_start_time))/10] seconds."
 	. += "Invisibility Time Left: [invis_message]"
+
+/mob/living/carbon/Xenomorph/Lurker/init_movement_handler()
+	var/datum/xeno_ai_movement/linger/L = new(src)
+	L.linger_range = linger_range
+	L.linger_deviation = linger_deviation
+	return L
+
+/mob/living/carbon/Xenomorph/Lurker/process_ai(delta_time, game_evaluation)
+	zone_selected = pick(GLOB.ai_target_limbs)
+	return ..()

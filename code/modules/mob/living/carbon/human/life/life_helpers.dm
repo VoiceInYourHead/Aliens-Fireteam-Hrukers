@@ -306,6 +306,8 @@
 	GLOB.alive_mob_list += src
 	if(!isSynth(src) && !isYautja(src))
 		GLOB.alive_human_list += src
+	if(client)
+		GLOB.alive_client_human_list += src
 	GLOB.dead_mob_list -= src
 	timeofdeath = 0
 	life_time_start = world.time

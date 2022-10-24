@@ -378,6 +378,8 @@
 	var/datum/reagents/tied_reagents
 	var/datum/callback/to_call
 
+	object_weight = 100
+
 	var/fire_variant = FIRE_VARIANT_DEFAULT
 
 /obj/flamer_fire/Initialize(mapload, var/datum/cause_data/cause_data, var/datum/reagent/R, fire_spread_amount = 0, var/datum/reagents/obj_reagents = null, new_flameshape = FLAMESHAPE_DEFAULT, var/atom/target = null, var/datum/callback/C, var/fuel_pressure = 1, var/fire_type = FIRE_VARIANT_DEFAULT)

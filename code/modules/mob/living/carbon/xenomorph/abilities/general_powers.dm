@@ -396,31 +396,45 @@
 
 	apply_cooldown()
 
+//	cleanup_pounce_target()
+	current_pounce_target = A
+
 	if (windup)
-		X.set_face_dir(get_cardinal_dir(X, A))
 		if (!windup_interruptable)
 			X.frozen = TRUE
 			X.anchored = TRUE
 			X.update_canmove()
-		pre_windup_effects()
 
-		if (!do_after(X, windup_duration, INTERRUPT_NO_NEEDHAND, BUSY_ICON_HOSTILE))
+		X.xeno_jitter(windup_duration)
+		X.add_filter("xeno_pounce", 1, list("type" = "outline", "color" = "#ff0000", "size" = 1))
+		var/filter = X.get_filter("xeno_pounce")
+		animate(filter, alpha=0, time = 0.1 SECONDS, loop = -1, flags = ANIMATION_PARALLEL)
+		animate(alpha = 255, time = 0.1 SECONDS)
+
+		if (!do_after(X, windup_duration, windup_interrupt_flags))
+			animate(filter)
+			X.remove_filter("xeno_pounce")
 			to_chat(X, SPAN_XENODANGER("You cancel your [ability_name]!"))
 			if (!windup_interruptable)
-				X.frozen = FALSE
-				X.anchored = FALSE
+				X.frozen = 0
+				X.anchored = 0
 				X.update_canmove()
-			post_windup_effects(interrupted = TRUE)
 			return
 
+		animate(filter)
+		X.remove_filter("xeno_pounce")
+
 		if (!windup_interruptable)
-			X.frozen = FALSE
-			X.anchored = FALSE
+			X.frozen = 0
+			X.anchored = 0
 			X.update_canmove()
-		post_windup_effects()
 
-	X.visible_message(SPAN_XENOWARNING("\The [X] [ability_name][findtext(ability_name, "e", -1) ? "s" : "es"] at [A]!"), SPAN_XENOWARNING("You [ability_name] at [A]!"))
+	X.visible_message(SPAN_XENOWARNING("\The [X] [ability_name]s at [A]!"), SPAN_XENOWARNING("You [ability_name] at [A]!"))
 
+	// ok so basically the way this code works is godawful
+	// what happens next is if we hit anything
+	// a callback occurs to either the mob_launch_collision or obj_launch_collision procs.
+	// those procs poll our action to see if we are 'pouncing'
 	var/datum/launch_metadata/LM = new()
 	LM.target = A
 	LM.range = distance
@@ -429,13 +443,54 @@
 	LM.spin = FALSE
 	LM.pass_flags = pounce_pass_flags
 	LM.collision_callbacks = pounce_callbacks
+//	LM.ignore_collision_behaviour = successful_parry
+//	RegisterSignal(A, COMSIG_PARENT_QDELETING, .proc/cleanup_pounce_target)
+//	RegisterSignal(owner, COMSIG_MOVABLE_POST_LAUNCH, .proc/handle_finish_launch, TRUE)
 
-	X.launch_towards(LM)
+	X.launch_towards(LM) //Victim, distance, speed
 
 	additional_effects_always()
 	..()
 
-	return TRUE
+	return
+
+/*/datum/action/xeno_action/activable/pounce/proc/handle_finish_launch()
+	SIGNAL_HANDLER
+	var/mob/living/carbon/human/H = current_pounce_target
+
+	cleanup_pounce_target()
+	if(!H)
+		return
+	if(H.get_active_hand() && H.Adjacent(owner))
+		INVOKE_ASYNC(H, /mob.proc/do_click, owner, list())
+	var/turf/valid_turf
+	var/direction_between = get_dir(owner, H)
+	for(var/dir in GLOB.cardinals)
+		if(dir & direction_between)
+			continue
+
+		var/turf/T = get_step(H, dir)
+		if(LinkBlocked(H, get_turf(H), T, list(H)))
+			continue
+
+		valid_turf = T
+		break
+
+	if(valid_turf)
+		var/turf/prev_turf = get_turf(H)
+		H.Move(valid_turf, get_dir(H, valid_turf))
+		owner.Move(prev_turf, get_dir(owner, prev_turf))
+	H.visible_message(SPAN_NOTICE("[H] parries [owner]'s [ability_name] and counter-attacks!"), SPAN_NOTICE("You parry [owner] and perform a counter attack!"))
+	return COMPONENT_ABORT_COLLISION_CALLBACKS
+
+/datum/action/xeno_action/activable/pounce/proc/cleanup_pounce_target()
+	SIGNAL_HANDLER
+	if(!current_pounce_target)
+		return
+	UnregisterSignal(current_pounce_target, list(
+		COMSIG_PARENT_QDELETING
+	))
+	current_pounce_target = null*/
 
 // Massive, customizable spray_acid
 /datum/action/xeno_action/activable/spray_acid/use_ability(atom/A)

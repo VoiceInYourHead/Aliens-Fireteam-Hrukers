@@ -1006,8 +1006,6 @@
 
 	bullet_message(P) //Message us about the bullet, since damage was inflicted.
 
-
-
 	if(SEND_SIGNAL(src, COMSIG_XENO_BULLET_ACT, damage_result, ammo_flags, P) & COMPONENT_CANCEL_BULLET_ACT)
 		return
 
@@ -1024,6 +1022,9 @@
 			var/pain_emote = prob(70) ? "hiss" : "roar"
 			emote(pain_emote)
 		updatehealth()
+
+	if(mob_flags & AI_CONTROLLED)
+		handle_ai_shot(P)
 
 	SEND_SIGNAL(P, COMSIG_BULLET_ACT_XENO, src, damage, damage_result)
 

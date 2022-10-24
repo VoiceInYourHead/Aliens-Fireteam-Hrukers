@@ -55,7 +55,7 @@
 		/datum/action/xeno_action/activable/corrosive_acid/weak,
 		/datum/action/xeno_action/onclick/emit_pheromones,
 		/datum/action/xeno_action/activable/place_construction,
-		/datum/action/xeno_action/onclick/plant_weeds, //first macro
+		/datum/action/xeno_action/onclick/plant_weeds/random, //first macro
 		/datum/action/xeno_action/onclick/choose_resin, //second macro
 		/datum/action/xeno_action/activable/secrete_resin, //third macro
 		/datum/action/xeno_action/activable/transfer_plasma, //fourth macro
@@ -68,3 +68,56 @@
 
 	icon_xeno = 'icons/mob/hostiles/drone.dmi'
 	icon_xenonid = 'icons/mob/xenonids/drone.dmi'
+
+	var/range_to_check_for_weeds = 6
+	var/turf/target_turf
+	var/next_search_time = 0
+	var/search_delay = 3 SECONDS
+	var/pursuing_target = FALSE
+
+/mob/living/carbon/Xenomorph/Drone/make_ai()
+	. = ..()
+	current_aura = pick(caste.aura_allowed)
+
+// Drone has unique movement. Not going to modularize it yet.
+/mob/living/carbon/Xenomorph/Drone/ai_move_target(delta_time, game_evaluation)
+	if((!target_turf || pursuing_target) && next_search_time < world.time)
+		var/list/valid_turfs = RANGE_TURFS(range_to_check_for_weeds, current_target)
+		var/list/total_turfs = valid_turfs.Copy()
+		for(var/i in total_turfs)
+			var/turf/T = i
+			var/area/A = T.loc
+
+			if(!T.is_weedable() || !A.is_resin_allowed)
+				valid_turfs -= T
+				continue
+
+			for(var/a in T)
+				var/atom/movable/AM = a
+				if(AM.density)
+					valid_turfs -= T
+					break
+
+
+		if(!length(valid_turfs))
+			target_turf = get_turf(current_target)
+		else
+			target_turf = pick(valid_turfs)
+			pursuing_target = FALSE
+		next_search_time = world.time + search_delay
+	else if(!target_turf || get_dist(target_turf, src) <= 0)
+		target_turf = get_turf(current_target)
+		pursuing_target = TRUE
+
+	if(!target_turf)
+		return
+
+	if(!move_to_next_turf(target_turf, range_to_check_for_weeds))
+		target_turf = null
+		current_target = null
+		return
+
+	if(get_dist(target_turf, src) <= 0)
+		var/datum/action/xeno_action/onclick/plant_weeds/PW = get_xeno_action_by_type(src, /datum/action/xeno_action/onclick/plant_weeds)
+		PW.use_ability_async()
+		target_turf = null

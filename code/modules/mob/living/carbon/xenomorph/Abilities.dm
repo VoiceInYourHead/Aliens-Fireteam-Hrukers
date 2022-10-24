@@ -99,6 +99,20 @@
 	no_cooldown_msg = FALSE // Needed for onclick actions
 	ability_primacy = XENO_SCREECH
 
+	var/xenos_to_spawn = 4
+	var/range_to_spawn = 3
+
+	var/heal_amt_per_second = AMOUNT_PER_TIME(200, 60 SECONDS)
+	var/ovipositor_time = 60 SECONDS
+	var/ovi_health = 200
+
+	var/prob_chance = 100
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/screech/process_ai(mob/living/carbon/Xenomorph/Queen/X, delta_time, game_evaluation)
+	if(!X.ovipositor && DT_PROB(prob_chance, delta_time))
+		use_ability_async(X.current_target)
+
 /datum/action/xeno_action/onclick/screech/use_ability(atom/target)
 	var/mob/living/carbon/Xenomorph/Queen/xeno = owner
 
@@ -154,9 +168,64 @@
 				mob.AdjustEarDeafness(2)
 			to_chat(mob, SPAN_DANGER("The roar shakes your body to the core, freezing you in place!"))
 
+	var/list/turfs = RANGE_TURFS(range_to_spawn, xeno) & view()
+	var/list/possible_spawns = GLOB.t3_ais + GLOB.t2_ais + GLOB.t1_ais
+
+	for(var/i in 1 to xenos_to_spawn)
+		var/turf/T = pick(turfs)
+		if(length(turfs) > 1)
+			turfs -= T
+
+
+		var/xeno_to_spawn = pick(possible_spawns)
+		var/mob/living/carbon/Xenomorph/to_spawn = new xeno_to_spawn(T)
+		to_spawn.make_ai()
+
+	ovi_health = initial(ovi_health)
+	xeno.mount_ovipositor()
+	RegisterSignal(xeno, COMSIG_MOB_DEATH, .proc/disable_effect)
+	RegisterSignal(xeno, COMSIG_XENO_TAKE_DAMAGE, .proc/handle_damage_taken)
+	START_PROCESSING(SSobj, src)
+	addtimer(CALLBACK(src, .proc/disable_effect), ovipositor_time)
+
 	apply_cooldown()
 
 	..()
+
+/datum/action/xeno_action/onclick/screech/process(delta_time)
+	var/mob/living/carbon/Xenomorph/Queen/X = owner
+
+	if(!istype(X))
+		return PROCESS_KILL
+
+	if(X.ovipositor)
+		X.flick_heal_overlay(delta_time, "#00ff00")
+		X.apply_damage(-heal_amt_per_second * delta_time)
+
+/datum/action/xeno_action/onclick/screech/proc/disable_effect()
+	SIGNAL_HANDLER
+	var/mob/living/carbon/Xenomorph/Queen/X = owner
+	if(!X)
+		return
+	if(X.ovipositor)
+		INVOKE_ASYNC(X, /mob/living/carbon/Xenomorph/Queen.proc/dismount_ovipositor, TRUE)
+	UnregisterSignal(X, list(
+		COMSIG_MOB_DEATH,
+		COMSIG_XENO_TAKE_DAMAGE
+	))
+	STOP_PROCESSING(SSobj, src)
+
+/datum/action/xeno_action/onclick/screech/proc/handle_damage_taken(var/mob/living/carbon/Xenomorph/Queen/X, var/list/damage)
+	SIGNAL_HANDLER
+	if(!X.ovipositor)
+		disable_effect()
+
+	if(damage["damage"] <= 0)
+		return
+
+	ovi_health -= damage["damage"]
+	if(ovi_health <= 0)
+		disable_effect()
 
 /datum/action/xeno_action/activable/gut
 	name = "Gut (200)"
@@ -330,7 +399,7 @@
 /datum/action/xeno_action/onclick/queen_word/use_ability(atom/target)
 	var/mob/living/carbon/Xenomorph/Queen/xeno = owner
 	// We don't test or apply the cooldown here because the proc does it since verbs can activate it too
-	xeno.hive_message() 
+	xeno.hive_message()
 
 /datum/action/xeno_action/onclick/queen_tacmap
 	name = "View Xeno Tacmap"

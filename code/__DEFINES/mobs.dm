@@ -177,6 +177,7 @@
 #define SURGERY_MODE_ON			(1<<3)  // Mob on surgery mode, will attempt surgery when using relevant items on harm/disarm intent.
 #define MUTINEER				(1<<4)  // Part of the Mutiny Gang
 #define GIVING					(1<<5)	// Is currently trying to give an item to someone
+#define AI_CONTROLLED           (1<<2)
 
 //=================================================
 
@@ -324,6 +325,7 @@
 
 // Sentinel strain flags
 #define SENTINEL_NORMAL		"Normal"
+#define SENTINEL_SCATTERSPIT "Scatterspitter"
 
 // Spitter strain flags
 #define SPITTER_NORMAL		"Normal"
@@ -350,6 +352,7 @@
 
 // Warrior strain flags
 #define WARRIOR_NORMAL		"Normal"
+#define WARRIOR_BOXER		"Boxer"
 
 // Crusher strain flags
 #define CRUSHER_NORMAL		"Normal"

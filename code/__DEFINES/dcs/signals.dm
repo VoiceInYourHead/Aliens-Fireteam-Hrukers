@@ -365,6 +365,10 @@
 #define COMSIG_MOVABLE_PRE_LAUNCH "movable_pre_launch"
 	#define COMPONENT_LAUNCH_CANCEL (1<<0)
 
+///from /atom/movable/launch_towards(): (datum/launch_metadata/LM)
+#define COMSIG_MOVABLE_POST_LAUNCH "movable_post_launch"
+	#define COMPONENT_ABORT_COLLISION_CALLBACKS (1<<0)
+
 // Return non-zero value to override original behaviour
 #define COMSIG_MOB_SCREECH_ACT "mob_screech_act"
 	#define COMPONENT_SCREECH_ACT_CANCEL (1<<0)
@@ -443,6 +447,8 @@
 
 /// from /obj/structure/transmitter/update_icon()
 #define COMSIG_TRANSMITTER_UPDATE_ICON "transmitter_update_icon"
+
+
 
 /// From /obj/effect/alien/weeds/Initialize()
 #define COMSIG_WEEDNODE_GROWTH_COMPLETE "weednode_growth_complete"

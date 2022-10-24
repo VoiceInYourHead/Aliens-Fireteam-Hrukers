@@ -13,6 +13,47 @@
 	freeze_time = 15
 	can_be_shield_blocked = TRUE
 
+	var/datum/action/xeno_action/onclick/lurker_invisibility/ai_combo_ability
+	prob_chance = 75
+
+/datum/action/xeno_action/activable/pounce/lurker/ai_registered(mob/living/carbon/Xenomorph/X)
+	. = ..()
+	ai_combo_ability = get_xeno_action_by_type(X, /datum/action/xeno_action/onclick/lurker_invisibility)
+	if(ai_combo_ability)
+		RegisterSignal(ai_combo_ability, COMSIG_PARENT_QDELETING, .proc/cleanup_combo)
+
+/datum/action/xeno_action/activable/pounce/lurker/ai_unregistered(mob/living/carbon/Xenomorph/X)
+	if(ai_combo_ability)
+		UnregisterSignal(ai_combo_ability, COMSIG_PARENT_QDELETING)
+		ai_combo_ability = null
+	return ..()
+
+/datum/action/xeno_action/activable/pounce/lurker/Destroy()
+	cleanup_combo(ai_combo_ability)
+	return ..()
+
+/datum/action/xeno_action/activable/pounce/lurker/proc/cleanup_combo(var/datum/D)
+	SIGNAL_HANDLER
+	if(D == ai_combo_ability)
+		ai_combo_ability = null
+
+/datum/action/xeno_action/activable/pounce/lurker/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if((ai_combo_ability && ai_combo_ability.invis_timer_id == TIMER_ID_NULL) || get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
+		return
+
+	var/turf/last_turf = X.loc
+	var/clear = TRUE
+	X.add_temp_pass_flags(PASS_OVER_THROW_MOB)
+	for(var/i in getline2(X, X.current_target, FALSE))
+		var/turf/new_turf = i
+		if(LinkBlocked(X, last_turf, new_turf, list(X.current_target, X)))
+			clear = FALSE
+			break
+	X.remove_temp_pass_flags(PASS_OVER_THROW_MOB)
+
+	if(clear)
+		use_ability_async(X.current_target)
+
 /datum/action/xeno_action/activable/pounce/lurker/additional_effects_always()
 	var/mob/living/carbon/Xenomorph/X = owner
 	if (!istype(X))
@@ -61,6 +102,14 @@
 	var/alpha_amount = 25
 	var/speed_buff = 0.20
 
+	var/prob_chance = 100
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/lurker_invisibility/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(LURKER_INVISIBLE, delta_time))
+		use_ability_async()
+
+
 // tightly coupled 'buff next slash' action
 /datum/action/xeno_action/onclick/lurker_assassinate
 	name = "Crippling Strike"
@@ -73,3 +122,8 @@
 	plasma_cost = 20
 
 	var/buff_duration = 50
+	var/prob_chance = 50
+
+/datum/action/xeno_action/onclick/lurker_assassinate/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(get_dist(X, X.current_target) <= 1 && DT_PROB(prob_chance, delta_time))
+		use_ability_async()

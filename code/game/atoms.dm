@@ -29,6 +29,8 @@
 	var/flags_barrier = NO_FLAGS
 	var/throwpass = 0
 
+	var/object_weight = 0
+
 	//Effects
 	var/list/effects_list
 

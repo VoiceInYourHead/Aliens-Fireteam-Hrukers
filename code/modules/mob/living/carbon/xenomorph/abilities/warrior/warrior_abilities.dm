@@ -28,9 +28,14 @@
 	var/weaken_power = 1
 	var/slowdown = FALSE
 
+	var/prob_chance = 25
+
+/datum/action/xeno_action/activable/fling/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
 
 // Warrior Lunge
-/datum/action/xeno_action/activable/lunge
+/datum/action/xeno_action/activable/pounce/lunge
 	name = "Lunge"
 	action_icon_state = "lunge"
 	ability_name = "lunge"
@@ -43,6 +48,26 @@
 	var/grab_range = 6
 	var/click_miss_cooldown = 15
 	var/twitch_message_cooldown = 0 //apparently this is necessary for a tiny code that makes the lunge message on cooldown not be spammable, doesn't need to be big so 5 will do.
+	prob_chance = 40
+
+/datum/action/xeno_action/activable/pounce/lunge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(X.pulling || get_dist(X, X.current_target) > grab_range || !DT_PROB(prob_chance, delta_time))
+		return
+
+	var/turf/last_turf = X.loc
+	var/clear = TRUE
+	X.add_temp_pass_flags(PASS_OVER_THROW_MOB)
+	for(var/i in getline2(X, X.current_target, FALSE))
+		var/turf/new_turf = i
+		if(LinkBlocked(X, last_turf, new_turf, list(X.current_target, X)))
+			clear = FALSE
+			break
+	X.remove_temp_pass_flags(PASS_OVER_THROW_MOB)
+
+	if(clear)
+		use_ability_async(X.current_target)
+		X.swap_hand()
+
 
 // Warrior Agility
 
@@ -56,10 +81,18 @@
 	xeno_cooldown = 40
 
 	// Configurables
-	var/base_damage = 25
+	var/base_damage = 20
+	var/boxer_punch_damage = 20
 	var/base_punch_damage_synth = 30
+	var/boxer_punch_damage_synth = 30
 	var/base_punch_damage_pred = 25
+	var/boxer_punch_damage_pred = 25
 	var/damage_variance = 5
+	var/prob_chance = 30
+
+/datum/action/xeno_action/activable/warrior_punch/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/uppercut
 	name = "Uppercut"
@@ -75,6 +108,33 @@
 	var/knockout_power = 11 // 11 seconds
 	var/base_healthgain = 5 // in percents of health per ko point
 
+	default_ai_action = TRUE
+	var/prob_chance_scale = 1
+	var/datum/behavior_delegate/boxer/registered_delegate
+
+/datum/action/xeno_action/activable/uppercut/ai_registered(mob/living/carbon/Xenomorph/X)
+	. = ..()
+	if(!istype(X.behavior_delegate, /datum/behavior_delegate/boxer/))
+		return
+	registered_delegate = X.behavior_delegate
+	RegisterSignal(registered_delegate, COMSIG_PARENT_QDELETING, .proc/cleanup_delegate)
+
+/datum/action/xeno_action/activable/uppercut/ai_unregistered(mob/living/carbon/Xenomorph/X)
+	UnregisterSignal(registered_delegate, COMSIG_PARENT_QDELETING)
+	registered_delegate = null
+	return ..()
+
+/datum/action/xeno_action/activable/uppercut/proc/cleanup_delegate(var/datum/D)
+	SIGNAL_HANDLER
+	if(D == registered_delegate)
+		registered_delegate = null
+
+/datum/action/xeno_action/activable/uppercut/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if((registered_delegate && (DT_PROB(registered_delegate.ko_counter * prob_chance_scale, delta_time) || registered_delegate.ko_counter == registered_delegate.max_ko_counter))\
+		&& get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
+
+
 /datum/action/xeno_action/activable/jab
 	name = "Jab"
 	action_icon_state = "pounce"
@@ -84,3 +144,10 @@
 	ability_primacy = XENO_PRIMARY_ACTION_2
 	xeno_cooldown = 40
 
+	var/distance = 3
+	default_ai_action = TRUE
+	var/prob_chance = 20
+
+/datum/action/xeno_action/activable/jab/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(get_dist(X, X.current_target) <= distance && DT_PROB(prob_chance, delta_time))
+		use_ability_async(X.current_target)

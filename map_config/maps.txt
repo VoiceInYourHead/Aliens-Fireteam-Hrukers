@@ -13,10 +13,13 @@ Format:
 endmap
 
 map lv624
-	default
 endmap
 
 map bigredv2
+endmap
+
+map bigredv2_ai
+	default
 endmap
 
 map prison_station_fop

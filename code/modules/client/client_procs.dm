@@ -665,4 +665,3 @@ GLOBAL_LIST_INIT(whitelisted_client_procs, list(
 	if(timelock.can_play(src))
 		return TRUE
 	return FALSE
-

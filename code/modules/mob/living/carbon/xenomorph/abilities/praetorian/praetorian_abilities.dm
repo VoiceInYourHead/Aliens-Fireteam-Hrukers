@@ -257,6 +257,13 @@
 	activation_delay = TRUE
 	activation_delay_length = 5
 
+	default_ai_action = TRUE
+	prob_chance = 80
+
+/datum/action/xeno_action/activable/spray_acid/base_prae_spray_acid/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prob_chance, delta_time))
+		use_ability_async(X.current_target)
+
 
 ///////////////////////// WARDEN PRAE
 

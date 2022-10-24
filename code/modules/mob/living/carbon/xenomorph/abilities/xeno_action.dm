@@ -28,6 +28,13 @@
 
 	var/charges = NO_ACTION_CHARGES
 
+	var/default_ai_action = FALSE
+
+// Used for AI xenos to prevent them from sleeping
+/datum/action/xeno_action/proc/use_ability_async(var/atom/A)
+	set waitfor = FALSE
+	use_ability(A)
+
 /datum/action/xeno_action/New(Target, override_icon_state)
 	. = ..()
 	if(charges != NO_ACTION_CHARGES)
@@ -74,10 +81,22 @@
 	if(X && !X.is_mob_incapacitated() && !X.dazed && !X.lying && !X.buckled && X.plasma_stored >= plasma_cost)
 		return TRUE
 
-/datum/action/xeno_action/give_to(mob/living/L)
+/datum/action/xeno_action/give_to(mob/living/carbon/Xenomorph/X)
 	..()
+	if(!istype(X))
+		CRASH("Xeno action given to non-xenomorph type! Expected /mob/living/carbon/Xenomorph, got [X.type]")
+
+	if(default_ai_action)
+		X.register_ai_action(src)
+
 	if(macro_path)
-		add_verb(L, macro_path)
+		add_verb(X, macro_path)
+
+/datum/action/xeno_action/remove_from(mob/living/carbon/Xenomorph/X)
+	if(src in X.registered_ai_abilities)
+		X.unregister_ai_action(src)
+
+	return ..()
 
 /datum/action/xeno_action/update_button_icon()
 	if(!button)
@@ -100,6 +119,18 @@
 
 	use_plasma_owner(plasma_to_use)
 	return TRUE
+
+/datum/action/xeno_action/proc/process_ai(var/mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	SHOULD_NOT_SLEEP(TRUE)
+	return PROCESS_KILL
+
+/datum/action/xeno_action/proc/ai_registered(var/mob/living/carbon/Xenomorph/X)
+	SHOULD_CALL_PARENT(TRUE)
+	return
+
+/datum/action/xeno_action/proc/ai_unregistered(var/mob/living/carbon/Xenomorph/X)
+	SHOULD_CALL_PARENT(TRUE)
+	return
 
 // Checks the host Xeno's plasma. Returns TRUE if the amount of plasma
 // is sufficient to use the ability and FALSE otherwise.

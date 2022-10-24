@@ -586,10 +586,9 @@
 			to_chat(M, SPAN_WARNING("[src] is welded shut."))
 			return XENO_NO_DELAY_ACTION
 		if(density) //Make sure it's still closed
-			spawn(0)
-				open(1)
-				M.visible_message(SPAN_DANGER("[M] pries [src] open."), \
-				SPAN_DANGER("You pry [src] open."), null, 5, CHAT_TYPE_XENO_COMBAT)
+			open(TRUE)
+			M.visible_message(SPAN_DANGER("[M] pries [src] open."), \
+			SPAN_DANGER("You pry [src] open."), null, 5, CHAT_TYPE_XENO_COMBAT)
 	return XENO_NO_DELAY_ACTION
 
 /obj/structure/machinery/door/airlock/attack_larva(mob/living/carbon/Xenomorph/Larva/M)

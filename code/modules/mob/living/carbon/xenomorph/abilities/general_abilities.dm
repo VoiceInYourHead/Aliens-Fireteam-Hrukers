@@ -20,6 +20,14 @@
 	var/plant_on_semiweedable = FALSE
 	var/node_type = /obj/effect/alien/weeds/node
 
+/datum/action/xeno_action/onclick/plant_weeds/random
+	var/chance_per_second = 20
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/plant_weeds/random/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(chance_per_second, delta_time))
+		use_ability_async(X.current_target)
+
 // Resting
 /datum/action/xeno_action/onclick/xeno_resting
 	name = "Rest"
@@ -208,6 +216,7 @@
 	var/windup = FALSE					// Is there a do_after before we pounce?
 	var/windup_duration = 20			// How long to wind up, if applicable
 	var/windup_interruptable = TRUE		// Can the windup be interrupted?
+	var/windup_interrupt_flags = INTERRUPT_INCAPACITATED
 
 	var/can_be_shield_blocked = FALSE	// Some legacy stuff, self explanatory
 	var/should_destroy_objects = FALSE  // Only used for ravager charge
@@ -217,6 +226,30 @@
 
 	var/list/pounce_callbacks = null	// Specific callbacks to invoke when a pounce lands on an atom of a specific type
 										// (note that if a collided atom does not match any of the key types, defaults to the appropriate X_launch_collision proc)
+
+	var/atom/current_pounce_target
+
+	default_ai_action = TRUE
+	var/prob_chance = 80
+
+/datum/action/xeno_action/activable/pounce/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
+		return
+
+	var/turf/last_turf = X.loc
+	var/clear = TRUE
+	X.add_temp_pass_flags(PASS_OVER_THROW_MOB)
+	for(var/i in getline2(X, X.current_target, FALSE))
+		var/turf/new_turf = i
+		if(LinkBlocked(X, last_turf, new_turf, list(X.current_target, X)))
+			clear = FALSE
+			break
+	X.remove_temp_pass_flags(PASS_OVER_THROW_MOB)
+
+	if(!clear)
+		return
+
+	use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/pounce/New()
 	. = ..()
@@ -332,6 +365,7 @@
 	var/activation_delay = FALSE		// Is there an activation delay?
 	var/activation_delay_length = 0		// Only used if activation_delay is TRUE.
 
+	var/prob_chance = 100
 
 /datum/action/xeno_action/activable/transfer_plasma
 	name = "Transfer Plasma"
@@ -395,6 +429,12 @@
 	ability_primacy = XENO_PRIMARY_ACTION_1
 	cooldown_message = "You feel your neurotoxin glands swell with ichor. You can spit again."
 	xeno_cooldown = 60 SECONDS
+
+	var/spit_chance_per_second = 80
+
+/datum/action/xeno_action/activable/xeno_spit/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(spit_chance_per_second, delta_time) && (X.loc in view(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/xeno_spit/queen_macro //so it doesn't screw other macros up
 	ability_primacy = XENO_PRIMARY_ACTION_3

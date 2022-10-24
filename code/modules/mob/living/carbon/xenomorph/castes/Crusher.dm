@@ -60,6 +60,22 @@
 
 	icon_xenonid = 'icons/mob/xenonids/crusher.dmi'
 
+	var/linger_range = 6
+	var/linger_deviation = 1
+
+/mob/living/carbon/Xenomorph/Crusher/make_ai()
+	. = ..()
+	var/datum/action/A = get_xeno_action_by_type(src, /datum/action/xeno_action/activable/pounce/crusher_charge)
+	A.hide_from(src)
+
+	A = new /datum/action/xeno_action/activable/pounce/crusher_charge/ai()
+	A.give_to(src)
+
+/mob/living/carbon/Xenomorph/Crusher/remove_ai()
+	qdel(get_xeno_action_by_type(src, /datum/action/xeno_action/activable/pounce/crusher_charge/ai))
+	give_action(src, /datum/action/xeno_action/activable/pounce/crusher_charge)
+	return ..()
+
 /mob/living/carbon/Xenomorph/Crusher/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_crusher))
 	. = ..()
@@ -270,3 +286,14 @@
 	if(bound_xeno.throwing) //Let it build up a bit so we're not changing icons every single turf
 		bound_xeno.icon_state = "[bound_xeno.mutation_type] Crusher Charging"
 		return TRUE
+
+/mob/living/carbon/Xenomorph/Crusher/ai_move_target(delta_time, game_evaluation)
+	if(frozen)
+		return
+	return ..()
+
+/mob/living/carbon/Xenomorph/Crusher/init_movement_handler()
+	var/datum/xeno_ai_movement/linger/L = new(src)
+	L.linger_range = linger_range
+	L.linger_deviation = linger_deviation
+	return L

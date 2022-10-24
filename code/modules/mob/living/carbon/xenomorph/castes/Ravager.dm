@@ -103,3 +103,7 @@
 		QDEL_NULL(rav_shield)
 		to_chat(bound_xeno, SPAN_XENODANGER("You feel your shield decay!"))
 		bound_xeno.overlay_shields()
+
+/mob/living/carbon/Xenomorph/Ravager/process_ai(delta_time, game_evaluation)
+	zone_selected = pick(GLOB.ai_target_limbs)
+	return ..()

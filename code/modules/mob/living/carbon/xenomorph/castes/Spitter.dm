@@ -57,6 +57,15 @@
 
 	icon_xenonid = 'icons/mob/xenonids/spitter.dmi'
 
+	var/potential_turf_range = 6
+	var/min_range = 3
+
+/mob/living/carbon/Xenomorph/Spitter/init_movement_handler()
+	var/datum/xeno_ai_movement/ranged/R = new(src)
+	R.potential_turf_range = potential_turf_range
+	R.min_range = min_range
+	return R
+
 /mob/living/carbon/Xenomorph/Spitter/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_spitter))
 	. = ..()

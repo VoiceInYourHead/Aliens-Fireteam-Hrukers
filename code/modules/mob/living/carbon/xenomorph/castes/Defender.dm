@@ -75,3 +75,7 @@
 	if(bound_xeno.crest_defense)
 		bound_xeno.icon_state = "[bound_xeno.mutation_type] Defender Crest"
 		return TRUE
+
+/mob/living/carbon/Xenomorph/Defender/process_ai(delta_time, game_evaluation)
+	zone_selected = pick(GLOB.ai_target_limbs)
+	return ..()

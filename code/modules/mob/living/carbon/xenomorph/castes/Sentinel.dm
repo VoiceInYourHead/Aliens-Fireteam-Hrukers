@@ -52,6 +52,14 @@
 	mutation_type = SENTINEL_NORMAL
 
 	icon_xenonid = 'icons/mob/xenonids/sentinel.dmi'
+	var/potential_turf_range = 6
+	var/min_range = 2
+
+/mob/living/carbon/Xenomorph/Sentinel/init_movement_handler()
+	var/datum/xeno_ai_movement/ranged/R = new(src)
+	R.potential_turf_range = potential_turf_range
+	R.min_range = min_range
+	return R
 
 /mob/living/carbon/Xenomorph/Sentinel/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_sentinel))

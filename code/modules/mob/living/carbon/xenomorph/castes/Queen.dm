@@ -24,7 +24,7 @@
 	evolution_allowed = FALSE
 	fire_immunity = FIRE_IMMUNITY_NO_DAMAGE|FIRE_IMMUNITY_NO_IGNITE
 	caste_desc = "The biggest and baddest xeno. The Queen controls the hive and plants eggs"
-	spit_types = list(/datum/ammo/xeno/toxin/queen, /datum/ammo/xeno/acid/medium)
+	spit_types = list(/datum/ammo/xeno/acid/medium)
 	can_hold_facehuggers = 0
 	can_hold_eggs = CAN_HOLD_ONE_HAND
 	acid_level = 2
@@ -259,6 +259,8 @@
 
 	icon_xenonid = 'icons/mob/xenonids/queen.dmi'
 
+	flags_ai = XENO_AI_NO_DESPAWN
+
 	var/breathing_counter = 0
 	var/ovipositor = FALSE //whether the Queen is attached to an ovipositor
 	var/queen_ability_cooldown = 0
@@ -283,7 +285,7 @@
 		/datum/action/xeno_action/onclick/psychic_whisper,
 		/datum/action/xeno_action/onclick/psychic_radiance,
 		/datum/action/xeno_action/activable/gut,
-		/datum/action/xeno_action/onclick/plant_weeds, //first macro, and fits near the resin structure buttons
+		/datum/action/xeno_action/onclick/plant_weeds/random, //first macro, and fits near the resin structure buttons
 		/datum/action/xeno_action/onclick/choose_resin/queen_macro, //fourth macro
 		/datum/action/xeno_action/activable/secrete_resin/queen_macro, //fifth macro
 		/datum/action/xeno_action/onclick/grow_ovipositor,
@@ -340,6 +342,11 @@
 	var/queen_aged = FALSE
 	var/queen_age_timer_id = TIMER_ID_NULL
 
+/mob/living/carbon/Xenomorph/Queen/make_ai()
+	. = ..()
+	make_combat_effective()
+	current_aura = pick(caste.aura_allowed)
+
 /mob/living/carbon/Xenomorph/Queen/can_destroy_special()
 	return TRUE
 
@@ -370,6 +377,11 @@
 
 /mob/living/carbon/Xenomorph/Queen/combat_ready
 	queen_aged = TRUE
+
+/mob/living/carbon/Xenomorph/Queen/ai_move_target(delta_time, game_evaluation)
+	if(ovipositor)
+		return
+	return ..()
 
 /mob/living/carbon/Xenomorph/Queen/Initialize()
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_queen_standing))

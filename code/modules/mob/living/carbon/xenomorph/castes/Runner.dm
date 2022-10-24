@@ -59,8 +59,51 @@
 	icon_xeno = 'icons/mob/hostiles/runner.dmi'
 	icon_xenonid = 'icons/mob/xenonids/runner.dmi'
 
+	var/linger_range = 5
+	var/linger_deviation = 0
+	var/pull_direction
 
 /mob/living/carbon/Xenomorph/Runner/initialize_pass_flags(var/datum/pass_flags_container/PF)
 	..()
 	if (PF)
 		PF.flags_pass = PASS_FLAGS_CRAWLER
+
+/mob/living/carbon/Xenomorph/Runner/launch_towards(datum/launch_metadata/LM)
+	if(!current_target)
+		return ..()
+
+	pull_direction = turn(get_dir(src, current_target), 180)
+
+	if(!(pull_direction in GLOB.cardinals))
+		if(abs(x - current_target.x) < abs(y - current_target.y))
+			pull_direction &= (NORTH|SOUTH)
+		else
+			pull_direction &= (EAST|WEST)
+	return ..()
+
+/mob/living/carbon/Xenomorph/Runner/init_movement_handler()
+	var/datum/xeno_ai_movement/linger/L = new(src)
+	L.linger_range = linger_range
+	L.linger_deviation = linger_deviation
+	return L
+
+/mob/living/carbon/Xenomorph/Runner/ai_move_target(delta_time, game_evaluation)
+	if(throwing)
+		return
+
+	if(pulling)
+		if(can_move_and_apply_move_delay())
+			Move(get_step(loc, pull_direction), pull_direction)
+		current_path = null
+	else
+		..()
+
+	if(get_dist(current_target, src) <= 1 && current_target.is_mob_incapacitated() && !isXeno(current_target.pulledby) && !pulling && DT_PROB(RUNNER_GRAB, delta_time))
+		CallAsync(src, /mob.proc/start_pulling, list(current_target))
+		swap_hand()
+
+/mob/living/carbon/Xenomorph/Runner/process_ai(delta_time, game_evaluation)
+	if(get_active_hand())
+		swap_hand()
+	zone_selected = pick(GLOB.ai_target_limbs)
+	return ..()
