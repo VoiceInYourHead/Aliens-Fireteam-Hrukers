@@ -33,7 +33,7 @@
 
 	X.visible_message(SPAN_XENOWARNING("\The [X] lunges towards [H]!"), SPAN_XENOWARNING("You lunge at [H]!"))
 
-	X.throw_atom(get_step_towards(A, X), grab_range, SPEED_FAST, X)
+	X.throw_atom(get_step_towards(A, X), distance, SPEED_FAST, X)
 
 	if (X.Adjacent(H))
 		X.start_pulling(H,1)

@@ -100,8 +100,8 @@
 	set desc = "Toggles between using middle mouse click and shift click for selected ability use."
 	set category = "Alien"
 
-	if (!client || !client.prefs)
-		return
+//	if (!client || !client.prefs)
+//		return
 
 	client.prefs.toggle_prefs ^= TOGGLE_MIDDLE_MOUSE_CLICK
 	client.prefs.save_preferences()
@@ -115,8 +115,8 @@
 	set desc = "Toggles the use of directional assist attacks."
 	set category = "Alien"
 
-	if (!client || !client.prefs)
-		return
+//	if (!client || !client.prefs)
+//		return
 
 	client.prefs.toggle_prefs ^= TOGGLE_DIRECTIONAL_ATTACK
 	client.prefs.save_preferences()
