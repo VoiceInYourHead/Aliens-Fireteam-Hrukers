@@ -24,8 +24,6 @@
 
 /mob/proc/do_click(atom/A, location, params)
 	// We'll be sending a lot of signals and things later on, this will save time.
-	if(!client)
-		return
 	// No clicking on atoms with the NOINTERACT flag
 	if ((A.flags_atom & NOINTERACT))
 		if (istype(A, /atom/movable/screen/click_catcher))
