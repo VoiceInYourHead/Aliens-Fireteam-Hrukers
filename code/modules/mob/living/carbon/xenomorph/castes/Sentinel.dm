@@ -53,7 +53,7 @@
 
 	icon_xenonid = 'icons/mob/xenonids/sentinel.dmi'
 	var/potential_turf_range = 6
-	var/min_range = 2
+	var/min_range = 3
 
 /mob/living/carbon/Xenomorph/Sentinel/init_movement_handler()
 	var/datum/xeno_ai_movement/ranged/R = new(src)

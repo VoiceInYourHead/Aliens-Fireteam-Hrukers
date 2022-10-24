@@ -1016,3 +1016,13 @@
 	targetXeno.throw_atom(throw_target_turf, throw_dist, SPEED_VERY_FAST, pass_flags = PASS_MOB_THRU)
 	apply_cooldown()
 	return
+
+/datum/action/xeno_action/activable/spray_acid/base_prae_spray_acid/use_ability(atom/A)
+	var/mob/living/carbon/Xenomorph/X = owner
+
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 5))
+
+	..()

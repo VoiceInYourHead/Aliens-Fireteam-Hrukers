@@ -457,6 +457,13 @@
 	var/range = 15
 	var/interrupt_flags = INTERRUPT_ALL|BEHAVIOR_IMMOBILE
 
+	var/bombard_chance_per_second = 80
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/bombard/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(bombard_chance_per_second, delta_time) && (X.loc < range(X.current_target)))
+		use_ability_async(X.current_target)
+
 /datum/action/xeno_action/activable/tail_stab
 	name = "Tail Stab"
 	action_icon_state = "tail_attack"

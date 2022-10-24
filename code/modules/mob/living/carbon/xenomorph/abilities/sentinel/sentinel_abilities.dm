@@ -20,6 +20,13 @@
 	xeno_cooldown = 8 SECONDS
 	plasma_cost = 30
 
+	var/scattered_spit_chance_per_second = 80
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/scattered_spit/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(scattered_spit_chance_per_second, delta_time) && (X.loc in view(X.current_target)))
+		use_ability_async(X.current_target)
+
 // Paralyzing slash
 /datum/action/xeno_action/onclick/paralyzing_slash
 	name = "Paralyzing Slash"
@@ -32,3 +39,9 @@
 	plasma_cost = 50
 
 	var/buff_duration = 50
+	var/paralyzing_slash_prob_chance = 100
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/paralyzing_slash/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(paralyzing_slash_prob_chance, delta_time))
+		use_ability_async()

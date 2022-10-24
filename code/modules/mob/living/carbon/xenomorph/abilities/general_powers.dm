@@ -780,6 +780,11 @@
 /datum/action/xeno_action/activable/bombard/use_ability(atom/A)
 	var/mob/living/carbon/Xenomorph/X = owner
 
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 15))
+
 	if (!istype(X) || !X.check_state() || !action_cooldown_check() || X.action_busy)
 		return FALSE
 
@@ -819,6 +824,10 @@
 	recursive_spread(T, effect_range, effect_range)
 
 	return ..()
+
+/proc/unroot(mob/living/carbon/Xenomorph/X)
+	X.frozen = 0
+	X.update_canmove()
 
 /datum/action/xeno_action/activable/bombard/proc/recursive_spread(turf/T, dist_left, orig_depth)
 	if(!istype(T))

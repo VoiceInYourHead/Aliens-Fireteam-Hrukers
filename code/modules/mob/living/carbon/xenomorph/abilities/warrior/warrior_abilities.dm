@@ -45,9 +45,15 @@
 	action_type = XENO_ACTION_CLICK
 	ability_primacy = XENO_PRIMARY_ACTION_2
 	xeno_cooldown = 100
+	plasma_cost = 0
 
 	// Configurables
 	distance = 6
+	knockdown = FALSE
+	freeze_self = FALSE
+
+	default_ai_action = TRUE
+
 	var/click_miss_cooldown = 15
 	var/twitch_message_cooldown = 0 //apparently this is necessary for a tiny code that makes the lunge message on cooldown not be spammable, doesn't need to be big so 5 will do.
 	prob_chance = 40
@@ -70,7 +76,6 @@
 		use_ability_async(X.current_target)
 		X.swap_hand()
 
-
 // Warrior Agility
 
 /datum/action/xeno_action/activable/warrior_punch
@@ -92,7 +97,7 @@
 	var/base_punch_damage_pred = 25
 	var/boxer_punch_damage_pred = 25
 	var/damage_variance = 5
-	var/prob_chance = 30
+	var/prob_chance = 70
 
 /datum/action/xeno_action/activable/warrior_punch/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
@@ -113,7 +118,7 @@
 	var/base_healthgain = 5 // in percents of health per ko point
 
 	default_ai_action = TRUE
-	var/prob_chance_scale = 1
+	var/prob_chance_scale = 2
 	var/datum/behavior_delegate/boxer/registered_delegate
 
 /datum/action/xeno_action/activable/uppercut/ai_registered(mob/living/carbon/Xenomorph/X)
@@ -150,7 +155,7 @@
 
 	var/distance = 3
 	default_ai_action = TRUE
-	var/prob_chance = 20
+	var/prob_chance = 50
 
 /datum/action/xeno_action/activable/jab/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	if(get_dist(X, X.current_target) <= distance && DT_PROB(prob_chance, delta_time))

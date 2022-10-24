@@ -64,6 +64,15 @@
 		/datum/action/xeno_action/onclick/toggle_long_range/boiler, //4th macro
 	)
 
+	var/potential_turf_range = 15
+	var/min_range = 10
+
+/mob/living/carbon/Xenomorph/Boiler/init_movement_handler()
+	var/datum/xeno_ai_movement/ranged/boiler/R = new(src)
+	R.potential_turf_range = potential_turf_range
+	R.min_range = min_range
+	return R
+
 /mob/living/carbon/Xenomorph/Boiler/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	. = ..()
 	smoke = new /datum/effect_system/smoke_spread/xeno_acid

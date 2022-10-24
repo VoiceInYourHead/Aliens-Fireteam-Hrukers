@@ -57,8 +57,8 @@
 
 	icon_xenonid = 'icons/mob/xenonids/spitter.dmi'
 
-	var/potential_turf_range = 6
-	var/min_range = 3
+	var/potential_turf_range = 7
+	var/min_range = 4
 
 /mob/living/carbon/Xenomorph/Spitter/init_movement_handler()
 	var/datum/xeno_ai_movement/ranged/R = new(src)
