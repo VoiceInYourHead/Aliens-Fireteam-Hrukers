@@ -429,6 +429,7 @@
 	ability_primacy = XENO_PRIMARY_ACTION_1
 	cooldown_message = "You feel your neurotoxin glands swell with ichor. You can spit again."
 	xeno_cooldown = 60 SECONDS
+	default_ai_action = TRUE
 
 	var/spit_chance_per_second = 80
 

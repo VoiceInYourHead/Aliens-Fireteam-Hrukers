@@ -22,6 +22,8 @@
 	ability_primacy = XENO_PRIMARY_ACTION_3
 	xeno_cooldown = 55
 
+	default_ai_action = TRUE
+
 	// Configurables
 	var/fling_distance = 4
 	var/stun_power = 1
@@ -45,13 +47,13 @@
 	xeno_cooldown = 100
 
 	// Configurables
-	var/grab_range = 6
+	distance = 6
 	var/click_miss_cooldown = 15
 	var/twitch_message_cooldown = 0 //apparently this is necessary for a tiny code that makes the lunge message on cooldown not be spammable, doesn't need to be big so 5 will do.
 	prob_chance = 40
 
 /datum/action/xeno_action/activable/pounce/lunge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(X.pulling || get_dist(X, X.current_target) > grab_range || !DT_PROB(prob_chance, delta_time))
+	if(X.pulling || get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
 		return
 
 	var/turf/last_turf = X.loc
@@ -79,6 +81,8 @@
 	action_type = XENO_ACTION_CLICK
 	ability_primacy = XENO_PRIMARY_ACTION_1
 	xeno_cooldown = 40
+
+	default_ai_action = TRUE
 
 	// Configurables
 	var/base_damage = 20
