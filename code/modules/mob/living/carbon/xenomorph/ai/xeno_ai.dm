@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 /mob/living/carbon/Xenomorph/proc/get_target(var/range)
 	var/list/viable_humans = list()
-	var/list/viable_vehicles = list()
+//	var/list/viable_vehicles = list()
 	var/smallest_distance = INFINITY
 	for(var/l in GLOB.alive_client_human_list)
 		var/mob/living/carbon/human/H = l
