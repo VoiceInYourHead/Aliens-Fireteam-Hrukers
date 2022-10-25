@@ -122,11 +122,10 @@
 	var/effect_duration = 10
 
 	var/prob_chance_on_person = 100
-	var/prob_chance = 10
+	var/prob_chance = 25
 
 /datum/action/xeno_action/onclick/crusher_stomp/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if((get_dist(X, X.current_target) <= 0 && DT_PROB(prob_chance_on_person, delta_time)) \
-		|| (get_dist(X, X.current_target) <= 1 && DT_PROB(prob_chance, delta_time)))
+	if((get_dist(X, X.current_target) <= 0 && DT_PROB(prob_chance_on_person, delta_time)) || (get_dist(X, X.current_target) <= 1 && DT_PROB(prob_chance, delta_time)))
 		use_ability_async()
 
 /datum/action/xeno_action/onclick/crusher_stomp/charger
@@ -154,7 +153,7 @@
 
 	default_ai_action = TRUE
 
-	var/ai_percentage_activate = 0.25
+	var/ai_percentage_activate = 0.90
 	var/prob_chance = 100
 
 /datum/action/xeno_action/onclick/crusher_shield/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
@@ -175,7 +174,12 @@
 	stun_power = 0
 	weaken_power = 0
 	slowdown = 8
+	var/prob_chance = 75
+	default_ai_action = TRUE
 
+/datum/action/xeno_action/activable/fling/charger/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/charger_charge
 	name = "Toggle Charging"
@@ -208,8 +212,11 @@
 	var/last_charge_move
 	/// Dictates speed and damage dealt via collision, increased with movement
 	var/momentum = 0
+	default_ai_action = TRUE
 
-
+/datum/action/xeno_action/onclick/charger_charge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(activated == 0)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/charger_charge/proc/handle_movement(mob/living/carbon/Xenomorph/Xeno, atom/oldloc, dir, forced)
 	SIGNAL_HANDLER
@@ -236,7 +243,8 @@
 	var/do_stop_momentum = FALSE
 
 	// Need to be constantly moving in order to maintain charge
-	if(world.time > last_charge_move + 0.5 SECONDS)
+//	if(world.time > last_charge_move + 0.5 SECONDS)
+	if(world.time > last_charge_move + 1 SECONDS)
 		do_stop_momentum = TRUE
 	if(dir != charge_dir)
 		charge_dir = dir
@@ -345,13 +353,18 @@
 
 	plasma_cost = 25
 	xeno_cooldown = 10 SECONDS
+	var/tumble_prob_chance = 60
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/tumble/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(tumble_prob_chance, delta_time) && get_dist(X, X.current_target) <= 2)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/tumble/proc/on_end_throw(start_charging)
 	var/mob/living/carbon/Xenomorph/Xeno = owner
 	Xeno.flags_atom &= ~DIRLOCK
 	if(start_charging)
 		SEND_SIGNAL(Xeno, COMSIG_XENO_START_CHARGING)
-
 
 /datum/action/xeno_action/activable/tumble/proc/handle_mob_collision(mob/living/carbon/Mob)
 	var/mob/living/carbon/Xenomorph/Xeno = owner

@@ -206,6 +206,7 @@ GLOBAL_LIST_INIT(t1_ais, list(
 GLOBAL_LIST_INIT(t2_ais, list(
 	/mob/living/carbon/Xenomorph/Warrior,
 	/mob/living/carbon/Xenomorph/Spitter,
+	/mob/living/carbon/Xenomorph/Burrower,
 	/mob/living/carbon/Xenomorph/Lurker
 ))
 

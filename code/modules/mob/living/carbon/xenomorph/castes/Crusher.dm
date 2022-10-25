@@ -58,6 +58,8 @@
 	mutation_type = CRUSHER_NORMAL
 	claw_type = CLAW_TYPE_VERY_SHARP
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	icon_xeno = 'icons/mob/hostiles/crusher.dmi'
 	icon_xenonid = 'icons/mob/hostiles/crusher.dmi'
 
@@ -217,7 +219,7 @@
 	if (!.)
 		update_icons()
 
-// Mutator delegate for base ravager
+// Mutator delegate for base Crusher
 /datum/behavior_delegate/crusher_base
 	name = "Base Crusher Behavior Delegate"
 
@@ -293,8 +295,14 @@
 		return
 	return ..()
 
+/*
 /mob/living/carbon/Xenomorph/Crusher/init_movement_handler()
-	var/datum/xeno_ai_movement/linger/L = new(src)
-	L.linger_range = linger_range
-	L.linger_deviation = linger_deviation
-	return L
+	var/mob/living/carbon/Xenomorph/Crusher/X
+	if(X.mutation_type == CRUSHER_CHARGER)
+		return ..()
+	else
+		var/datum/xeno_ai_movement/linger/L = new(src)
+		L.linger_range = linger_range
+		L.linger_deviation = linger_deviation
+		return L
+*/

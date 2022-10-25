@@ -701,6 +701,12 @@
 
 /datum/action/xeno_action/activable/prae_acid_ball/use_ability(atom/A)
 	var/mob/living/carbon/Xenomorph/X = owner
+
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 5))
+
 	if (!X.check_state() || X.action_busy)
 		return
 
