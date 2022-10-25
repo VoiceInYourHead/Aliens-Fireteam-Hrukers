@@ -158,6 +158,11 @@
 			desc = "A map of Trijent Dam"
 			html_link = "images/9/92/Trijent_Dam.png"
 			color = "#cec13f"
+		if(MAP_DESERT_DAM_AI)
+			name = "\improper Trijent Dam map"
+			desc = "A map of Trijent Dam"
+			html_link = "images/9/92/Trijent_Dam.png"
+			color = "#cec13f"
 			//did only the basics todo change later
 		if(MAP_SOROKYNE_STRATA)
 			name = "\improper Sorokyne Strata map"
