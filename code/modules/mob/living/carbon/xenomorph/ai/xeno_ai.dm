@@ -187,15 +187,28 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 /mob/living/carbon/Xenomorph/proc/get_target(var/range)
 	var/list/viable_humans = list()
+	var/list/viable_vehicles = list()
 	var/smallest_distance = INFINITY
 	for(var/l in GLOB.alive_client_human_list)
 		var/mob/living/carbon/human/H = l
+//		if(/mob/living/carbon/human/synthetic == l)
+//			return pick(viable_humans)
 		if(z != H.z)
 			continue
 		var/distance = get_dist(src, H)
 
 		if(distance < ai_range)
 			viable_humans += H
+		smallest_distance = min(distance, smallest_distance)
+
+	for(var/l in GLOB.all_multi_vehicles)
+		var/obj/vehicle/multitile/V = l
+		if(z != V.z)
+			continue
+		var/distance = get_dist(src, V)
+
+		if(distance < ai_range)
+			viable_vehicles += V
 		smallest_distance = min(distance, smallest_distance)
 
 
@@ -206,6 +219,9 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 	if(length(viable_humans))
 		return pick(viable_humans)
+
+	if(length(viable_vehicles))
+		return pick(viable_vehicles)
 
 /mob/living/carbon/Xenomorph/proc/make_ai()
 	SHOULD_CALL_PARENT(TRUE)
