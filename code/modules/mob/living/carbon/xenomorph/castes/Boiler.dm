@@ -64,8 +64,8 @@
 		/datum/action/xeno_action/onclick/toggle_long_range/boiler, //4th macro
 	)
 
-	var/potential_turf_range = 15
-	var/min_range = 10
+	var/potential_turf_range = 8
+	var/min_range = 6
 
 /mob/living/carbon/Xenomorph/Boiler/init_movement_handler()
 	var/datum/xeno_ai_movement/ranged/boiler/R = new(src)
