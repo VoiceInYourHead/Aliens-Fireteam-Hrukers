@@ -238,6 +238,13 @@
 
 	var/activation_delay = 1 SECONDS
 	var/prime_delay = 1 SECONDS
+	var/ball_chance_per_second = 60
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/prae_acid_ball/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(ball_chance_per_second, delta_time) && (X.loc in view(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/spray_acid/base_prae_spray_acid
 	name = "Spray Acid"

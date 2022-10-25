@@ -24,7 +24,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/scattered_spit/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(scattered_spit_chance_per_second, delta_time) && (X.loc in view(X.current_target)))
+	if(DT_PROB(scattered_spit_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 4)
 		use_ability_async(X.current_target)
 
 // Paralyzing slash
