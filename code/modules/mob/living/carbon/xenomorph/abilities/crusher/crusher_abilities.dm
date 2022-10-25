@@ -174,11 +174,11 @@
 	stun_power = 0
 	weaken_power = 0
 	slowdown = 8
-	var/prob_chance = 75
+	var/charger_prob_chance = 75
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/fling/charger/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+	if(DT_PROB(charger_prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/charger_charge
