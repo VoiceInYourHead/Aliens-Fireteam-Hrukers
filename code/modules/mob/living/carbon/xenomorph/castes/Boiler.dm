@@ -32,7 +32,6 @@
 	caste_type = XENO_CASTE_BOILER
 	name = XENO_CASTE_BOILER
 	desc = "A huge, grotesque xenomorph covered in glowing, oozing acid slime."
-	icon = 'icons/mob/hostiles/boiler.dmi'
 	icon_size = 64
 	icon_state = "Boiler Walking"
 	plasma_types = list(PLASMA_NEUROTOXIN)
@@ -44,11 +43,13 @@
 	drag_delay = 6 //pulling a big dead xeno is hard
 	mutation_type = BOILER_NORMAL
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	tileoffset = 0
 	viewsize = 16
 
 	icon_xeno = 'icons/mob/hostiles/boiler.dmi'
-	icon_xenonid = 'icons/mob/xenonids/boiler.dmi'
+	icon_xenonid = 'icons/mob/hostiles/boiler.dmi'
 
 	var/datum/effect_system/smoke_spread/xeno_acid/smoke
 

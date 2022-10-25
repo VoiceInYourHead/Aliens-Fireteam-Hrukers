@@ -29,6 +29,12 @@
 	var/max_stacks = 5
 	var/movespeed_nerf_applied = 0
 	var/activated_once = FALSE
+	var/acid_lance_chance_per_second = 40
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/acid_lance/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(acid_lance_chance_per_second, delta_time) && (X.loc < range(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/dump_acid
 	name = "Dump Acid"
@@ -67,6 +73,12 @@
 	var/empowered = FALSE
 	var/empowering_charge_counter = 0
 	var/empower_charge_max = 10
+	var/trap_chance_per_second = 100
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/boiler_trap/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(trap_chance_per_second, delta_time) && (X.loc < range(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/acid_mine
 	name = "Acid Mine"
@@ -82,6 +94,12 @@
 
 	var/damage = 45
 	var/delay = 13.5
+	var/acid_mine_chance_per_second = 80
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/acid_mine/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(acid_mine_chance_per_second, delta_time) && (X.loc < range(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/acid_shotgun
 	name = "Acid Shotgun"
@@ -94,6 +112,12 @@
 	xeno_cooldown = 130
 
 	var/ammo_type = /datum/ammo/xeno/acid_shotgun
+	var/acid_shotgun_chance_per_second = 60
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/acid_shotgun/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(acid_shotgun_chance_per_second, delta_time) && (X.loc < range(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/toggle_long_range/trapper
 	handles_movement = FALSE

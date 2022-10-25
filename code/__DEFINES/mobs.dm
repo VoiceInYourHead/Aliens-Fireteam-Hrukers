@@ -336,6 +336,7 @@
 
 // Runner strain flags
 #define RUNNER_NORMAL		"Normal"
+#define RUNNER_CAT			"Cat"
 #define RUNNER_ACIDER		"Acider"
 
 // Lurker strain flags

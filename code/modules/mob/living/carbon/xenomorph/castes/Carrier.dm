@@ -66,7 +66,8 @@
 		)
 	mutation_type = CARRIER_NORMAL
 
-	icon_xenonid = 'icons/mob/xenonids/carrier.dmi'
+	icon_xeno = 'icons/mob/hostiles/carrier.dmi'
+	icon_xenonid = 'icons/mob/hostiles/carrier.dmi'
 
 	var/atom/movable/vis_obj/carrier_huggers/carrier_huggers_icon_carrier
 	var/list/hugger_image_index = list()

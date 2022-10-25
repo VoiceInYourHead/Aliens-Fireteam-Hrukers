@@ -40,6 +40,8 @@
 	tier = 2
 	pull_speed = 2.0 // about what it was before, slightly faster
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	base_actions = list(
 		/datum/action/xeno_action/onclick/xeno_resting,
 		/datum/action/xeno_action/onclick/regurgitate,
@@ -53,7 +55,7 @@
 	mutation_type = WARRIOR_NORMAL
 	claw_type = CLAW_TYPE_SHARP
 	icon_xeno = 'icons/mob/hostiles/warrior.dmi'
-	icon_xenonid = 'icons/mob/xenonids/warrior.dmi'
+	icon_xenonid = 'icons/mob/hostiles/warrior.dmi'
 
 	var/lunging = FALSE // whether or not the warrior is currently lunging (holding) a target
 

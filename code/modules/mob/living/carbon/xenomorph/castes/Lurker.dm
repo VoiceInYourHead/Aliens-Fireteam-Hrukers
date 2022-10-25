@@ -54,7 +54,8 @@
 	var/linger_range = 5
 	var/linger_deviation = 0
 
-	icon_xenonid = 'icons/mob/xenonids/lurker.dmi'
+	icon_xeno = 'icons/mob/hostiles/lurker.dmi'
+	icon_xenonid = 'icons/mob/hostiles/lurker.dmi'
 
 /mob/living/carbon/Xenomorph/Lurker/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_lurker))
