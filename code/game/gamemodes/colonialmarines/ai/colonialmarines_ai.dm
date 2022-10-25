@@ -212,6 +212,7 @@ GLOBAL_LIST_INIT(t2_ais, list(
 GLOBAL_LIST_INIT(t3_ais, list(
 	/mob/living/carbon/Xenomorph/Ravager,
 	/mob/living/carbon/Xenomorph/Crusher,
+	/mob/living/carbon/Xenomorph/Boiler,
 	/mob/living/carbon/Xenomorph/Praetorian
 ))
 

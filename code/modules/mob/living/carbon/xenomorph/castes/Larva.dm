@@ -44,7 +44,8 @@
 	mutation_type = "Normal"
 	var/poolable = TRUE //Can it be safely pooled if it has no player?
 
-	icon_xenonid = 'icons/mob/xenonids/larva.dmi'
+	icon_xeno = 'icons/mob/hostiles/larva.dmi'
+	icon_xenonid = 'icons/mob/hostiles/larva.dmi'
 
 /mob/living/carbon/Xenomorph/Larva/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_embryo))

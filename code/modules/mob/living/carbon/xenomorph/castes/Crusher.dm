@@ -58,7 +58,8 @@
 	mutation_type = CRUSHER_NORMAL
 	claw_type = CLAW_TYPE_VERY_SHARP
 
-	icon_xenonid = 'icons/mob/xenonids/crusher.dmi'
+	icon_xeno = 'icons/mob/hostiles/crusher.dmi'
+	icon_xenonid = 'icons/mob/hostiles/crusher.dmi'
 
 	var/linger_range = 6
 	var/linger_deviation = 1

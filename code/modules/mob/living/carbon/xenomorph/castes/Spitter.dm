@@ -55,7 +55,8 @@
 	)
 	mutation_type = SPITTER_NORMAL
 
-	icon_xenonid = 'icons/mob/xenonids/spitter.dmi'
+	icon_xeno = 'icons/mob/hostiles/spitter.dmi'
+	icon_xenonid = 'icons/mob/hostiles/spitter.dmi'
 
 	var/potential_turf_range = 7
 	var/min_range = 4

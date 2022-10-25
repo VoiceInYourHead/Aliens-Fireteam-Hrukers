@@ -51,7 +51,8 @@
 	)
 	mutation_type = SENTINEL_NORMAL
 
-	icon_xenonid = 'icons/mob/xenonids/sentinel.dmi'
+	icon_xeno = 'icons/mob/hostiles/sentinel.dmi'
+	icon_xenonid = 'icons/mob/hostiles/sentinel.dmi'
 	var/potential_turf_range = 6
 	var/min_range = 3
 

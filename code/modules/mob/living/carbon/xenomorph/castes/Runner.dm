@@ -28,7 +28,6 @@
 	caste_type = XENO_CASTE_RUNNER
 	name = XENO_CASTE_RUNNER
 	desc = "A small red alien that looks like it could run fairly quickly..."
-	icon = 'icons/mob/hostiles/runner.dmi'
 	icon_state = "Runner Walking"
 	icon_size = 64
 	layer = MOB_LAYER
@@ -57,7 +56,7 @@
 	mutation_type = RUNNER_NORMAL
 
 	icon_xeno = 'icons/mob/hostiles/runner.dmi'
-	icon_xenonid = 'icons/mob/xenonids/runner.dmi'
+	icon_xenonid = 'icons/mob/hostiles/runner.dmi'
 
 	var/linger_range = 5
 	var/linger_deviation = 0
@@ -107,3 +106,10 @@
 		swap_hand()
 	zone_selected = pick(GLOB.ai_target_limbs)
 	return ..()
+
+/mob/living/carbon/Xenomorph/Runner/cat
+	desc = "D'aaawwww"
+	icon = 'icons/mob/hostiles/runner.dmi'
+	icon_state = "Runner Walking"
+
+	mutation_type = RUNNER_CAT
