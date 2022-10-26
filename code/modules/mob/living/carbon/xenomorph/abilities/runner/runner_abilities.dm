@@ -52,7 +52,7 @@
 	action_type = XENO_ACTION_CLICK
 	ability_primacy = XENO_PRIMARY_ACTION_2
 	var/minimal_acid = 200
-	var/fth_prob_chance = 80
+	var/fth_prob_chance = 60
 
 	default_ai_action = TRUE
 

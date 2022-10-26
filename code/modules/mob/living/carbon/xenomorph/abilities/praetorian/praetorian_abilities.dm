@@ -119,6 +119,13 @@
 	// Config
 	var/max_distance = 7
 	var/windup = 8
+	var/abduct_prob_chance = 80
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/prae_abduct/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(abduct_prob_chance, delta_time) && get_dist(X, X.current_target) <= 7)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/oppressor_punch
 	name = "Dislocate"
@@ -132,7 +139,13 @@
 
 	// Configurables
 	var/damage = 20
+	var/oppressor_punch_prob_chance = 70
 
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/oppressor_punch/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(oppressor_punch_prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
 
 // This one is more tightly coupled than I'd like, but oh well
 // unused
@@ -159,6 +172,13 @@
 	// Config
 	var/fling_dist = 3
 	var/windup = 2
+	var/tail_lash_prob_chance = 40
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/tail_lash/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(tail_lash_prob_chance, delta_time) && get_dist(X, X.current_target) <= 2)
+		use_ability_async(X.current_target)
 
 ////////// Dancer Abilities
 
@@ -173,6 +193,13 @@
 	plasma_cost = 80
 
 	var/click_miss_cooldown = 15
+	var/prae_impale_chance_per_second = 60
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/prae_impale/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prae_impale_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 1)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/prae_dodge
 	name = "Dodge"
@@ -187,6 +214,14 @@
 	// Config
 	var/duration = 70
 	var/speed_buff_amount = 0.5
+	var/prae_dodge_chance_per_second = 90
+	var/ai_prae_dodge_percentage_activate = 0.98
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/prae_dodge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prae_dodge_chance_per_second, delta_time) && X.loc in view(X.current_target) && X.health/X.maxHealth < ai_prae_dodge_percentage_activate)
+		use_ability_async()
 
 /datum/action/xeno_action/activable/prae_tail_trip
 	name = "Tail Trip"
@@ -207,6 +242,13 @@
 	var/daze_duration_buffed = 2
 
 	var/click_miss_cooldown = 15
+	var/prae_tail_trip_chance_per_second = 40
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/prae_tail_trip/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(prae_tail_trip_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 2)
+		use_ability_async(X.current_target)
 
 ////////// BASE PRAE
 
@@ -225,6 +267,13 @@
 	knockdown = FALSE
 	slash = FALSE
 	freeze_self = FALSE
+	var/base_prae_dash_chance_per_second = 70
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/pounce/base_prae_dash/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(base_prae_dash_chance_per_second, delta_time) && (X.loc in view(X.current_target)))
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/prae_acid_ball
 	name = "Acid Ball"

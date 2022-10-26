@@ -295,6 +295,7 @@
 		return
 	return ..()
 
+/*
 /mob/living/carbon/Xenomorph/Crusher/init_movement_handler()
 	var/mob/living/carbon/Xenomorph/Crusher/X
 	var/datum/behavior_delegate/crusher_charger/BD = X.behavior_delegate
@@ -306,3 +307,4 @@
 		L.linger_range = linger_range
 		L.linger_deviation = linger_deviation
 		return L
+*/
