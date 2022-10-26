@@ -143,7 +143,13 @@
 	// Config values
 	var/max_distance = 6 // 5 tiles between
 	var/windup_duration = 10
+	var/apprehend_chance_per_second = 60
 
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/apprehend/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(apprehend_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 7)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/clothesline
 	name = "Clothesline"
@@ -160,6 +166,14 @@
 	var/damage = 20
 	var/fling_dist_base = 4
 	var/daze_amount = 2
+	var/clothesline_chance_per_second = 80
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/clothesline/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	var/datum/behavior_delegate/ravager_berserker/BD = X.behavior_delegate
+	if(DT_PROB(clothesline_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 2 && BD.rage > 3)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/eviscerate
 	name = "Eviscerate"
@@ -178,6 +192,14 @@
 	var/damage_at_rage_levels = list(5, 10, 25, 45, 70)
 	var/range_at_rage_levels = list(1, 1, 1, 2, 2)
 	var/windup_reduction_at_rage_levels = list(0, 2, 4, 6, 10)
+	var/eviscerate_chance_per_second = 80
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/eviscerate/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	var/datum/behavior_delegate/ravager_berserker/BD = X.behavior_delegate
+	if(DT_PROB(eviscerate_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 2 && BD.rage > 3)
+		use_ability_async()
 
 
 ////// HEDGEHOG ABILITIES
@@ -199,6 +221,15 @@
 	var/shard_cost = 150 			// Minimum spikes to use this ability
 	var/shield_active = FALSE 		// Is our shield active.
 	var/real_hp_per_shield_hp = 0.5	// How many real HP we get for each shield HP
+	var/spike_shield_chance_per_second = 80
+	var/ai_spike_shield_percentage_activate = 0.98
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/spike_shield/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	var/datum/behavior_delegate/ravager_hedgehog/BD = X.behavior_delegate
+	if(DT_PROB(spike_shield_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 5 && X.health/X.maxHealth < ai_spike_shield_percentage_activate && BD.shards >= 150)
+		use_ability_async()
 
 /datum/action/xeno_action/activable/rav_spikes
 	name = "Fire Spikes (75 shards)"
@@ -213,6 +244,14 @@
 	// Config
 	var/shard_cost = 75
 	var/ammo_type = /datum/ammo/xeno/bone_chips
+	var/rav_spikes_chance_per_second = 80
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/activable/rav_spikes/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	var/datum/behavior_delegate/ravager_hedgehog/BD = X.behavior_delegate
+	if(DT_PROB(rav_spikes_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 3 && BD.shards >= 225)
+		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/spike_shed
 	name = "Spike Shed (50 shards)"
@@ -228,6 +267,14 @@
 	var/shard_cost = 50
 	var/ammo_type = /datum/ammo/xeno/bone_chips/spread
 	var/shrapnel_amount = 40
+	var/spike_shed_chance_per_second = 100
+	var/ai_spike_shed_percentage_activate = 0.10
+
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/spike_shed/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(spike_shed_chance_per_second, delta_time) && X.health/X.maxHealth < ai_spike_shed_percentage_activate)
+		use_ability_async()
 
 
 
