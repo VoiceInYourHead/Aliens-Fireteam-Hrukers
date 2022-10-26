@@ -18,7 +18,7 @@
 		SQUAD_MARINE_1
 	)
 
-	var/spawn_flags = XENO_SPAWN_T1 || XENO_SPAWN_T2 || XENO_SPAWN_T3
+	var/spawn_flags = XENO_SPAWN_T1|XENO_SPAWN_T2|XENO_SPAWN_T3
 
 	var/list/objectives = list()
 	var/initial_objectives = 0
@@ -260,12 +260,12 @@ GLOBAL_LIST_INIT(t3_ais, list(
 		if(ready_for_boss_battle)
 			start_boss_battle()*/
 
-	var/t2_amount = 0
-	var/t3_amount = 0
+//	var/t2_amount = 0
+//	var/t3_amount = 0
 	var/total_amount = length(GLOB.living_xeno_list)
-	var/list/targetted_players = GLOB.clients.Copy()
+//	var/list/targetted_players = GLOB.clients.Copy()
 
-	for(var/i in GLOB.living_xeno_list)
+/*	for(var/i in GLOB.living_xeno_list)
 		var/mob/living/carbon/Xenomorph/X = i
 		switch(X.tier)
 			if(2)
@@ -280,7 +280,7 @@ GLOBAL_LIST_INIT(t3_ais, list(
 					if(X.current_target || X.current_path)
 						targetted_players[h] += X.tier
 					else
-						targetted_players[h] = max(targetted_players[h], 1)
+						targetted_players[h] = max(targetted_players[h], 1)*/
 
 /*	for(var/i in targetted_players)
 		var/client/C = i
@@ -321,9 +321,9 @@ GLOBAL_LIST_INIT(t3_ais, list(
 	var/list/xenos_to_spawn = list()
 
 	while(total_amount < length(GLOB.alive_client_human_list)*CONFIG_GET(number/ai_director/max_xeno_per_player)*length(groups))
-		var/current_amount = total_amount
+//		var/current_amount = total_amount
 		total_amount++
-		if(current_amount)
+/*		if(current_amount)
 			if(t3_amount >= 2)
 				break
 			if(t2_amount >= 5)
@@ -336,10 +336,10 @@ GLOBAL_LIST_INIT(t3_ais, list(
 			if((length(GLOB.alive_human_list) >= 10) && (spawn_flags & XENO_SPAWN_T2) && prob(90))
 				xenos_to_spawn += pick(GLOB.t2_ais)
 				t2_amount++
-				continue
+				continue*/
 
 		if(spawn_flags & XENO_SPAWN_T1)
-			xenos_to_spawn += pick(GLOB.t1_ais)
+			xenos_to_spawn += pick(GLOB.t1_ais,GLOB.t2_ais,GLOB.t3_ais)
 			continue
 		break
 

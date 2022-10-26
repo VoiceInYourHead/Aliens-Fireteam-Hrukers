@@ -8,7 +8,7 @@
 #define DOOR_PENALTY 3
 #define OBJECT_PENALTY 20
 #define HUMAN_PENALTY 4
-#define VEHICLE_PENALTY 10
+#define VEHICLE_PENALTY 25
 #define WINDOW_FRAME_PENALTY 25
 #define BARRICADE_PENALTY 50
 #define WALL_PENALTY 50
@@ -96,7 +96,7 @@
 
 /// The maximum amount of xenomorphs that can spawn, scaled up by population.
 /datum/config_entry/number/ai_director/max_xeno_per_player
-	config_entry_value = 2
+	config_entry_value = 3
 
 // Xenos spawn
 /datum/config_entry/number/ai_director/t2_spawn_at_percentage

@@ -237,8 +237,7 @@
 
 /obj/item/device/motiondetector/proc/show_blip(var/mob/user, var/atom/target, var/blip_icon)
 	set waitfor = 0
-//	if(user && user.client)
-	if(user)
+	if(user && user.client)
 
 		blip_icon = blip_icon ? blip_icon : blip_type
 
