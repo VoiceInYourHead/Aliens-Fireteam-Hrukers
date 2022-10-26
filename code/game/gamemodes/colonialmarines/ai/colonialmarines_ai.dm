@@ -18,7 +18,7 @@
 		SQUAD_MARINE_1
 	)
 
-	var/spawn_flags = XENO_SPAWN_T1
+	var/spawn_flags = XENO_SPAWN_T1 || XENO_SPAWN_T2 || XENO_SPAWN_T3
 
 	var/list/objectives = list()
 	var/initial_objectives = 0
@@ -65,7 +65,7 @@
 //	game_shuttle = SSshuttle.getShuttle(game_shuttle_id)
 
 	RegisterSignal(SSdcs, COMSIG_GLOB_XENO_SPAWN, .proc/handle_xeno_spawn)
-	for(var/i in RoleAuthority.squads.Copy())
+/*	for(var/i in RoleAuthority.squads.Copy())
 		var/datum/squad/S = i
 		if(!(S.name in squad_limit))
 			RoleAuthority.squads -= i
@@ -81,7 +81,7 @@
 		), .proc/finish_objective)
 		objectives += RN
 
-	initial_objectives = length(objectives)
+	initial_objectives = length(objectives)*/
 
 /*	while(length(GLOB.loot_landmarks) && length(lootbox_amounts))
 		var/obj/effect/landmark/loot_landmark/L = pick(GLOB.loot_landmarks)
@@ -110,7 +110,7 @@
 /datum/game_mode/colonialmarines/ai/announce_bioscans()
 	return
 
-/datum/game_mode/colonialmarines/ai/proc/finish_objective(var/obj/structure/resource_node/RN)
+/*/datum/game_mode/colonialmarines/ai/proc/finish_objective(var/obj/structure/resource_node/RN)
 	SIGNAL_HANDLER
 
 //	if(GLOB.marine_pointshop)
@@ -133,7 +133,7 @@
 		spawn_flags |= XENO_SPAWN_T3
 
 	if(!length(objectives))
-		INVOKE_ASYNC(src, .proc/marine_win)
+		INVOKE_ASYNC(src, .proc/marine_win)*/
 
 /*/datum/game_mode/colonialmarines/ai/proc/enter_endgame()
 	marine_announcement("Massive biosignatures detected. Xenomorph hive located. Please board the dropship and launch as soon as possible. Autopilot co-ordinates set for Xenomorph Hive", "[MAIN_SHIP_NAME] AI", 'sound/misc/distressbeacon_sunshine.ogg')
@@ -324,12 +324,16 @@ GLOBAL_LIST_INIT(t3_ais, list(
 		var/current_amount = total_amount
 		total_amount++
 		if(current_amount)
-			if((t3_amount/current_amount) < IDEAL_T3_PERCENT && (spawn_flags & XENO_SPAWN_T3))
+			if(t3_amount >= 2)
+				break
+			if(t2_amount >= 5)
+				break
+			if((length(GLOB.alive_human_list) >= 15) && (spawn_flags & XENO_SPAWN_T3) && prob(60))
 				xenos_to_spawn += pick(GLOB.t3_ais)
 				t3_amount++
 				continue
 
-			if((t2_amount/current_amount) < IDEAL_T2_PERCENT && (spawn_flags & XENO_SPAWN_T2))
+			if((length(GLOB.alive_human_list) >= 10) && (spawn_flags & XENO_SPAWN_T2) && prob(90))
 				xenos_to_spawn += pick(GLOB.t2_ais)
 				t2_amount++
 				continue

@@ -25,23 +25,7 @@
     "monkey_types": [
         "stok"
     ],
-    "traits": [{ "Ground": true }],
-    "nightmare": {
-		"scenario": "maps/Nightmare/maps/DesertDam/scenario.json",
-        "mapgen": "maps/Nightmare/maps/DesertDam/mapgen.json"
-    },
-    "xvx_hives": {
-        "xeno_hive_alpha": 0,
-        "xeno_hive_bravo": 0,
-        "xeno_hive_charlie": 0,
-        "xeno_hive_delta": 100
-    },
-    "gamemodes": [
-        "Distress Signal",
-        "Hunter Games",
-        "Hive Wars",
-        "Faction Clash",
-        "Distress Signal: Lowpop",
-        "Infection"
-    ]
+	"traits": [{ "Ground": true }],
+    "force_mode": "Distress Signal: Lowpop",
+    "ship_map": "Outpost Alpha"
 }

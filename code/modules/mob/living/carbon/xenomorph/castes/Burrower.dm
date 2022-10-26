@@ -11,7 +11,7 @@
 	plasma_max = XENO_PLASMA_TIER_6
 	crystal_max = XENO_CRYSTAL_LOW
 	xeno_explosion_resistance = XENO_EXPLOSIVE_ARMOR_TIER_4
-	armor_deflection = XENO_ARMOR_TIER_2
+	armor_deflection = XENO_NO_ARMOR
 	evasion = XENO_EVASION_NONE
 	speed = XENO_SPEED_TIER_4
 

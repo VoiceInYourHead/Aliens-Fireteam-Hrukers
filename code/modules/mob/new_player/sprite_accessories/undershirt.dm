@@ -37,7 +37,7 @@ GLOBAL_LIST_INIT_TYPED(undershirt_f, /datum/sprite_accessory/undershirt, setup_u
 				selected_icon_state = "c_" + selected_icon_state
 			if(MAP_LV_624, MAP_HAUNTED_HOUSE_V2, MAP_RUNTIME)
 				selected_icon_state = "j_" + selected_icon_state
-			if(MAP_WHISKEY_OUTPOST, MAP_DESERT_DAM, MAP_DESERT_DAM_AI, MAP_BIG_RED, MAP_KUTJEVO)
+			if(MAP_WHISKEY_OUTPOST, MAP_DESERT_DAM, MAP_DESERT_DAM_AI, MAP_BIG_RED, MAP_BIG_RED_AI, MAP_KUTJEVO)
 				selected_icon_state = "d_" + selected_icon_state
 			if(MAP_CORSAT, MAP_SOROKYNE_STRATA, MAP_ICE_COLONY, MAP_ICE_COLONY_V3)
 				selected_icon_state = "s_" + selected_icon_state
