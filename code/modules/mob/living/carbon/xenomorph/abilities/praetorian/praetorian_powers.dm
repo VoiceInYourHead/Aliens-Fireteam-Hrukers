@@ -705,7 +705,7 @@
 	X.frozen = TRUE
 	X.update_canmove()
 
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 5))
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 10))
 
 	if (!X.check_state() || X.action_busy)
 		return

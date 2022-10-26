@@ -35,14 +35,18 @@
 /datum/behavior_delegate/runner_acider
 	var/acid_amount = 0
 
-	var/caboom_left = 20
+//	var/caboom_left = 20
+	var/caboom_left = 5
 	var/caboom_trigger
 	var/caboom_last_proc
 
 	var/max_acid = 1000
-	var/caboom_timer = 20
-	var/acid_slash_regen_lying = 8
-	var/acid_slash_regen_standing = 14
+//	var/caboom_timer = 20
+	var/caboom_timer = 5
+//	var/acid_slash_regen_lying = 8
+//	var/acid_slash_regen_standing = 14
+	var/acid_slash_regen_lying = 80
+	var/acid_slash_regen_standing = 140
 	var/acid_passive_regen = 1
 
 	var/melt_acid_cost = 100

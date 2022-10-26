@@ -51,12 +51,11 @@
 	action_type = XENO_ACTION_CLICK
 	ability_primacy = XENO_PRIMARY_ACTION_2
 	var/minimal_acid = 200
-
-	var/wait_period = 0.5 SECONDS
-	var/range = 2
+	var/fth_prob_chance = 80
 
 	default_ai_action = TRUE
 
-/datum/action/xeno_action/activable/acider_for_the_hive/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) <= 1)
+/datum/action/xeno_action/activable/acider_for_the_hive/process_ai(mob/living/carbon/Xenomorph/Runner/X, delta_time, game_evaluation)
+	var/datum/behavior_delegate/runner_acider/BD = X.behavior_delegate
+	if(DT_PROB(fth_prob_chance, delta_time) && get_dist(X, X.current_target) <= 2 && BD.acid_amount >= 350)
 		use_ability_async()

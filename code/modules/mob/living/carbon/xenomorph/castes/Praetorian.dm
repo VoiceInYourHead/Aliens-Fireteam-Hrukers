@@ -57,6 +57,15 @@
 	icon_xeno = 'icons/mob/hostiles/praetorian.dmi'
 	icon_xenonid = 'icons/mob/hostiles/praetorian.dmi'
 
+	var/linger_range = 5
+	var/linger_deviation = 1
+
+/mob/living/carbon/Xenomorph/Praetorian/init_movement_handler()
+	var/datum/xeno_ai_movement/linger/L = new(src)
+	L.linger_range = linger_range
+	L.linger_deviation = linger_deviation
+	return L
+
 /mob/living/carbon/Xenomorph/Praetorian/Initialize(mapload, mob/living/carbon/Xenomorph/oldXeno, h_number)
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_praetorian))
 	. = ..()
