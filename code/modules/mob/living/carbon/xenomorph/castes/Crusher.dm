@@ -294,15 +294,3 @@
 	if(frozen)
 		return
 	return ..()
-
-/*
-/mob/living/carbon/Xenomorph/Crusher/init_movement_handler()
-	var/mob/living/carbon/Xenomorph/Crusher/X
-	if(X.mutation_type == CRUSHER_CHARGER)
-		return ..()
-	else
-		var/datum/xeno_ai_movement/linger/L = new(src)
-		L.linger_range = linger_range
-		L.linger_deviation = linger_deviation
-		return L
-*/

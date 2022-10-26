@@ -175,7 +175,7 @@
 		return
 
 	if(BD.caboom_trigger)
-		cancel_ability()
+//		cancel_ability()
 		return
 
 	if(BD.acid_amount < minimal_acid)
@@ -193,6 +193,7 @@
 
 	X.say(";FOR THE HIVE!!!")
 
+/*
 /datum/action/xeno_action/activable/acider_for_the_hive/proc/cancel_ability()
 	var/mob/living/carbon/Xenomorph/X = owner
 
@@ -207,3 +208,4 @@
 	X.SetLuminosity(0)
 	BD.modify_acid(-BD.max_acid / 4)
 	to_chat(X, SPAN_XENOWARNING("You remove all your explosive acid before it combusted."))
+*/
