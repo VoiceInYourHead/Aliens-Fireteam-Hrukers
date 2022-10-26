@@ -399,6 +399,11 @@
 	if (!check_plasma_owner())
 		return
 
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 5))
+
 	// Transient turf list
 	var/list/target_turfs = list()
 	var/list/temp_turfs = list()
@@ -702,16 +707,16 @@
 /datum/action/xeno_action/activable/prae_acid_ball/use_ability(atom/A)
 	var/mob/living/carbon/Xenomorph/X = owner
 
-	X.frozen = TRUE
-	X.update_canmove()
-
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 10))
-
 	if (!X.check_state() || X.action_busy)
 		return
 
 	if (!action_cooldown_check() && check_and_use_plasma_owner())
 		return
+
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 10))
 
 	var/turf/current_turf = get_turf(X)
 

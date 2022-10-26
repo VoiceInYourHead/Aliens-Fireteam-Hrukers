@@ -12,7 +12,7 @@
 	var/burrow_prob_chance = 80
 
 /datum/action/xeno_action/activable/burrow/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(burrow_prob_chance, delta_time))
+	if(DT_PROB(burrow_prob_chance, delta_time) && (X.loc in view(X.current_target)))
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/burrow/use_ability(atom/A)

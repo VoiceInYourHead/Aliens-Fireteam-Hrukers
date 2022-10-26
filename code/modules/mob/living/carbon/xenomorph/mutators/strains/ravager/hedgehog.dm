@@ -43,14 +43,15 @@
 
 	// Shard config
 	var/max_shards = 300
-	var/shard_gain_onlife = 10
+//	var/shard_gain_onlife = 10
+	var/shard_gain_onlife = 45
 	var/shards_per_projectile = 20
 	var/armor_buff_per_fifty_shards = 2.50
 	var/shard_lock_duration = 300
 	var/shard_lock_speed_mod = 0.85
 
 	// Shard state
-	var/shards = 0
+	var/shards = 250
 	var/shards_locked = FALSE //are we locked at 0 shards?
 
 	// Armor buff state

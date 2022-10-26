@@ -43,6 +43,8 @@
 	mutation_type = RAVAGER_NORMAL
 	claw_type = CLAW_TYPE_VERY_SHARP
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	base_actions = list(
 		/datum/action/xeno_action/onclick/xeno_resting,
 		/datum/action/xeno_action/onclick/regurgitate,
