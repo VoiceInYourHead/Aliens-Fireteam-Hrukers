@@ -38,7 +38,6 @@ map desert_dam
 endmap
 
 map desert_dam_ai
-	default
 endmap
 
 map ice_colony_v2
@@ -50,6 +49,10 @@ map shivas_snowball
 endmap
 
 map kutjevo
+endmap
+
+map kutjevo_ai
+	default
 endmap
 
 map sorokyne_strata
