@@ -42,6 +42,8 @@
 	tier = 3
 	mutation_type = PRAETORIAN_NORMAL
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	base_actions = list(
 		/datum/action/xeno_action/onclick/xeno_resting,
 		/datum/action/xeno_action/onclick/regurgitate,

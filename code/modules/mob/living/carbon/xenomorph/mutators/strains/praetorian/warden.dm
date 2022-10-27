@@ -1,6 +1,7 @@
 /datum/xeno_mutator/praetorian_warden
 	// i mean so basically im braum
 	name = "STRAIN: Praetorian - Warden"
+	required_level = 10 //выключаем вардена и вангуарда ради иишек
 	description = "You trade your corrosive acid and your dash for an internal hitpoint pool. The pool is filled by your spits and slashes, and can be spent to protect your allies and yourself."
 	flavor_description = "Only in Death does your sisters' service to the Queen end. Keep them fighting using your own blood and claws."
 	cost = MUTATOR_COST_EXPENSIVE
