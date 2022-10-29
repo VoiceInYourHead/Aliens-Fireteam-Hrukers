@@ -771,7 +771,7 @@ Defined in conflicts.dm of the #defines folder.
 	. = ..()
 	var/new_attach_icon
 	switch(SSmapping.configs[GROUND_MAP].map_name) // maploader TODO: json
-		if(MAP_ICE_COLONY, MAP_ICE_COLONY_V3, MAP_CORSAT, MAP_SOROKYNE_STRATA)
+		if(MAP_ICE_COLONY, MAP_ICE_COLONY_V3, MAP_CORSAT, MAP_SOROKYNE_STRATA, MAP_SOROKYNE_STRATA_AI)
 			attach_icon = new_attach_icon ? new_attach_icon : "s_" + attach_icon
 		if(MAP_WHISKEY_OUTPOST, MAP_DESERT_DAM, MAP_DESERT_DAM_AI, MAP_BIG_RED, MAP_BIG_RED_AI, MAP_KUTJEVO, MAP_KUTJEVO_AI)
 			attach_icon = new_attach_icon ? new_attach_icon : "d_" + attach_icon

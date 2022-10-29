@@ -29,6 +29,12 @@
 	icon = 'icons/turf/area_kutjevo.dmi'
 	lighting_use_dynamic = 1
 
+/area/shuttle/drop3/kutjevo
+	name = "Kutjevo - Dropship Turtle Landing Zone"
+	icon_state = "shuttle2"
+	icon = 'icons/turf/area_kutjevo.dmi'
+	lighting_use_dynamic = 1
+
 /area/kutjevo/exterior
 	name = "Kutjevo - Exterior"
 	ceiling = CEILING_NONE

@@ -362,4 +362,8 @@
 	name = "\improper 'Normandy' camera controls"
 	network = list(CAMERA_NET_NORMANDY, CAMERA_NET_LASER_TARGETS)
 
+/obj/structure/machinery/computer/security/dropship/three
+	name = "\improper 'Turtle' camera controls"
+	network = list(CAMERA_NET_NORMANDY, CAMERA_NET_LASER_TARGETS)
+
 #undef DEFAULT_MAP_SIZE

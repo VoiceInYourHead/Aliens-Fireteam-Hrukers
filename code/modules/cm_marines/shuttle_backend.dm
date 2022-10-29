@@ -318,6 +318,72 @@ x_pos = 0 1 2 3 4 5 6
 
 	)
 
+	//Turtle
+	/*
+x_pos = 0 1 2 3 4 5 6 7 8 9 101112
+		| | | | | | | | | | | | |
+		O O O O X X X X X O O O O -- y_pos = 18
+		O O O O X X X X X O O O O -- y_pos = 17
+		X X O O X X X X X O O X X -- y_pos = 16
+		X X X X X X X X X X X X X -- y_pos = 15
+		X X X X X X X X X X X X X -- y_pos = 14
+		X X X X X X X X X X X X X -- y_pos = 13
+		X X X X X X X X X X X X X -- y_pos = 12
+		O O O X X X X X X X O O O -- y_pos = 11
+		O O O X X X X X X X O O O -- y_pos = 10
+		O O O X X X X X X X O O O -- y_pos = 9
+		O O O X X X X X X X O O O -- y_pos = 8
+		O X X X X X X X X X X X O -- y_pos = 7
+		X X X X X X X X X X X X X -- y_pos = 6
+		X X X X X X X X X X X X X -- y_pos = 5
+		X X X X X X X X X X X X X -- y_pos = 4
+		O X X O O X X X O O X X O -- y_pos = 3
+		O O O O O X X X O O O O O -- y_pos = 2
+		O O O O O O X O O O O O O -- y_pos = 1
+		T O O X X X X X X X O O O -- y_pos = 0
+		*/
+
+	s_info["Seven Sins Dropship"] = newlist(
+
+	/datum/coords{x_pos=4;y_pos=18}, /datum/coords{x_pos=5;y_pos=18}, /datum/coords{x_pos=6;y_pos=18}, /datum/coords{x_pos=7;y_pos=18}, /datum/coords{x_pos=8;y_pos=18},
+
+	/datum/coords{x_pos=4;y_pos=17}, /datum/coords{x_pos=5;y_pos=17}, /datum/coords{x_pos=6;y_pos=17}, /datum/coords{x_pos=7;y_pos=17}, /datum/coords{x_pos=8;y_pos=17},
+
+	/datum/coords{x_pos=0;y_pos=16}, /datum/coords{x_pos=1;y_pos=16}, /datum/coords{x_pos=4;y_pos=16}, /datum/coords{x_pos=5;y_pos=16}, /datum/coords{x_pos=6;y_pos=16}, /datum/coords{x_pos=7;y_pos=16}, /datum/coords{x_pos=8;y_pos=16}, /datum/coords{x_pos=11;y_pos=16}, /datum/coords{x_pos=12;y_pos=16},
+
+	/datum/coords{x_pos=0;y_pos=15}, /datum/coords{x_pos=1;y_pos=15}, /datum/coords{x_pos=2;y_pos=15}, /datum/coords{x_pos=3;y_pos=15}, /datum/coords{x_pos=4;y_pos=15}, /datum/coords{x_pos=5;y_pos=15}, /datum/coords{x_pos=6;y_pos=15}, /datum/coords{x_pos=7;y_pos=15}, /datum/coords{x_pos=8;y_pos=15}, /datum/coords{x_pos=9;y_pos=15}, /datum/coords{x_pos=10;y_pos=15}, /datum/coords{x_pos=11;y_pos=16}, /datum/coords{x_pos=12;y_pos=16},
+
+	/datum/coords{x_pos=0;y_pos=14}, /datum/coords{x_pos=1;y_pos=14}, /datum/coords{x_pos=2;y_pos=14}, /datum/coords{x_pos=3;y_pos=14}, /datum/coords{x_pos=4;y_pos=14}, /datum/coords{x_pos=5;y_pos=14}, /datum/coords{x_pos=6;y_pos=14}, /datum/coords{x_pos=7;y_pos=14}, /datum/coords{x_pos=8;y_pos=14}, /datum/coords{x_pos=9;y_pos=14}, /datum/coords{x_pos=10;y_pos=14}, /datum/coords{x_pos=11;y_pos=14}, /datum/coords{x_pos=12;y_pos=14},
+
+	/datum/coords{x_pos=0;y_pos=13}, /datum/coords{x_pos=1;y_pos=13}, /datum/coords{x_pos=2;y_pos=13}, /datum/coords{x_pos=3;y_pos=13}, /datum/coords{x_pos=4;y_pos=13}, /datum/coords{x_pos=5;y_pos=13}, /datum/coords{x_pos=6;y_pos=13}, /datum/coords{x_pos=7;y_pos=13}, /datum/coords{x_pos=8;y_pos=13}, /datum/coords{x_pos=9;y_pos=13}, /datum/coords{x_pos=10;y_pos=13}, /datum/coords{x_pos=11;y_pos=13}, /datum/coords{x_pos=12;y_pos=13},
+
+	/datum/coords{x_pos=0;y_pos=12}, /datum/coords{x_pos=1;y_pos=12}, /datum/coords{x_pos=2;y_pos=12}, /datum/coords{x_pos=3;y_pos=12}, /datum/coords{x_pos=4;y_pos=12}, /datum/coords{x_pos=5;y_pos=12}, /datum/coords{x_pos=6;y_pos=12}, /datum/coords{x_pos=7;y_pos=12}, /datum/coords{x_pos=8;y_pos=12}, /datum/coords{x_pos=9;y_pos=12}, /datum/coords{x_pos=10;y_pos=12}, /datum/coords{x_pos=11;y_pos=12}, /datum/coords{x_pos=12;y_pos=12},
+
+	/datum/coords{x_pos=3;y_pos=11},/datum/coords{x_pos=4;y_pos=11}, /datum/coords{x_pos=5;y_pos=11}, /datum/coords{x_pos=6;y_pos=11}, /datum/coords{x_pos=7;y_pos=11}, /datum/coords{x_pos=8;y_pos=11}, /datum/coords{x_pos=9;y_pos=11},
+
+	/datum/coords{x_pos=3;y_pos=10}, /datum/coords{x_pos=4;y_pos=10}, /datum/coords{x_pos=5;y_pos=10}, /datum/coords{x_pos=6;y_pos=10}, /datum/coords{x_pos=7;y_pos=10}, /datum/coords{x_pos=8;y_pos=10}, /datum/coords{x_pos=9;y_pos=10},
+
+	/datum/coords{x_pos=3;y_pos=9}, /datum/coords{x_pos=4;y_pos=9}, /datum/coords{x_pos=5;y_pos=9}, /datum/coords{x_pos=6;y_pos=9}, /datum/coords{x_pos=7;y_pos=9}, /datum/coords{x_pos=8;y_pos=9}, /datum/coords{x_pos=9;y_pos=9},
+
+	/datum/coords{x_pos=3;y_pos=8}, /datum/coords{x_pos=4;y_pos=8}, /datum/coords{x_pos=5;y_pos=8}, /datum/coords{x_pos=6;y_pos=8}, /datum/coords{x_pos=7;y_pos=8}, /datum/coords{x_pos=8;y_pos=8}, /datum/coords{x_pos=9;y_pos=8},
+
+	/datum/coords{x_pos=1;y_pos=7}, /datum/coords{x_pos=2;y_pos=7}, /datum/coords{x_pos=3;y_pos=7}, /datum/coords{x_pos=4;y_pos=7}, /datum/coords{x_pos=5;y_pos=7}, /datum/coords{x_pos=6;y_pos=7}, /datum/coords{x_pos=7;y_pos=7}, /datum/coords{x_pos=8;y_pos=7}, /datum/coords{x_pos=9;y_pos=7}, /datum/coords{x_pos=10;y_pos=7}, /datum/coords{x_pos=11;y_pos=7},
+
+	/datum/coords{x_pos=0;y_pos=6}, /datum/coords{x_pos=1;y_pos=6}, /datum/coords{x_pos=2;y_pos=6}, /datum/coords{x_pos=3;y_pos=6}, /datum/coords{x_pos=4;y_pos=6}, /datum/coords{x_pos=5;y_pos=6}, /datum/coords{x_pos=6;y_pos=6}, /datum/coords{x_pos=7;y_pos=6}, /datum/coords{x_pos=8;y_pos=6}, /datum/coords{x_pos=9;y_pos=6}, /datum/coords{x_pos=10;y_pos=6}, /datum/coords{x_pos=11;y_pos=6}, /datum/coords{x_pos=12;y_pos=6},
+
+	/datum/coords{x_pos=0;y_pos=5}, /datum/coords{x_pos=1;y_pos=5}, /datum/coords{x_pos=2;y_pos=5}, /datum/coords{x_pos=3;y_pos=5}, /datum/coords{x_pos=4;y_pos=5}, /datum/coords{x_pos=5;y_pos=5}, /datum/coords{x_pos=6;y_pos=5}, /datum/coords{x_pos=7;y_pos=5}, /datum/coords{x_pos=8;y_pos=5}, /datum/coords{x_pos=9;y_pos=5}, /datum/coords{x_pos=10;y_pos=5}, /datum/coords{x_pos=11;y_pos=5}, /datum/coords{x_pos=12;y_pos=5},
+
+	/datum/coords{x_pos=0;y_pos=4}, /datum/coords{x_pos=1;y_pos=4}, /datum/coords{x_pos=2;y_pos=4}, /datum/coords{x_pos=3;y_pos=4}, /datum/coords{x_pos=4;y_pos=4}, /datum/coords{x_pos=5;y_pos=4}, /datum/coords{x_pos=6;y_pos=4}, /datum/coords{x_pos=7;y_pos=4}, /datum/coords{x_pos=8;y_pos=4}, /datum/coords{x_pos=9;y_pos=4}, /datum/coords{x_pos=10;y_pos=4}, /datum/coords{x_pos=11;y_pos=4}, /datum/coords{x_pos=12;y_pos=4},
+
+	/datum/coords{x_pos=1;y_pos=3}, /datum/coords{x_pos=2;y_pos=3}, /datum/coords{x_pos=5;y_pos=3}, /datum/coords{x_pos=6;y_pos=3}, /datum/coords{x_pos=7;y_pos=3}, /datum/coords{x_pos=10;y_pos=3}, /datum/coords{x_pos=11;y_pos=3},
+
+	/datum/coords{x_pos=5;y_pos=2}, /datum/coords{x_pos=6;y_pos=2}, /datum/coords{x_pos=7;y_pos=2},
+
+	/datum/coords{x_pos=6;y_pos=1},
+
+	/datum/coords{x_pos=3;y_pos=0}, /datum/coords{x_pos=4;y_pos=0}, /datum/coords{x_pos=5;y_pos=0}, /datum/coords{x_pos=6;y_pos=0}, /datum/coords{x_pos=7;y_pos=0}, /datum/coords{x_pos=8;y_pos=0}, /datum/coords{x_pos=9;y_pos=0}
+
+	)
 /*
 x_pos = 0 1 2 3 4 5 6 7 8 9 ....	   15 16
 		| | | | | | | | | | | | | | | | | |

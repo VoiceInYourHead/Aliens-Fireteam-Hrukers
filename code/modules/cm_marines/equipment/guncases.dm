@@ -182,8 +182,8 @@
 	new /obj/item/weapon/gun/rifle/m41a(src)
 	for(var/i = 1 to 4)
 		new /obj/item/ammo_magazine/rifle(src)
-	
-	
+
+
 //------------
 /obj/item/storage/box/guncase/pumpshotgun
 	name = "\improper M37A2 Pump Shotgun case"

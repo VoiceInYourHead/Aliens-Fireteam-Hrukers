@@ -24,6 +24,11 @@ EXTERIOR is FUCKING FREEZING, and refers to areas out in the open and or exposed
 	icon_state = "shuttle2"
 	lighting_use_dynamic = 0
 
+/area/shuttle/drop3/strata
+	name = "Dropship Turtle Landing Zone"
+	icon_state = "shuttle2"
+	lighting_use_dynamic = 0
+
 /*A WHOLE BUNCH OF PARENT ENTITIES
 fake_zlevel = 1 or 2. 1 is 'above' 2 is 'below', however ladders are flipped and think that 1 is below, and 2 is above.
 But, players don't actually care where they are so long as the ladders look correct going up and down. They shouldn't notice.

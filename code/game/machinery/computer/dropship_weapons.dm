@@ -674,3 +674,11 @@
 	New()
 		..()
 		shuttle_tag = "[MAIN_SHIP_NAME] Dropship 2"
+
+/obj/structure/machinery/computer/dropship_weapons/dropship3
+	name = "\improper 'Turtle' weapons controls"
+	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP, ACCESS_WY_CORPORATE)
+	firemission_envelope = new /datum/cas_fire_envelope/uscm_dropship()
+	New()
+		..()
+		shuttle_tag = "[MAIN_SHIP_NAME] Dropship 3"

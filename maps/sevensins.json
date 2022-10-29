@@ -1,0 +1,6 @@
+{
+    "map_name": "USS Seven Sins",
+    "map_path": "map_files/USS_Seven_Sins",
+    "map_file": "USS_Seven_Sins.dmm",
+    "traits": [{"Marine Main Ship": true}]
+}

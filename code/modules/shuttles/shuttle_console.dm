@@ -357,6 +357,8 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 		var/ship_id = "sh_dropship1"
 		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 2")
 			ship_id = "sh_dropship2"
+		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 3")
+			ship_id = "sh_dropship3"
 
 		for(var/obj/structure/machinery/door/airlock/dropship_hatch/M in machines)
 			if(M.id == ship_id)
@@ -396,6 +398,8 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 		var/ship_id = "sh_dropship1"
 		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 2")
 			ship_id = "sh_dropship2"
+		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 3")
+			ship_id = "sh_dropship3"
 
 		for(var/obj/structure/machinery/door/airlock/dropship_hatch/M in machines)
 			if(M.id == ship_id)
@@ -420,6 +424,8 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 		var/ship_id = "sh_dropship1"
 		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 2")
 			ship_id = "sh_dropship2"
+		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 3")
+			ship_id = "sh_dropship3"
 
 		for(var/obj/structure/machinery/door/airlock/dropship_hatch/M in machines)
 			if(M.id == ship_id)
@@ -447,6 +453,8 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 		var/ship_id = "sh_dropship1"
 		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 2")
 			ship_id = "sh_dropship2"
+		if(shuttle_tag == "[MAIN_SHIP_NAME] Dropship 3")
+			ship_id = "sh_dropship3"
 		var/obj/structure/machinery/door/airlock/multi_tile/almayer/reardoor
 		switch(ship_id)
 			if("sh_dropship1")
@@ -552,6 +560,30 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 /obj/structure/machinery/computer/shuttle_control/dropship2/onboard
 	name = "\improper 'Normandy' flight controls"
 	desc = "The flight controls for the 'Normandy' Dropship. Named after a department in France, noteworthy for the famous naval invasion of Normandy on the 6th of June 1944, a bloody but decisive victory in World War II and the campaign for the Liberation of France."
+	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi'
+	icon_state = "console"
+	onboard = 1
+	density = TRUE
+
+/obj/structure/machinery/computer/shuttle_control/dropship3
+	name = "\improper 'Turtle' dropship console"
+	desc = "The remote controls for the 'Turtle' Dropship. Named like that because of it shape, and also because it's durability."
+	icon = 'icons/obj/structures/machinery/computer.dmi'
+	icon_state = "shuttle"
+
+	shuttle_type = SHUTTLE_DROPSHIP
+	unslashable = TRUE
+	unacidable = TRUE
+	exproof = 1
+	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP, ACCESS_WY_CORPORATE_DS)
+
+/obj/structure/machinery/computer/shuttle_control/dropship3/Initialize()
+	. = ..()
+	shuttle_tag = "[MAIN_SHIP_NAME] Dropship 3"
+
+/obj/structure/machinery/computer/shuttle_control/dropship3/onboard
+	name = "\improper 'Turtle' flight controls"
+	desc = "The flight controls for the 'Turtle' Dropship. Named like that because of it shape, and also because it's durability."
 	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi'
 	icon_state = "console"
 	onboard = 1

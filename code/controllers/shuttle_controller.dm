@@ -72,6 +72,20 @@
 	shuttles[shuttle1.shuttle_tag] = shuttle1
 	process_shuttles += shuttle1
 
+	//ALMAYER DROPSHIP 3
+	shuttle1 = new
+	shuttle1.name = "Turtle"
+	shuttle1.location = 0
+	shuttle1.warmup_time = DROPSHIP_WARMUP_TIME
+	shuttle1.move_time = DROPSHIP_TRANSIT_DURATION
+	shuttle1.shuttle_tag = "[MAIN_SHIP_NAME] Dropship 3"
+	shuttle1.info_tag = "Seven Sins Dropship"
+	shuttle1.can_be_optimized = TRUE
+	shuttle1.can_do_gun_mission = TRUE
+	shuttle1.load_datums()
+	shuttles[shuttle1.shuttle_tag] = shuttle1
+	process_shuttles += shuttle1
+
 	//END: ALMAYER SHUTTLES AND EVAC PODS
 
 	// START: CORSAT shuttle(s).. i mean monorails, what

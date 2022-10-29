@@ -566,3 +566,18 @@
 /obj/item/weapon/melee/twohanded/folded_metal_chair/mob_launch_collision(var/mob/living/L)
 	playsound(get_turf(src), 'sound/weapons/metal_chair_slam.ogg', 50, 1)
 	..()
+
+/obj/structure/bed/chair/fixed
+	var/buckle_offset_x = 0
+	var/buckle_offset_y = 0
+
+/obj/structure/bed/chair/fixed/Initialize()
+	. = ..()
+	addtimer(CALLBACK(src, .proc/setup_buckle_offsets), 1 SECONDS)
+
+/obj/structure/bed/chair/fixed/proc/setup_buckle_offsets()
+	if(pixel_x != 0)
+		buckle_offset_x = pixel_x
+	if(pixel_y != 0)
+		buckle_offset_y = pixel_y
+

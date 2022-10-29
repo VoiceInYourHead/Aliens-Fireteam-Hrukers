@@ -34,6 +34,7 @@
 #define MAP_DESERT_DAM "Trijent Dam"  // Highpop only
 #define MAP_DESERT_DAM_AI "Trijent Dam AI"
 #define MAP_SOROKYNE_STRATA "Sorokyne Strata"
+#define MAP_SOROKYNE_STRATA_AI "Sorokyne Strata AI"
 #define MAP_CORSAT "CORSAT" // Highpop only
 #define MAP_KUTJEVO "Kutjevo Refinery"
 #define MAP_KUTJEVO_AI "Kutjevo Refinery AI"

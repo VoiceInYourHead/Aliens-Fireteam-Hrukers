@@ -118,7 +118,59 @@
 	icon_state = "away2"
 
 
+/area/shuttle/drop3/Enter(atom/movable/O, atom/oldloc)
+	if(istype(O, /obj/structure/barricade))
+		return FALSE
+	return TRUE
 
+/area/shuttle/drop3
+	//soundscape_playlist = list('sound/soundscape/drum1.ogg')
+	soundscape_interval = 30 //seconds
+	is_resin_allowed = FALSE
+	flags_area = AREA_NOTUNNEL
+	is_landing_zone = TRUE
+
+/area/shuttle/drop3/sulaco
+	name = "\improper Dropship Turtle"
+	icon_state = "shuttle"
+	base_muffle = MUFFLE_HIGH
+
+/area/shuttle/drop3/LV624
+	name = "\improper Dropship Turtle"
+	ambience_exterior = AMBIENCE_LV624
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/Haunted
+	name = "\improper Dropship Turtle"
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/prison
+	name = "\improper Dropship Turtle"
+	ambience_exterior = AMBIENCE_PRISON
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/BigRed
+	name = "\improper Dropship Turtle"
+	ambience_exterior = AMBIENCE_BIGRED
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/ice_colony
+	name = "\improper Dropship Turtle"
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/DesertDam
+	name = "\improper Dropship Turtle"
+	ambience_exterior = AMBIENCE_TRIJENT
+	icon_state = "shuttle2"
+
+/area/shuttle/drop3/transit
+	ambience_exterior 	= 'sound/ambience/dropship_ambience_loop.ogg'
+	name = "\improper Dropship Turtle Transit"
+	icon_state = "shuttlered"
+
+/area/shuttle/drop3/lz2
+	name = "\improper Turtle Landing Zone"
+	icon_state = "away2"
 
 
 //DISTRESS SHUTTLES
