@@ -51,6 +51,12 @@
 	icon_xeno = get_icon_from_source(CONFIG_GET(string/alien_embryo))
 	. = ..()
 
+/mob/living/carbon/Xenomorph/Larva/init_movement_handler()
+	var/datum/xeno_ai_movement/linger/L = new(src)
+	L.linger_range = 5
+	L.linger_deviation = 0
+	return L
+
 /mob/living/carbon/Xenomorph/Larva/Corrupted
 	hivenumber = XENO_HIVE_CORRUPTED
 
