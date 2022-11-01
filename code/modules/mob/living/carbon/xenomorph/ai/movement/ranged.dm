@@ -5,8 +5,9 @@
 
 /datum/xeno_ai_movement/ranged/ai_move_target(delta_time, game_evaluation)
 	var/mob/living/carbon/Xenomorph/X = parent
-	if(X.current_target.is_mob_incapacitated())
-		return ..()
+	if(!X.current_target in GLOB.all_multi_vehicles || !X.current_target in GLOB.all_defenses)
+		if(X.current_target.is_mob_incapacitated())
+			return ..()
 
 	if(!travelling_turf || !(get_turf(X) in view(world.view, X.current_target)))
 		travelling_turf = get_turf(X.current_target)
