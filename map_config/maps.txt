@@ -68,3 +68,6 @@ endmap
 map haunted_house_v2
 	voteweight 0
 endmap
+
+map death_wish
+endmap

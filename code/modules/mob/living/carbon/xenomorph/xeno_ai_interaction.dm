@@ -65,6 +65,13 @@
 /obj/vehicle/xeno_ai_act(mob/living/carbon/Xenomorph/X)
 	X.do_click(src, "", list())
 
+// SENTRY
+/obj/structure/machinery/defenses/xeno_ai_obstacle(mob/living/carbon/Xenomorph/X, direction)
+	return VEHICLE_PENALTY
+
+/obj/structure/machinery/defenses/xeno_ai_act(mob/living/carbon/Xenomorph/X)
+	X.do_click(src, "", list())
+
 // WINDOW FRAME
 /obj/structure/window_frame/xeno_ai_obstacle(mob/living/carbon/Xenomorph/X, direction)
 	if(X.claw_type == CLAW_TYPE_VERY_SHARP || (X.claw_type >= CLAW_TYPE_SHARP && !reinforced))

@@ -19,8 +19,9 @@
 	var/sentry_type = "sentry" //Used for the icon
 	display_additional_stats = TRUE
 
-	var/omni_directional = FALSE
-	var/sentry_range = SENTRY_RANGE
+	disassemble_time = 10 SECONDS
+	var/omni_directional = TRUE
+	var/sentry_range = 12
 
 	var/damage_mult = 1
 	var/accuracy_mult = 1
@@ -509,9 +510,9 @@ obj/structure/machinery/defenses/sentry/premade/damaged_action()
 	fire_delay = 0.15 SECONDS
 	health = 150
 	health_max = 150
-	damage_mult = 0.4
+	damage_mult = 0.7
 	density = FALSE
-	disassemble_time = 0.75 SECONDS
+	disassemble_time = 0.50 SECONDS
 	handheld_type = /obj/item/defenses/handheld/sentry/mini
 	composite_icon = FALSE
 

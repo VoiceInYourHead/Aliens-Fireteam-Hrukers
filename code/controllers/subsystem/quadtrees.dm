@@ -22,7 +22,7 @@ SUBSYSTEM_DEF(quadtree)
 
 /datum/controller/subsystem/quadtree/fire(resumed = FALSE)
 	if(!resumed)
-		player_feed = GLOB.clients.Copy()
+		player_feed = GLOB.living_mob_list.Copy()
 		cur_quadtrees = new_quadtrees.Copy()
 		if(new_quadtrees.len < world.maxz)
 			new_quadtrees.len = world.maxz
@@ -30,10 +30,10 @@ SUBSYSTEM_DEF(quadtree)
 			new_quadtrees[i] = QTREE(RECT(world.maxx/2,world.maxy/2, world.maxx, world.maxy), i)
 
 	while(length(player_feed))
-		var/client/C = player_feed[player_feed.len]
+		var/mob/living/carbon/C = player_feed[player_feed.len]
 		player_feed.len--
 		if(!C) continue
-		var/turf/T = get_turf(C.mob)
+		var/turf/T = get_turf(C)   /*(C.mob)*/
 		if(!T?.z || new_quadtrees.len < T.z)
 			continue
 		var/datum/coords/qtplayer/p_coords = new
@@ -41,8 +41,8 @@ SUBSYSTEM_DEF(quadtree)
 		p_coords.x_pos = T.x
 		p_coords.y_pos = T.y
 		p_coords.z_pos = T.z
-		if(isobserver(C.mob))
-			p_coords.is_observer = TRUE
+/*		if(isobserver(C.mob))
+			p_coords.is_observer = TRUE*/
 		var/datum/quadtree/QT = new_quadtrees[T.z]
 		QT.insert_player(p_coords)
 		if(MC_TICK_CHECK)

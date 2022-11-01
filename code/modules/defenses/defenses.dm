@@ -23,7 +23,7 @@
 	var/composite_icon = TRUE
 	var/display_additional_stats = FALSE
 
-	var/defense_check_range = 2
+	var/defense_check_range = 1
 	var/can_be_near_defense = FALSE
 
 	var/shots = 0
@@ -82,11 +82,13 @@
 		return FALSE
 
 	turned_on = TRUE
+	GLOB.all_defenses += src
 	power_on_action()
 	update_icon()
 
 /obj/structure/machinery/defenses/proc/power_off()
 	turned_on = FALSE
+	GLOB.all_defenses -= src
 	power_off_action()
 	update_icon()
 
@@ -355,6 +357,9 @@
 	return
 
 /obj/structure/machinery/defenses/Destroy()
+
+	GLOB.all_defenses -= src
+
 	if(owner_mob)
 		owner_mob = null
 

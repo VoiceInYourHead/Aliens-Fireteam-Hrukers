@@ -63,12 +63,16 @@
 
 /area/sevensins/corridor_east/pods
 
+/area/sevensins/corridor_east/maint
+
 /area/sevensins/corridor_west
 	name = "\improper 'Seven Sins' East Corridor"
 	icon_state = "lowerengineering"
 	fake_zlevel = 2 // lowerdeck
 
 /area/sevensins/corridor_west/pods
+
+/area/sevensins/corridor_west/maint
 
 /area/sevensins/hangar
 	name = "\improper 'Seven Sins' Hangar"

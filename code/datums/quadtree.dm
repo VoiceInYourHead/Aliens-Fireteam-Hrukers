@@ -39,7 +39,7 @@
 
 /datum/coords/qtplayer
 	/// Relevant client the coords are associated to
-	var/client/player
+	var/mob/living/carbon/player
 	/// Truthy if player is an observer
 	var/is_observer = FALSE
 
@@ -138,7 +138,7 @@
 			continue
 		if(range.contains(P))
 			if(flags & QTREE_SCAN_MOBS)
-				found_players.Add(P.player.mob)
+				found_players.Add(P.player) /*(P.player.mob)*/
 			else
 				found_players.Add(P.player)
 

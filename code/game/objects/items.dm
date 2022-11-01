@@ -195,7 +195,7 @@ cases. Override_icon_state should be a list.*/
 			if(MAP_ICE_COLONY, MAP_ICE_COLONY_V3, MAP_CORSAT, MAP_SOROKYNE_STRATA, MAP_SOROKYNE_STRATA_AI)
 				icon_state = new_icon_state ? new_icon_state : "s_" + icon_state
 				item_state = new_item_state ? new_item_state : "s_" + item_state
-			if(MAP_WHISKEY_OUTPOST, MAP_DESERT_DAM, MAP_DESERT_DAM_AI, MAP_BIG_RED, MAP_BIG_RED_AI, MAP_KUTJEVO, MAP_KUTJEVO_AI)
+			if(MAP_WHISKEY_OUTPOST, MAP_DESERT_DAM, MAP_DESERT_DAM_AI, MAP_BIG_RED, MAP_BIG_RED_AI, MAP_KUTJEVO, MAP_KUTJEVO_AI, MAP_DEATH_WISH)
 				icon_state = new_icon_state ? new_icon_state : "d_" + icon_state
 				item_state = new_item_state ? new_item_state : "d_" + item_state
 			if(MAP_PRISON_STATION, MAP_PRISON_STATION_V3)

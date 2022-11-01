@@ -569,7 +569,9 @@
 
 /obj/structure/bed/chair/fixed
 	var/buckle_offset_x = 0
+	var/mob_old_x = 0
 	var/buckle_offset_y = 0
+	var/mob_old_y = 0
 
 /obj/structure/bed/chair/fixed/Initialize()
 	. = ..()
@@ -581,3 +583,21 @@
 	if(pixel_y != 0)
 		buckle_offset_y = pixel_y
 
+/obj/structure/bed/chair/fixed/afterbuckle(mob/M)
+	if(buckled_mob)
+
+		if(buckle_offset_x != 0)
+			mob_old_x = M.pixel_x
+			M.pixel_x = buckle_offset_x
+		if(buckle_offset_y != 0)
+			mob_old_y = M.pixel_y
+			M.pixel_y = buckle_offset_y
+	else
+		if(buckle_offset_x != 0)
+			M.pixel_x = mob_old_x
+			mob_old_x = 0
+		if(buckle_offset_y != 0)
+			M.pixel_y = mob_old_y
+			mob_old_y = 0
+
+	handle_rotation()

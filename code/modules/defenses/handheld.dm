@@ -98,6 +98,7 @@
 	icon = 'icons/obj/structures/machinery/defenses/sentry.dmi'
 	icon_state = "Normal uac_sentry_handheld"
 	defense_type = /obj/structure/machinery/defenses/sentry
+	deployment_time = 10 SECONDS
 
 /obj/item/defenses/handheld/sentry/get_upgrade_list()
 	. = list()
@@ -132,7 +133,7 @@
 	name = "handheld UA 512-M mini sentry"
 	icon_state = "Mini uac_sentry_handheld"
 	defense_type = /obj/structure/machinery/defenses/sentry/mini
-	deployment_time = 0.75 SECONDS
+	deployment_time = 0.50 SECONDS
 
 
 // FLAMER BASE AND UPGRADES
@@ -291,4 +292,20 @@
 	deployment_time = 2 SECONDS
 	defense_type = /obj/structure/machinery/defenses/planted_flag/range
 
+/obj/item/storage/box/sentry_pack
+	name = "\improper UA 571-C crate"
+	desc = "A large metal case with Japanese writing on the top. However it also comes with English text to the side. This is a UA 571-C Sentry Gun, it clearly has various labeled warnings."
+	icon = 'icons/turf/whiskeyoutpost.dmi'
+	icon_state = "M56D_case" // I guess a placeholder? Not actually going to show up ingame for now.
+	w_class = SIZE_HUGE
+	storage_slots = 6
+	can_hold = list()
 
+/obj/item/storage/box/sentry_pack/fill_preset_inventory()
+	new /obj/item/defenses/handheld/sentry(src)
+	new /obj/item/defenses/handheld/sentry(src)
+	new /obj/item/ammo_magazine/sentry(src)
+	new /obj/item/ammo_magazine/sentry(src)
+	new /obj/item/ammo_magazine/sentry(src)
+	new /obj/item/ammo_magazine/sentry(src)
+	new /obj/item/device/multitool(src)
