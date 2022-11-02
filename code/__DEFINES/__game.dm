@@ -445,6 +445,19 @@
 #define QTREE_EXCLUDE_OBSERVER 1
 #define QTREE_SCAN_MOBS 2 //Return mob list instead of client list
 
+// Old Quadtree values
+
+/// Max amount of player coordinates in a quadtree cell
+#define QUADTREE_CAPACITY_OLD 12
+/// Minimum X width up to which we keep dividing the tree (meaning cells can be half that)
+#define QUADTREE_BOUNDARY_MINIMUM_WIDTH_OLD 12
+/// Minimum Y height up to which we keep dividing the tree (meaning cells can be half that)
+#define QUADTREE_BOUNDARY_MINIMUM_HEIGHT_OLD 12
+
+
+#define QTREE_EXCLUDE_OBSERVER_OLD 1
+#define QTREE_SCAN_MOBS_OLD 2 //Return mob list instead of client list
+
 // Ship section bounds
 
 #define UPPER_DECK "Upper deck"

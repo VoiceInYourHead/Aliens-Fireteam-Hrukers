@@ -81,4 +81,8 @@
 #define QTREE new /datum/quadtree
 #define SEARCH_QTREE(qtree, shape_range, flags) qtree.query_range(shape_range, null, flags)
 
+#define RECT_OLD new /datum/shape_old/rectangle
+#define QTREE_OLD new /datum/quadtree_old
+#define SEARCH_QTREE_OLD(qtree_old, shape_range, flags) qtree_old.query_range(shape_range, null, flags)
+
 #define HTML_FILE(contents) "<!DOCTYPE html><html><body>[contents]</body></html>"
