@@ -9,8 +9,9 @@
 	if(X.throwing)
 		return
 
-	if(X.current_target.is_mob_incapacitated())
-		return ..()
+	if(!X.current_target in GLOB.all_multi_vehicles || !X.current_target in GLOB.all_defenses)
+		if(X.current_target.is_mob_incapacitated())
+			return ..()
 
 	if(!(X in view(world.view, X.current_target)))
 		travelling_turf = get_turf(X.current_target)
