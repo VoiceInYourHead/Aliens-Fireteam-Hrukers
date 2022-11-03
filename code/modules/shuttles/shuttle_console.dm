@@ -370,6 +370,13 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 				else
 					M.do_command("secure_close")
 
+		for(var/obj/structure/machinery/door/poddoor/shutters/P in machines)
+			if(P.id == ship_id)
+				if(P.density)
+					P.open() // jobs done
+				else if(!P.density)
+					P.close() // closed but not locked yet
+
 		var/obj/structure/machinery/door/airlock/multi_tile/almayer/reardoor
 		switch(ship_id)
 			if("sh_dropship1")
@@ -405,6 +412,11 @@ GLOBAL_LIST_EMPTY(shuttle_controls)
 			if(M.id == ship_id)
 				if(!is_loworbit_level(M.z))
 					M.unlock()
+
+		for(var/obj/structure/machinery/door/poddoor/shutters/P in machines)
+			if(P.id == ship_id)
+				if(!is_loworbit_level(P.z))
+					P.open()
 
 		var/obj/structure/machinery/door/airlock/multi_tile/almayer/reardoor
 		switch(ship_id)

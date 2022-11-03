@@ -59,6 +59,8 @@
 			shuttle_tag = "[MAIN_SHIP_NAME] Dropship 1"
 		if("sh_dropship2")
 			shuttle_tag = "[MAIN_SHIP_NAME] Dropship 2"
+		if("sh_dropship3")
+			shuttle_tag = "[MAIN_SHIP_NAME] Dropship 3"
 		if("gr_transport1")
 			shuttle_tag = "Ground Transport 1"
 	if(!shuttle_tag)

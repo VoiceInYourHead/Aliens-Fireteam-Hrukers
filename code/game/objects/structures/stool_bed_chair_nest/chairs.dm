@@ -600,4 +600,30 @@
 			M.pixel_y = mob_old_y
 			mob_old_y = 0
 
+	for(var/obj/structure/bed/chair/fixed/C in get_turf(src))
+		if(C != src)
+			//if both seats on same tile have buckled mob, we become dense, otherwise, not dense.
+			if(buckled_mob)
+				if(C.buckled_mob)
+					buckled_mob.density = TRUE
+					C.buckled_mob.density = TRUE
+				else
+					buckled_mob.density = FALSE
+			else
+				if(C.buckled_mob)
+					C.buckled_mob.density = FALSE
+				M.density = TRUE
+			break
+
 	handle_rotation()
+
+/obj/structure/bed/chair/fixed/unbuckle()
+	if(buckled_mob && buckled_mob.buckled == src)
+		buckled_mob.buckled = null
+		buckled_mob.anchored = initial(buckled_mob.anchored)
+		buckled_mob.update_canmove()
+
+		var/M = buckled_mob
+		buckled_mob = null
+
+		afterbuckle(M)

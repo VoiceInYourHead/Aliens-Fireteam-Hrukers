@@ -677,9 +677,10 @@
 
 		//Just so marines can't land with shutters down and turtle the rasputin
 		for(var/obj/structure/machinery/door/poddoor/shutters/P in T)
-			if(!istype(P)) continue
+			P.open()
+/*			if(!istype(P)) continue
 			if(P.density)
-				INVOKE_ASYNC(P, /obj/structure/machinery/door.proc/close)
+				INVOKE_ASYNC(P, /obj/structure/machinery/door.proc/close)*/
 				//No break since transit shutters are the same parent type
 
 		if (iselevator)
