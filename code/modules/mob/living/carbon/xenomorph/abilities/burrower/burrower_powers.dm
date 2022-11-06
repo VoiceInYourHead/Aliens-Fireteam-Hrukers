@@ -24,6 +24,9 @@
 
 	used_burrow = TRUE
 
+	frozen = TRUE
+	update_canmove()
+
 	to_chat(src, SPAN_XENOWARNING("You begin burrowing yourself into the ground."))
 	if(!do_after(src, 1.5 SECONDS, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
 		addtimer(CALLBACK(src, .proc/do_burrow_cooldown), (caste ? caste.burrow_cooldown : 5 SECONDS))
@@ -31,14 +34,12 @@
 	// TODO Make immune to all damage here.
 	to_chat(src, SPAN_XENOWARNING("You burrow yourself into the ground."))
 	burrow = TRUE
-	frozen = TRUE
 	invisibility = 101
 	anchored = TRUE
 	density = FALSE
 	if(caste.fire_immunity == FIRE_IMMUNITY_NONE)
 		RegisterSignal(src, COMSIG_LIVING_PREIGNITION, .proc/fire_immune)
 		RegisterSignal(src, COMSIG_LIVING_FLAMER_CROSSED, .proc/flamer_crossed_immune)
-	update_canmove()
 	update_icons()
 	addtimer(CALLBACK(src, .proc/do_burrow_cooldown), (caste ? caste.burrow_cooldown : 5 SECONDS))
 	burrow_timer = world.time + 90		// How long we can be burrowed
@@ -68,7 +69,7 @@
 	density = TRUE
 	for(var/mob/living/carbon/human/H in loc)
 		H.KnockDown(2)
-	addtimer(CALLBACK(src, .proc/do_burrow_cooldown), (caste ? caste.burrow_cooldown : 5 SECONDS))
+	addtimer(CALLBACK(src, .proc/do_burrow_cooldown), (caste ? caste.burrow_cooldown : 2 SECONDS))
 	update_canmove()
 	update_icons()
 
@@ -78,7 +79,6 @@
 	for(var/X in actions)
 		var/datum/action/act = X
 		act.update_button_icon()
-
 
 /mob/living/carbon/Xenomorph/proc/tunnel(var/turf/T)
 	if(!burrow)
@@ -118,17 +118,17 @@
 			return
 
 	if(tunnel)
-		tunnel = FALSE
-		to_chat(src, SPAN_NOTICE("You stop tunneling."))
-		used_tunnel = TRUE
-		addtimer(CALLBACK(src, .proc/do_tunnel_cooldown), (caste ? caste.tunnel_cooldown : 5 SECONDS))
+//		tunnel = FALSE
+//		to_chat(src, SPAN_NOTICE("You stop tunneling."))
+//		used_tunnel = TRUE
+//		addtimer(CALLBACK(src, .proc/do_tunnel_cooldown), (caste ? caste.tunnel_cooldown : 5 SECONDS))
 		return
 
 	if(!T || T.density)
 		to_chat(src, SPAN_NOTICE("You cannot tunnel to there!"))
 	tunnel = TRUE
 	to_chat(src, SPAN_NOTICE("You start tunneling!"))
-	tunnel_timer = (get_dist(src, T)*10) + world.time
+	tunnel_timer = (get_dist(src, T)*5) + world.time
 	process_tunnel(T)
 
 

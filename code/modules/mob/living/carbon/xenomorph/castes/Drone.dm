@@ -68,6 +68,8 @@
 	icon_xeno = 'icons/mob/hostiles/drone.dmi'
 	icon_xenonid = 'icons/mob/hostiles/drone.dmi'
 
+	flags_ai = XENO_AI_CHOOSE_RANDOM_STRAIN
+
 	var/range_to_check_for_weeds = 6
 	var/turf/target_turf
 	var/next_search_time = 0

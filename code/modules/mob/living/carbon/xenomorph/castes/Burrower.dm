@@ -54,7 +54,7 @@
 		/datum/action/xeno_action/activable/corrosive_acid,
 		/datum/action/xeno_action/activable/place_construction,
 		/datum/action/xeno_action/onclick/build_tunnel,
-		/datum/action/xeno_action/onclick/plant_weeds, //first macro
+		/datum/action/xeno_action/onclick/plant_weeds/random, //first macro
 		/datum/action/xeno_action/onclick/place_trap, //second macro
 		/datum/action/xeno_action/activable/burrow, //third macro
 		/datum/action/xeno_action/onclick/tremor, //fourth macro

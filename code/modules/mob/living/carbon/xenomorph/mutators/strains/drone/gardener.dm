@@ -8,10 +8,11 @@
 		/datum/action/xeno_action/activable/secrete_resin,
 		/datum/action/xeno_action/onclick/choose_resin,
 		/datum/action/xeno_action/activable/corrosive_acid/weak,
+		/datum/action/xeno_action/onclick/plant_weeds/random,
 		/datum/action/xeno_action/activable/transfer_plasma
 	)
 	mutator_actions_to_add = list(
-		/datum/action/xeno_action/onclick/plant_weeds/gardener, // second macro
+		/datum/action/xeno_action/onclick/plant_weeds/gardener/random, // second macro
 		/datum/action/xeno_action/activable/resin_surge, // third macro
 		/datum/action/xeno_action/onclick/plant_resin_fruit/greater, // fourth macro
 		/datum/action/xeno_action/onclick/change_fruit
@@ -232,8 +233,14 @@
 	ability_primacy = XENO_PRIMARY_ACTION_3
 	var/channel_in_progress = FALSE
 	var/max_range = 7
+	var/surge_prob_chance = 80
+	default_ai_action = TRUE
 
-/datum/action/xeno_action/activable/resin_surge/use_ability(atom/A, mods)
+/datum/action/xeno_action/activable/resin_surge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(surge_prob_chance, delta_time))
+		use_ability_async(X.current_target)
+
+/datum/action/xeno_action/activable/resin_surge/use_ability(atom/A) //(atom/A, mods)
 	var/mob/living/carbon/Xenomorph/X = owner
 	if (!istype(X))
 		return
@@ -241,11 +248,11 @@
 	if (!action_cooldown_check())
 		return
 
-	if (!X.check_state(TRUE))
-		return
+//	if (!X.check_state(TRUE))
+//		return
 
-	if(mods["click_catcher"])
-		return
+//	if(mods["click_catcher"])
+//		return
 
 	if(ismob(A)) // to prevent using thermal vision to bypass clickcatcher
 		if(!can_see(X, A, max_range))
@@ -258,6 +265,11 @@
 
 	if (!check_and_use_plasma_owner())
 		return
+
+	X.frozen = TRUE
+	X.update_canmove()
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/unroot, X), get_xeno_stun_duration(X, 10))
 
 	var/turf/T = get_turf(A)
 
@@ -287,12 +299,12 @@
 			SPAN_XENONOTICE("You surge the resin around [structure_to_buff], making it temporarily nigh unbreakable!"), null, 5)
 		else
 			to_chat(X, SPAN_XENONOTICE("You haplessly try to surge resin around [structure_to_buff], but it's already reinforced. It'll take a moment for you to recover."))
-			xeno_cooldown = xeno_cooldown * 0.5
+			xeno_cooldown = xeno_cooldown * 0.3
 
 	else if(F && F.hivenumber == X.hivenumber)
 		if(F.mature)
 			to_chat(X, SPAN_XENONOTICE("The [F] is already mature. The [src.name] does nothing."))
-			xeno_cooldown = xeno_cooldown * 0.5
+			xeno_cooldown = xeno_cooldown * 0.3
 		else
 			to_chat(X, SPAN_XENONOTICE("You surge the resin around the [F], speeding its growth somewhat!"))
 			F.reduce_timer(5 SECONDS)
@@ -322,7 +334,7 @@
 			new /obj/effect/alien/resin/sticky/thin/weak(T, X.hivenumber)
 
 	else
-		xeno_cooldown = xeno_cooldown * 0.5
+		xeno_cooldown = xeno_cooldown * 0.3
 
 	apply_cooldown()
 
@@ -342,7 +354,7 @@
 	action_icon_state = "plant_gardener_weeds"
 	plasma_cost = 125
 	macro_path = /datum/action/xeno_action/verb/verb_plant_gardening_weeds
-	xeno_cooldown = 2 MINUTES
+	xeno_cooldown = 8 SECONDS
 	action_type = XENO_ACTION_CLICK
 	ability_primacy = XENO_PRIMARY_ACTION_2
 	node_type = /obj/effect/alien/weeds/node/gardener
@@ -351,6 +363,19 @@
 	spread_on_semiweedable = TRUE
 	block_structures = BLOCK_SPECIAL_STRUCTURES
 	fruit_growth_multiplier = 0.8
+	health = NODE_HEALTH_STANDARD
+
+/obj/effect/alien/weeds/node/gardener/complete_growth()
+	..()
+	health = NODE_HEALTH_HIVE
+
+/datum/action/xeno_action/onclick/plant_weeds/gardener/random
+	var/chance_per_second = 20
+	default_ai_action = TRUE
+
+/datum/action/xeno_action/onclick/plant_weeds/gardener/random/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
+	if(DT_PROB(chance_per_second, delta_time))
+		use_ability_async()
 
 /datum/action/xeno_action/verb/verb_plant_gardening_weeds()
 	set category = "Alien"
@@ -358,3 +383,4 @@
 	set hidden = 1
 	var/action_name = "Plant Hardy Weeds (125)"
 	handle_xeno_macro(src, action_name)
+
