@@ -31,7 +31,7 @@
 		if(isXenoQueen(src))
 			var/mob/living/carbon/Xenomorph/Queen/Q = src
 			Q.queen_standing_icon = icon_xenonid
-			Q.queen_ovipositor_icon = 'icons/mob/xenonids/ovipositor.dmi'
+			Q.queen_ovipositor_icon = 'icons/mob/hostiles/Ovipositor.dmi'
 	else
 		icon = icon_xeno
 		if(isXenoQueen(src))

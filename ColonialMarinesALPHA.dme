@@ -1488,6 +1488,7 @@
 #include "code\modules\gear_presets\whiteout.dm"
 #include "code\modules\gear_presets\wo.dm"
 #include "code\modules\gear_presets\wy.dm"
+#include "code\modules\gear_presets\wy_goons.dm"
 #include "code\modules\gear_presets\yautja.dm"
 #include "code\modules\hydroponics\grown_inedible.dm"
 #include "code\modules\hydroponics\hydro_tools.dm"

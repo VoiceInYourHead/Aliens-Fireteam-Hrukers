@@ -17,6 +17,8 @@
 	 ///Used in attackby() to say how something was attacked "[x] has been [z.attack_verb] by [y] with [z]"
 	var/list/attack_verb
 
+	var/contained_sprite = FALSE
+
 	health = null
 
 	rebounds = TRUE
@@ -857,6 +859,8 @@ cases. Override_icon_state should be a list.*/
 		mob_state = item_state
 	else
 		mob_state = icon_state
+	if(contained_sprite)
+		mob_state += GLOB.slot_to_contained_sprite_shorthand[slot]
 	return mob_state
 
 /obj/item/proc/drop_to_floor(mob/wearer)

@@ -150,6 +150,10 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 #define JOB_PMC_LEAD_INVEST				"PMC Lead Investigator"
 #define JOB_PMC_DIRECTOR				"PMC Site Director"
 
+//-------- WY Goons --------//
+#define JOB_WY_GOON						"WY Corporate Security"
+#define JOB_WY_GOON_LEAD				"WY Corporate Security Lead"
+
 //-------- UPP --------//
 #define JOB_UPP							"UPP Private"
 #define JOB_UPP_CONSCRIPT				"UPP Conscript"

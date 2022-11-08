@@ -148,6 +148,10 @@
 	stored_item = knife
 	update_icon()
 
+/obj/item/clothing/shoes/marine/corporate
+	name = "rugged boots"
+	desc = "These synth-leather boots seem high quality when first worn, but quickly detoriate, especially in the environments the corporate security members these are issued to operate in. Still, better than nothing."
+
 /obj/item/clothing/shoes/marine/ress
 	name = "armoured sandals"
 	icon_state = "sandals"
