@@ -108,3 +108,14 @@
 
 	attack_verb = list("shoved", "bashed")
 	var/active = 0
+
+/obj/item/weapon/era
+	name = "explosive reactive armor system"
+	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and attached anywhere."
+	icon = 'icons/obj/items/clothing/backpacks.dmi'
+	icon_override = 'icons/mob/humans/onmob/back.dmi'
+	icon_state = "ERA"
+	w_class = SIZE_LARGE
+	flags_equip_slot = SLOT_BACK
+
+	var/blocks = 20

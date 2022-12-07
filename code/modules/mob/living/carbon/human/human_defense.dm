@@ -149,6 +149,14 @@ Contains most of the procs that are called when a mob is attacked by something
 		return TRUE
 	return FALSE
 
+/mob/living/carbon/human/proc/check_shields_explosive(var/attack_text = "the attack")
+	if(back && istype(back, /obj/item/weapon/era) && prob(60))
+		var/obj/item/weapon/era/shield_era = back
+		if(shield_era.blocks > 0)
+			visible_message(SPAN_DANGER("<B>The [back] on [src]'s back blocks [attack_text]!</B>"), null, null, 5)
+			shield_era.blocks--
+			return TRUE
+
 /mob/living/carbon/human/emp_act(severity)
 	for(var/obj/O in src)
 		if(!O)

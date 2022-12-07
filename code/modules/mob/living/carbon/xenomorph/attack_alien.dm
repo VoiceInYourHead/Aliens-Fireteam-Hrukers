@@ -32,6 +32,13 @@
 				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
 				return XENO_ATTACK_ACTION
 
+			if(check_shields_explosive(0, M.name)) // Blocking check
+				M.visible_message(SPAN_DANGER("[M]'s grab is blocked by [src]'s ERA shield!"), \
+				SPAN_DANGER("Your grab was blocked by [src]'s ERA shield!"), null, 5, CHAT_TYPE_XENO_COMBAT)
+				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
+				cell_explosion(get_turf(M), 10, 10, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, "ERA")
+				return XENO_ATTACK_ACTION
+
 			if(Adjacent(M)) //Logic!
 				M.start_pulling(src)
 
@@ -60,6 +67,13 @@
 				M.visible_message(SPAN_DANGER("[M]'s slash is blocked by [src]'s shield!"), \
 				SPAN_DANGER("Your slash is blocked by [src]'s shield!"), null, 5, CHAT_TYPE_XENO_COMBAT)
 				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
+				return XENO_ATTACK_ACTION
+
+			if(check_shields_explosive(0, M.name)) // Blocking check
+				M.visible_message(SPAN_DANGER("[M]'s slash is blocked by [src]'s ERA shield!"), \
+				SPAN_DANGER("Your slash is blocked by [src]'s ERA shield!"), null, 5, CHAT_TYPE_XENO_COMBAT)
+				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
+				cell_explosion(get_turf(M), 10, 10, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, "ERA")
 				return XENO_ATTACK_ACTION
 
 			//From this point, we are certain a full attack will go out. Calculate damage and modifiers
@@ -186,6 +200,13 @@
 				M.visible_message(SPAN_DANGER("[M]'s tackle is blocked by [src]'s shield!"), \
 				SPAN_DANGER("Your tackle is blocked by [src]'s shield!"), null, 5, CHAT_TYPE_XENO_COMBAT)
 				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
+				return XENO_ATTACK_ACTION
+
+			if(check_shields_explosive(0, M.name)) // Blocking check
+				M.visible_message(SPAN_DANGER("[M]'s tackle is blocked by [src]'s ERA shield!"), \
+				SPAN_DANGER("Your tackle is blocked by [src]'s ERA shield!"), null, 5, CHAT_TYPE_XENO_COMBAT)
+				playsound(loc, 'sound/weapons/alien_claw_block.ogg', 25, 1) //Feedback
+				cell_explosion(get_turf(M), 10, 10, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, "ERA")
 				return XENO_ATTACK_ACTION
 			M.flick_attack_overlay(src, "disarm")
 
