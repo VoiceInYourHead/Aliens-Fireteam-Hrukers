@@ -1386,7 +1386,7 @@ var/const/MAX_SAVE_SLOTS = 10
 						nanotrasen_relation = new_relation
 
 				if("prefsquad")
-					var/new_pref_squad = input(user, "Choose your preferred squad.", "Character Preference")  as null|anything in list("Alpha", "Bravo", "Charlie", "Delta", "None")
+					var/new_pref_squad = input(user, "Choose your preferred squad.", "Character Preference")  as null|anything in list("Alpha")
 					if(new_pref_squad)
 						preferred_squad = new_pref_squad
 

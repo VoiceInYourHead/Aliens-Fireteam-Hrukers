@@ -205,5 +205,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_leader, list(
 		/obj/item/map/current_map,
 		/obj/item/storage/box/kit/mini_pyro,
 		/obj/item/tool/extinguisher/mini,
+		/obj/item/device/whiskey_supply_beacon,
+		/obj/item/device/whiskey_supply_beacon,
+		/obj/item/device/whiskey_supply_beacon,
 		/obj/item/storage/box/zipcuffs
 	)

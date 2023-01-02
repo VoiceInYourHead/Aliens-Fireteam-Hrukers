@@ -98,7 +98,7 @@
 	color = 1
 	access = list(ACCESS_MARINE_ALPHA)
 	radio_freq = ALPHA_FREQ
-
+/*
 /datum/squad/marine/bravo
 	name = SQUAD_MARINE_2
 	color = 2
@@ -116,7 +116,7 @@
 	color = 4
 	access = list(ACCESS_MARINE_DELTA)
 	radio_freq = DELTA_FREQ
-
+*/
 /datum/squad/marine/echo
 	name = SQUAD_MARINE_5
 	color = 5

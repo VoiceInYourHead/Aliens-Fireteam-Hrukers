@@ -1259,9 +1259,9 @@
 
 	var/static/list/squad_leader_trackers = list(
 		TRACKER_ASL = /datum/squad/marine/alpha,
-		TRACKER_BSL = /datum/squad/marine/bravo,
-		TRACKER_CSL = /datum/squad/marine/charlie,
-		TRACKER_DSL = /datum/squad/marine/delta,
+//		TRACKER_BSL = /datum/squad/marine/bravo,
+//		TRACKER_CSL = /datum/squad/marine/charlie,
+//		TRACKER_DSL = /datum/squad/marine/delta,
 		TRACKER_ESL = /datum/squad/marine/echo
 	)
 	switch(tracker_setting)
