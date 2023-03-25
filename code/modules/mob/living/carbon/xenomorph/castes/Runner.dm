@@ -110,8 +110,16 @@
 	return ..()
 
 /mob/living/carbon/Xenomorph/Runner/cat
+	name = "Angry Cat"
 	desc = "D'aaawwww"
 	icon = 'icons/mob/hostiles/runner.dmi'
 	icon_state = "Runner Walking"
+	acid_blood_damage = 0
+	mob_size = 1
+
+	melee_damage_lower = 0
+	melee_damage_upper = 0
+
+	flags_ai = XENO_AI_NO_DESPAWN
 
 	mutation_type = RUNNER_CAT
