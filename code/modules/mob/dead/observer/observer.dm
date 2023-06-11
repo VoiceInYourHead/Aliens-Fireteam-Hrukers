@@ -683,7 +683,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			return
 
 		GLOB.hive_datum[hives[faction]].hive_ui.open_hive_status(src)
-
+/*
 /mob/dead/verb/join_as_alien()
 	set category = "Ghost.Join"
 	set name = "Join as Xeno"
@@ -698,7 +698,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	if(SSticker.mode.check_xeno_late_join(src))
 		SSticker.mode.attempt_to_join_as_xeno(src)
-
+*/
 /mob/dead/verb/join_as_zombie() //Adapted from join as hellhoud
 	set category = "Ghost.Join"
 	set name = "Join as Zombie"
