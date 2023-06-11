@@ -42,6 +42,8 @@
 #define MAP_HAUNTED_HOUSE_V2 "Haunted House V2"
 #define MAP_RUNTIME "USS Runtime"
 #define MAP_DEATH_WISH "Death Wish"
+#define MAP_DEATH_WISH_AI "Death Wish AI"
+
 
 #define PLAYERCOUNT_LOWPOP_MAP_LIMIT 130 // number of players before we switch to lowpop maps only (LV, BR, Prison)
 
