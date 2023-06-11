@@ -1,0 +1,31 @@
+{
+    "map_name": "Death Wish",
+    "map_path": "map_files/Death_Wish",
+    "map_file": "Death_Wish_AI.dmm",
+    "survivor_types": [
+        "/datum/equipment_preset/survivor/doctor/trijent",
+        "/datum/equipment_preset/survivor/roughneck",
+        "/datum/equipment_preset/survivor/chaplain/trijent",
+        "/datum/equipment_preset/survivor/interstellar_commerce_commission_liason",
+        "/datum/equipment_preset/survivor/colonial_marshal",
+        "/datum/equipment_preset/survivor/engineer/trijent",
+        "/datum/equipment_preset/survivor/engineer/trijent/hydro",
+        "/datum/equipment_preset/survivor/trucker/trijent",
+        "/datum/equipment_preset/survivor/security/trijent"
+    ],
+    "defcon_triggers": [
+        3300,
+        2100,
+        1450,
+        580,
+        0.0
+    ],
+    "map_item_type": "/obj/item/map/desert_dam",
+    "announce_text": "We've lost contact with Weyland-Yutani's extra-solar colony, \"Death Wish\", on the planet \"PayDay.\" The ###SHIPNAME### has been dispatched to assist.",
+    "monkey_types": [
+        "stok"
+    ],
+	"traits": [{ "Ground": true }],
+    "force_mode": "Distress Signal: Lowpop",
+    "ship_map": "Outpost Alpha"
+}
