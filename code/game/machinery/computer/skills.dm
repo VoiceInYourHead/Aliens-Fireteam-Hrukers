@@ -292,7 +292,7 @@ What a mess.*/
 							active1.fields["name"] = t1
 					if("id")
 						if (istype(active1, /datum/data/record))
-							var/t1 = copytext(trim(sanitize(input("Please input id:", "Secure. records", active1.fields["id"], null)  as text)),1,MAX_MESSAGE_LEN)
+							var/t1 = copytext_char(trim(sanitize(input("Please input id:", "Secure. records", active1.fields["id"], null)  as text)),1,MAX_MESSAGE_LEN)
 							if ((!( t1 ) || !( authenticated ) || usr.stat || usr.is_mob_restrained() || (!in_range(src, usr) && (!isRemoteControlling(usr))) || active1 != a1))
 								return
 							active1.fields["id"] = t1
@@ -321,7 +321,7 @@ What a mess.*/
 							alert(usr, "You do not have the required rank to do this!")
 					if("species")
 						if (istype(active1, /datum/data/record))
-							var/t1 = copytext(trim(sanitize(input("Please enter race:", "General records", active1.fields["species"], null)  as message)),1,MAX_MESSAGE_LEN)
+							var/t1 = copytext_char(trim(sanitize(input("Please enter race:", "General records", active1.fields["species"], null)  as message)),1,MAX_MESSAGE_LEN)
 							if ((!( t1 ) || !( authenticated ) || usr.stat || usr.is_mob_restrained() || (!in_range(src, usr) && (!isRemoteControlling(usr))) || active1 != a1))
 								return
 							active1.fields["species"] = t1

@@ -12,7 +12,7 @@ var/list/admin_ranks = list()								//list of all ranks with associated rights
 	//process each line separately
 	for(var/line in Lines)
 		if(!length(line))				continue
-		if(copytext(line,1,2) == "#")	continue
+		if(copytext_char(line,1,2) == "#")	continue
 
 		var/list/List = splittext(line,"+")
 		if(!List.len)					continue
@@ -88,7 +88,7 @@ var/list/admin_ranks = list()								//list of all ranks with associated rights
 /proc/process_rank_file(var/line, var/mentor = FALSE)
 	var/list/MentorRanks = file2list("config/mentor_ranks.txt")
 	if(!length(line))				return
-	if(copytext(line,1,2) == "#")	return
+	if(copytext_char(line,1,2) == "#")	return
 
 	//Split the line at every "-"
 	var/list/List = splittext(line, "-")

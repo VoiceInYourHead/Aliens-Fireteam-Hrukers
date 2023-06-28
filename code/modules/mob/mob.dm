@@ -366,7 +366,7 @@
 	var/msg = input(usr,"Set the flavor text in your 'examine' verb. Can also be used for OOC notes about your character.","Flavor Text",html_decode(flavor_text)) as message|null
 
 	if(msg != null)
-		msg = copytext(msg, 1, MAX_MESSAGE_LEN)
+		msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
 		msg = html_encode(msg)
 
 		flavor_text = msg
@@ -382,7 +382,7 @@
 		if(length(msg) <= 40)
 			return SPAN_NOTICE("[msg]")
 		else
-			return SPAN_NOTICE("[copytext(msg, 1, 37)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a>")
+			return SPAN_NOTICE("[copytext_char(msg, 1, 37)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a>")
 
 /mob/Topic(href, href_list)
 	. = ..()

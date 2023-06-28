@@ -6,7 +6,7 @@
 		to_chat(src, "Only staff members may talk on this channel.")
 		return
 
-	msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
+	msg = copytext_char(sanitize(msg), 1, MAX_MESSAGE_LEN)
 
 	if(!msg)
 		return

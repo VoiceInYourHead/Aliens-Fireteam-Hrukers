@@ -1,7 +1,7 @@
 /mob/living/carbon/Xenomorph/emote(var/act, var/m_type = 1, var/message = null, player_caused)
 	if(findtext(act, "-", 1, null))
 		var/t1 = findtext(act, "-", 1, null)
-		act = copytext(act, 1, t1)
+		act = copytext_char(act, 1, t1)
 
 	if(stat && act != "help")
 		return
@@ -112,7 +112,7 @@
 /mob/living/carbon/Xenomorph/Larva/emote(var/act, var/m_type = 1, var/message = null, player_caused)
 	if(findtext(act, "-", 1, null))
 		var/t1 = findtext(act, "-", 1, null)
-		act = copytext(act, 1, t1)
+		act = copytext_char(act, 1, t1)
 
 	if(stat && act != "help")
 		return

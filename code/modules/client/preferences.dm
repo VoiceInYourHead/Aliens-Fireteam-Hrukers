@@ -871,13 +871,13 @@ var/const/MAX_SAVE_SLOTS = 10
 				if("general")
 					var/msg = input(usr,"Give a physical description of your character. This will be shown regardless of clothing.","Flavor Text",html_decode(flavor_texts[href_list["task"]])) as message
 					if(msg != null)
-						msg = copytext(msg, 1, MAX_MESSAGE_LEN)
+						msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
 						msg = html_encode(msg)
 					flavor_texts[href_list["task"]] = msg
 				else
 					var/msg = input(usr,"Set the flavor text for your [href_list["task"]].","Flavor Text",html_decode(flavor_texts[href_list["task"]])) as message
 					if(msg != null)
-						msg = copytext(msg, 1, MAX_MESSAGE_LEN)
+						msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
 						msg = html_encode(msg)
 					flavor_texts[href_list["task"]] = msg
 			SetFlavorText(user)
@@ -895,7 +895,7 @@ var/const/MAX_SAVE_SLOTS = 10
 					var/medmsg = input(usr,"Set your medical notes here.","Medical Records",html_decode(med_record)) as message
 
 					if(medmsg != null)
-						medmsg = copytext(medmsg, 1, MAX_PAPER_MESSAGE_LEN)
+						medmsg = copytext_char(medmsg, 1, MAX_PAPER_MESSAGE_LEN)
 						medmsg = html_encode(medmsg)
 
 						med_record = medmsg
@@ -905,7 +905,7 @@ var/const/MAX_SAVE_SLOTS = 10
 					var/secmsg = input(usr,"Set your security notes here.","Security Records",html_decode(sec_record)) as message
 
 					if(secmsg != null)
-						secmsg = copytext(secmsg, 1, MAX_PAPER_MESSAGE_LEN)
+						secmsg = copytext_char(secmsg, 1, MAX_PAPER_MESSAGE_LEN)
 						secmsg = html_encode(secmsg)
 
 						sec_record = secmsg
@@ -914,7 +914,7 @@ var/const/MAX_SAVE_SLOTS = 10
 					var/genmsg = input(usr,"Set your employment notes here.","Employment Records",html_decode(gen_record)) as message
 
 					if(genmsg != null)
-						genmsg = copytext(genmsg, 1, MAX_PAPER_MESSAGE_LEN)
+						genmsg = copytext_char(genmsg, 1, MAX_PAPER_MESSAGE_LEN)
 						genmsg = html_encode(genmsg)
 
 						gen_record = genmsg
@@ -1283,9 +1283,9 @@ var/const/MAX_SAVE_SLOTS = 10
 					if(species == "Human")
 						var/new_hair = input(user, "Choose your character's hair colour:", "Character Preference") as color|null
 						if(new_hair)
-							r_hair = hex2num(copytext(new_hair, 2, 4))
-							g_hair = hex2num(copytext(new_hair, 4, 6))
-							b_hair = hex2num(copytext(new_hair, 6, 8))
+							r_hair = hex2num(copytext_char(new_hair, 2, 4))
+							g_hair = hex2num(copytext_char(new_hair, 4, 6))
+							b_hair = hex2num(copytext_char(new_hair, 6, 8))
 
 				if("h_style")
 					var/list/valid_hairstyles = list()
@@ -1318,9 +1318,9 @@ var/const/MAX_SAVE_SLOTS = 10
 				if("facial")
 					var/new_facial = input(user, "Choose your character's facial-hair colour:", "Character Preference") as color|null
 					if(new_facial)
-						r_facial = hex2num(copytext(new_facial, 2, 4))
-						g_facial = hex2num(copytext(new_facial, 4, 6))
-						b_facial = hex2num(copytext(new_facial, 6, 8))
+						r_facial = hex2num(copytext_char(new_facial, 2, 4))
+						g_facial = hex2num(copytext_char(new_facial, 4, 6))
+						b_facial = hex2num(copytext_char(new_facial, 6, 8))
 
 				if("f_style")
 					var/list/valid_facialhairstyles = list()
@@ -1365,9 +1365,9 @@ var/const/MAX_SAVE_SLOTS = 10
 				if("eyes")
 					var/new_eyes = input(user, "Choose your character's eye colour:", "Character Preference") as color|null
 					if(new_eyes)
-						r_eyes = hex2num(copytext(new_eyes, 2, 4))
-						g_eyes = hex2num(copytext(new_eyes, 4, 6))
-						b_eyes = hex2num(copytext(new_eyes, 6, 8))
+						r_eyes = hex2num(copytext_char(new_eyes, 2, 4))
+						g_eyes = hex2num(copytext_char(new_eyes, 4, 6))
+						b_eyes = hex2num(copytext_char(new_eyes, 6, 8))
 
 
 				if("ooccolor")

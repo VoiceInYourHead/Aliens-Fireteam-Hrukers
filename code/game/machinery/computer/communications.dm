@@ -281,11 +281,11 @@
 			state = STATE_STATUSDISPLAY
 
 		if("setmsg1")
-			stat_msg1 = reject_bad_text(trim(copytext(sanitize(input("Line 1", "Enter Message Text", stat_msg1) as text|null), 1, 40)), 40)
+			stat_msg1 = reject_bad_text(trim(copytext_char(sanitize(input("Line 1", "Enter Message Text", stat_msg1) as text|null), 1, 40)), 40)
 			updateDialog()
 
 		if("setmsg2")
-			stat_msg2 = reject_bad_text(trim(copytext(sanitize(input("Line 2", "Enter Message Text", stat_msg2) as text|null), 1, 40)), 40)
+			stat_msg2 = reject_bad_text(trim(copytext_char(sanitize(input("Line 2", "Enter Message Text", stat_msg2) as text|null), 1, 40)), 40)
 			updateDialog()
 
 		if("messageUSCM")

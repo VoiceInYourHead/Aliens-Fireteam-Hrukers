@@ -132,7 +132,7 @@ SUBSYSTEM_DEF(vote)
 				if(adjustment)
 					msg += "[abs(adjustment)] vote[abs(adjustment) > 1 ? "s" : ""] [adjustment < 0 ? "removed" : "added"] for adjustment; "
 				// Remove the trailing "; "
-				msg = copytext(msg, 1, length(msg)-1)
+				msg = copytext_char(msg, 1, length(msg)-1)
 				msg += ")"
 			text += msg
 		if(mode != "custom")

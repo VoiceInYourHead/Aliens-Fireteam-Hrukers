@@ -18,7 +18,7 @@
 	var/i = null
 	i = length(hex)
 	while(i > 0)
-		var/char = copytext(hex, i, i + 1)
+		var/char = copytext_char(hex, i, i + 1)
 		switch(char)
 			if("0")
 				//Apparently, switch works with empty statements, yay! If that doesn't work, blame me, though. -- Urist
@@ -240,7 +240,7 @@
 				return /atom
 			else
 				return /datum
-	return text2path(copytext(string_type, 1, last_slash))
+	return text2path(copytext_char(string_type, 1, last_slash))
 
 //returns a string the last bit of a type, without the preceeding '/'
 /proc/type2top(the_type)

@@ -653,7 +653,7 @@
 				for(var/datum/data/record/R in GLOB.data_core.security)
 					if(R.fields["id"] != E.fields["id"])
 						continue
-					var/t1 = copytext(trim(strip_html(input("Your name and time will be added to this new comment.", "Add a comment", null, null)  as message)), 1, MAX_MESSAGE_LEN)
+					var/t1 = copytext_char(trim(strip_html(input("Your name and time will be added to this new comment.", "Add a comment", null, null)  as message)), 1, MAX_MESSAGE_LEN)
 					if(!(t1) || usr.stat || usr.is_mob_restrained())
 						return
 					var/created_at = text("[]&nbsp;&nbsp;[]&nbsp;&nbsp;[]", time2text(world.realtime, "MMM DD"), time2text(world.time, "[worldtime2text()]:ss"), game_year)
@@ -827,14 +827,14 @@
 			if("general")
 				var/msg = input(usr,"Update the general description of your character. This will be shown regardless of clothing, and may include OOC notes and preferences.","Flavor Text",html_decode(flavor_texts[href_list["flavor_change"]])) as message
 				if(msg != null)
-					msg = copytext(msg, 1, MAX_MESSAGE_LEN)
+					msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
 					msg = html_encode(msg)
 				flavor_texts[href_list["flavor_change"]] = msg
 				return
 			else
 				var/msg = input(usr,"Update the flavor text for your [href_list["flavor_change"]].","Flavor Text",html_decode(flavor_texts[href_list["flavor_change"]])) as message
 				if(msg != null)
-					msg = copytext(msg, 1, MAX_MESSAGE_LEN)
+					msg = copytext_char(msg, 1, MAX_MESSAGE_LEN)
 					msg = html_encode(msg)
 				flavor_texts[href_list["flavor_change"]] = msg
 				set_flavor()
@@ -1159,18 +1159,18 @@
 
 	if(species.base_color && default_colour)
 		//Apply colour.
-		r_skin = hex2num(copytext(species.base_color,2,4))
-		g_skin = hex2num(copytext(species.base_color,4,6))
-		b_skin = hex2num(copytext(species.base_color,6,8))
+		r_skin = hex2num(copytext_char(species.base_color,2,4))
+		g_skin = hex2num(copytext_char(species.base_color,4,6))
+		b_skin = hex2num(copytext_char(species.base_color,6,8))
 	else
 		r_skin = 0
 		g_skin = 0
 		b_skin = 0
 
 	if(species.hair_color)
-		r_hair = hex2num(copytext(species.hair_color, 2, 4))
-		g_hair = hex2num(copytext(species.hair_color, 4, 6))
-		b_hair = hex2num(copytext(species.hair_color, 6, 8))
+		r_hair = hex2num(copytext_char(species.hair_color, 2, 4))
+		g_hair = hex2num(copytext_char(species.hair_color, 4, 6))
+		b_hair = hex2num(copytext_char(species.hair_color, 6, 8))
 
 	// Switches old pain and stamina over
 	species.initialize_pain(src)

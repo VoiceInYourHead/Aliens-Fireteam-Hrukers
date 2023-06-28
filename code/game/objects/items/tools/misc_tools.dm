@@ -77,7 +77,7 @@
 	if(mode)
 		to_chat(user, SPAN_NOTICE("You turn on \the [src]."))
 		//Now let them choose the text.
-		var/str = copytext(reject_bad_text(input(user,"Label text?", "Set label", "")), 1, MAX_NAME_LEN)
+		var/str = copytext_char(reject_bad_text(input(user,"Label text?", "Set label", "")), 1, MAX_NAME_LEN)
 		if(!str || !length(str))
 			to_chat(user, SPAN_NOTICE("Label text cleared. You can now remove labels."))
 			label = null

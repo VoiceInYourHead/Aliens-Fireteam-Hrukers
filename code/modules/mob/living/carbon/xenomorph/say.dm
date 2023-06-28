@@ -20,18 +20,18 @@
 		to_chat(src, SPAN_WARNING("You are too dazed to talk."))
 		return
 
-	if(copytext(message, 1, 2) == "*")
-		return emote(copytext(message, 2), player_caused = TRUE)
+	if(copytext_char(message, 1, 2) == "*")
+		return emote(copytext_char(message, 2), player_caused = TRUE)
 
 	var/datum/language/speaking = null
 	if(length(message) >= 2)
-		if(copytext(message,1,2) == ";" && languages.len)
+		if(copytext_char(message,1,2) == ";" && languages.len)
 			for(var/datum/language/L in languages)
 				if(L.flags & HIVEMIND)
 					verb = L.speech_verb
 					speaking = L
 					break
-		var/channel_prefix = copytext(message, 1, 3)
+		var/channel_prefix = copytext_char(message, 1, 3)
 		if(languages.len)
 			for(var/datum/language/L in languages)
 				if(lowertext(channel_prefix) == ":[L.key]" || lowertext(channel_prefix) == ".[L.key]")
@@ -57,10 +57,10 @@
 					break
 
 	if(speaking && !forced)
-		if (copytext(message,1,2) == ";")
-			message = trim(copytext(message,2))
-		else if (copytext(message,1,3) == ":q" || copytext(message,1,3) == ":Q")
-			message = trim(copytext(message,3))
+		if (copytext_char(message,1,2) == ";")
+			message = trim(copytext_char(message,2))
+		else if (copytext_char(message,1,3) == ":q" || copytext_char(message,1,3) == ":Q")
+			message = trim(copytext_char(message,3))
 
 	message = capitalize(trim_left(message))
 
@@ -69,7 +69,7 @@
 
 	// Automatic punctuation
 	if(client && client.prefs && client.prefs.toggle_prefs & TOGGLE_AUTOMATIC_PUNCTUATION)
-		if(!(copytext(message, -1) in ENDING_PUNCT))
+		if(!(copytext_char(message, -1) in ENDING_PUNCT))
 			message += "."
 
 	if(forced)
