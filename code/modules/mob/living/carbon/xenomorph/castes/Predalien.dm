@@ -27,6 +27,8 @@
 
 	behavior_delegate_type = /datum/behavior_delegate/predalien_base
 
+	caste_path = /mob/living/carbon/Xenomorph/Predalien
+
 /mob/living/carbon/Xenomorph/Predalien
 	caste_type = XENO_CASTE_PREDALIEN
 	name = "Abomination" //snowflake name

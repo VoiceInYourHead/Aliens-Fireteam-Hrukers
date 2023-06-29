@@ -32,6 +32,8 @@
 
 	aura_strength = 2.5
 
+	caste_path = /mob/living/carbon/Xenomorph/Hivelord
+
 /datum/caste_datum/hivelord/New()
 	. = ..()
 

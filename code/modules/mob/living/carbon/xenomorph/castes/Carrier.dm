@@ -37,6 +37,8 @@
 	hugger_delay = 20
 	egg_cooldown = 250
 
+	caste_path = /mob/living/carbon/Xenomorph/Carrier
+
 /mob/living/carbon/Xenomorph/Carrier
 	caste_type = XENO_CASTE_CARRIER
 	name = XENO_CASTE_CARRIER

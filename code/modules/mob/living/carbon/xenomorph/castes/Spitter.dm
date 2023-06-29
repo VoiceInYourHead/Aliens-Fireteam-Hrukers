@@ -29,6 +29,8 @@
 	tacklestrength_min = 4
 	tacklestrength_max = 5
 
+	caste_path = /mob/living/carbon/Xenomorph/Spitter
+
 /mob/living/carbon/Xenomorph/Spitter
 	caste_type = XENO_CASTE_SPITTER
 	name = XENO_CASTE_SPITTER

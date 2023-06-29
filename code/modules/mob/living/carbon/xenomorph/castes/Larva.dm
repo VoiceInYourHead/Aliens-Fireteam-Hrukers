@@ -14,6 +14,8 @@
 
 	can_be_revived = FALSE
 
+	caste_path = /mob/living/carbon/Xenomorph/Larva
+
 /datum/caste_datum/larva/predalien
 	caste_type = XENO_CASTE_PREDALIEN_LARVA
 	evolves_to = list(XENO_CASTE_PREDALIEN)

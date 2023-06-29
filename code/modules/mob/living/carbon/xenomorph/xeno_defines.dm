@@ -106,6 +106,8 @@
 	var/list/resin_build_order
 	var/minimum_xeno_playtime = 0
 
+	var/caste_path = /mob/living/carbon/Xenomorph // AI thingy
+
 
 /datum/caste_datum/can_vv_modify()
 	return FALSE

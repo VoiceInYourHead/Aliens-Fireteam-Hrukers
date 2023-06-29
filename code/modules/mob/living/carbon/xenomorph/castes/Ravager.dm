@@ -28,6 +28,8 @@
 
 	behavior_delegate_type = /datum/behavior_delegate/ravager_base
 
+	caste_path = /mob/living/carbon/Xenomorph/Ravager
+
 /mob/living/carbon/Xenomorph/Ravager
 	caste_type = XENO_CASTE_RAVAGER
 	name = XENO_CASTE_RAVAGER

@@ -28,6 +28,8 @@
 	tacklestrength_min = 3
 	tacklestrength_max = 4
 
+	caste_path = /mob/living/carbon/Xenomorph/Boiler
+
 /mob/living/carbon/Xenomorph/Boiler
 	caste_type = XENO_CASTE_BOILER
 	name = XENO_CASTE_BOILER

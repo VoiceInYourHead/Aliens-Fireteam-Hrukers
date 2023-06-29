@@ -68,6 +68,7 @@ GLOBAL_LIST_INIT_TYPED(resin_mark_meanings, /datum/xeno_mark_define, setup_resin
 
 /// Xeno caste datums
 GLOBAL_REFERENCE_LIST_INDEXED(xeno_datum_list, /datum/caste_datum, caste_type)
+GLOBAL_REFERENCE_LIST_INDEXED(xeno_datum_list_by_path, /datum/caste_datum, caste_path)
 
 //Chem Stuff
 var/global/list/chemical_reactions_filtered_list	//List of all /datum/chemical_reaction datums filtered by reaction components. Used during chemical reactions

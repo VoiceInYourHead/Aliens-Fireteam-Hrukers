@@ -27,6 +27,8 @@
 
 	heal_resting = 1.4
 
+	caste_path = /mob/living/carbon/Xenomorph/Warrior
+
 /mob/living/carbon/Xenomorph/Warrior
 	caste_type = XENO_CASTE_WARRIOR
 	name = XENO_CASTE_WARRIOR

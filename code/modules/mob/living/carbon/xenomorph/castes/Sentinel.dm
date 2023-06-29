@@ -26,6 +26,8 @@
 
 	behavior_delegate_type = /datum/behavior_delegate/sentinel_base
 
+	caste_path = /mob/living/carbon/Xenomorph/Sentinel
+
 /mob/living/carbon/Xenomorph/Sentinel
 	caste_type = XENO_CASTE_SENTINEL
 	name = XENO_CASTE_SENTINEL

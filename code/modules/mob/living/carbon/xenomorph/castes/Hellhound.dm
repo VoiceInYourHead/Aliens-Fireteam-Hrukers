@@ -24,6 +24,8 @@
 	heal_knocked_out = 1.25
 	innate_healing = TRUE
 
+	caste_path = /mob/living/carbon/Xenomorph/Hellhound
+
 /mob/living/carbon/Xenomorph/Hellhound
 	caste_type = XENO_CASTE_HELLHOUND
 	name = XENO_CASTE_HELLHOUND

@@ -1,3 +1,6 @@
+var/global/max_xeno_per_player = 1
+var/global/threat_level = 1
+
 /datum/game_mode/colonialmarines/ai
 	name = "Outpost Alpha"
 	config_tag = "Distress Signal: Lowpop"
@@ -217,6 +220,21 @@ GLOBAL_LIST_INIT(t3_ais, list(
 	/mob/living/carbon/Xenomorph/Praetorian
 ))
 
+GLOBAL_LIST_INIT(all_ais, list(
+	/mob/living/carbon/Xenomorph/Drone,
+	/mob/living/carbon/Xenomorph/Runner,
+	/mob/living/carbon/Xenomorph/Defender,
+	/mob/living/carbon/Xenomorph/Sentinel,
+	/mob/living/carbon/Xenomorph/Warrior,
+	/mob/living/carbon/Xenomorph/Spitter,
+	/mob/living/carbon/Xenomorph/Burrower,
+	/mob/living/carbon/Xenomorph/Lurker,
+	/mob/living/carbon/Xenomorph/Ravager,
+	/mob/living/carbon/Xenomorph/Crusher,
+	/mob/living/carbon/Xenomorph/Boiler,
+	/mob/living/carbon/Xenomorph/Praetorian
+))
+
 /*/datum/game_mode/colonialmarines/ai/proc/start_boss_battle()
 	boss_battle_enabled = TRUE
 	for(var/i in GLOB.boss_entrance_landmarks)
@@ -317,33 +335,30 @@ GLOBAL_LIST_INIT(t3_ais, list(
 
 		groups += list(group)
 
+	threat_level += 0.01
+
 
 	var/list/xenos_to_spawn = list()
 
-	while(total_amount < length(GLOB.alive_client_human_list)*CONFIG_GET(number/ai_director/max_xeno_per_player)*length(groups))
-//		var/current_amount = total_amount
-		total_amount++
-/*		if(current_amount)
-			if(t3_amount >= 2)
-				break
-			if(t2_amount >= 5)
-				break
-			if((length(GLOB.alive_human_list) >= 15) && (spawn_flags & XENO_SPAWN_T3) && prob(60))
-				xenos_to_spawn += pick(GLOB.t3_ais)
-				t3_amount++
-				continue
+	if(threat_level >= 15)
+		threat_level = 30
+	var/spawn_limit_formula = round( length(GLOB.alive_client_human_list)*max_xeno_per_player*length(groups)*(threat_level/10) )
 
-			if((length(GLOB.alive_human_list) >= 10) && (spawn_flags & XENO_SPAWN_T2) && prob(90))
-				xenos_to_spawn += pick(GLOB.t2_ais)
-				t2_amount++
-				continue*/
+	while(total_amount < spawn_limit_formula)
 
-		if(spawn_flags & XENO_SPAWN_T1)
-			xenos_to_spawn += pick(GLOB.t1_ais,GLOB.t2_ais,GLOB.t3_ais)
+		var/mob/living/carbon/Xenomorph/picked_xeno = pick(GLOB.all_ais)
+		var/datum/caste_datum/caste = GLOB.xeno_datum_list_by_path[picked_xeno]
+
+		if(caste.tier + total_amount > spawn_limit_formula)
 			continue
-		break
+
+		total_amount += caste.tier
+		xenos_to_spawn += picked_xeno
 
 	var/list/possible_spawners = GLOB.xeno_ai_spawns.Copy()
+
+	if(threat_level >= 30)
+		threat_level = 1
 
 	for(var/i in GLOB.alive_client_human_list)
 		for(var/l in possible_spawners)

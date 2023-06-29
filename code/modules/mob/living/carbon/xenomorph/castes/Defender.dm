@@ -23,6 +23,8 @@
 	tackle_min = 2
 	tackle_max = 4
 
+	caste_path = /mob/living/carbon/Xenomorph/Defender
+
 /mob/living/carbon/Xenomorph/Defender
 	caste_type = XENO_CASTE_DEFENDER
 	name = XENO_CASTE_DEFENDER

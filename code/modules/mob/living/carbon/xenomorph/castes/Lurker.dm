@@ -23,6 +23,8 @@
 
 	heal_resting = 1.5
 
+	caste_path = /mob/living/carbon/Xenomorph/Lurker
+
 /mob/living/carbon/Xenomorph/Lurker
 	caste_type = XENO_CASTE_LURKER
 	name = XENO_CASTE_LURKER

@@ -34,6 +34,8 @@
 	widen_cooldown = 70
 	tremor_cooldown = 450
 
+	caste_path = /mob/living/carbon/Xenomorph/Burrower
+
 /mob/living/carbon/Xenomorph/Burrower
 	caste_type = XENO_CASTE_BURROWER
 	name = XENO_CASTE_BURROWER

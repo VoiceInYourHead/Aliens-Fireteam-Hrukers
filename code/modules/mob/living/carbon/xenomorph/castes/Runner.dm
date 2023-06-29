@@ -24,6 +24,8 @@
 
 	heal_resting = 1.75
 
+	caste_path = /mob/living/carbon/Xenomorph/Runner
+
 /mob/living/carbon/Xenomorph/Runner
 	caste_type = XENO_CASTE_RUNNER
 	name = XENO_CASTE_RUNNER

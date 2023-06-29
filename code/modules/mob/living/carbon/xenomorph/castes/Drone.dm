@@ -31,6 +31,8 @@
 
 	aura_strength = 2
 
+	caste_path = /mob/living/carbon/Xenomorph/Drone
+
 /datum/caste_datum/drone/New()
 	. = ..()
 

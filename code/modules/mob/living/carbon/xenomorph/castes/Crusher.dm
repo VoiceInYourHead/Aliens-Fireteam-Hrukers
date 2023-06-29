@@ -24,6 +24,8 @@
 	deevolves_to = list(XENO_CASTE_WARRIOR)
 	caste_desc = "A huge tanky xenomorph."
 
+	caste_path = /mob/living/carbon/Xenomorph/Crusher
+
 /mob/living/carbon/Xenomorph/Crusher
 	caste_type = XENO_CASTE_CRUSHER
 	name = XENO_CASTE_CRUSHER
