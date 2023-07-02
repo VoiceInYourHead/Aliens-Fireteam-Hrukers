@@ -1,0 +1,602 @@
+"ak" = (/obj/effect/decal/warning_stripes{icon_state = "W"; layer = 2.5; tag = "icon-W"},/obj/structure/platform{dir = 4},/turf/open/floor/almayer,/area/space)
+"ao" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "22"},/area/shuttle/drop3/sulaco)
+"aC" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1; tag = "icon-N"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/space)
+"aO" = (/turf/open/floor/almayer{dir = 1; icon_state = "cargo_arrow"},/area/space)
+"aS" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod5)
+"bc" = (/obj/structure/machinery/door_control{id = "pilot_quarters"; name = "Dropship maintenance shutters control"; pixel_x = 27; pixel_y = 0},/obj/effect/decal/cleanable/blood/oil,/turf/open/floor/almayer,/area/space)
+"bm" = (/obj/structure/machinery/landinglight/ds2/delayone{dir = 4; tag = "icon-landingstripe (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"bs" = (/obj/effect/landmark/shuttle_loc/marine_crs/dropship,/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "vehicle_elevator_railing_aux"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"bv" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod8)
+"bA" = (/obj/structure/machinery/camera/autoname/almayer/dropship_two{dir = 4; pixel_x = -16},/obj/structure/bed/chair/dropship/passenger/shuttle_chair{dir = 4},/turf/open/shuttle/vehicle{icon_state = "floor_1_3"},/area/shuttle/drop3/sulaco)
+"bJ" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "100"},/area/shuttle/drop3/sulaco)
+"bR" = (/obj/docking_port/stationary/vehicle_elevator,/turf/open/floor/almayer/empty,/area/space)
+"cc" = (/obj/effect/attach_point/weapon/dropship2/right_fore,/turf/closed/shuttle/dropship2/transparent{icon_state = "91"},/area/shuttle/drop3/sulaco)
+"ce" = (/obj/structure/platform{dir = 1},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"cf" = (/turf/closed/shuttle/dropship2{icon_state = "2"},/area/shuttle/drop3/sulaco)
+"co" = (/obj/structure/machinery/door/airlock/evacuation{dir = 2; name = "\improper Evacuation Airlock PU-5"},/turf/open/floor/plating,/area/almayer/evacuation/pod6)
+"cD" = (/turf/closed/shuttle/escapepod{icon_state = "wall14"; tag = "icon-wall14"},/area/almayer/evacuation/pod5)
+"cX" = (/turf/closed/shuttle/dropship2{icon_state = "107"},/area/shuttle/drop3/sulaco)
+"db" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "16"},/turf/closed/wall/almayer,/area/space)
+"do" = (/obj/effect/decal/warning_stripes{icon_state = "SE-out"; tag = "icon-SE-out"},/obj/structure/machinery/gear{id = "supply_elevator_gear"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"dE" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod5)
+"dF" = (/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "supply_elevator_railing"},/turf/open/floor/almayer,/area/space)
+"dG" = (/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "supply_elevator_railing"},/turf/open/floor/almayer{dir = 8; icon_state = "cargo_arrow"},/area/space)
+"dH" = (/turf/open/shuttle/escapepod{icon_state = "floor11"; tag = "icon-floor11"},/area/almayer/evacuation/pod5)
+"dI" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "7"},/turf/closed/wall/almayer,/area/space)
+"dL" = (/obj/structure/machinery/door/airlock/evacuation{dir = 2; name = "\improper Evacuation Airlock SU-4"},/turf/open/floor/plating,/area/almayer/evacuation/pod9)
+"dU" = (/turf/open/shuttle/escapepod{icon_state = "floor5"; tag = "icon-floor5"},/area/almayer/evacuation/pod16)
+"ec" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 8; pixel_y = 28},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod9)
+"ef" = (/obj/effect/decal/warning_stripes{icon_state = "NE-out"; tag = "icon-NE-out"},/obj/structure/machinery/gear{id = "supply_elevator_gear"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"es" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod8)
+"eA" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "9"},/turf/closed/wall/almayer,/area/space)
+"eI" = (/obj/structure/machinery/landinglight/ds2/delaythree{dir = 1; tag = "icon-landingstripe (NORTH)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"eJ" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod17)
+"eW" = (/obj/structure/bed/chair,/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"fc" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod6)
+"fd" = (/turf/open/floor/almayer_hull{dir = 10; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (SOUTHWEST)"},/area/space)
+"fe" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod8)
+"fq" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"ft" = (/turf/closed/shuttle/dropship2{icon_state = "48"},/area/shuttle/drop3/sulaco)
+"fy" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod10)
+"fz" = (/turf/closed/shuttle/escapepod{icon_state = "wall8"; tag = "icon-wall8"},/area/almayer/evacuation/pod17)
+"fI" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1; tag = "icon-E"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/space)
+"fT" = (/turf/closed/wall/almayer,/area/space)
+"fU" = (/turf/open/space/basic,/area/space)
+"gf" = (/obj/effect/decal/cleanable/dirt,/obj/structure/machinery/door_control{id = "pilot_quarters"; name = "Dropship maintenance shutters control"; pixel_y = -22},/turf/open/floor/plating,/area/space)
+"gC" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod8)
+"gJ" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod9)
+"gR" = (/turf/closed/shuttle/escapepod{icon_state = "wall15"; tag = "icon-wall15"},/area/almayer/evacuation/pod6)
+"gY" = (/turf/open/floor/almayer_hull{dir = 1; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (NORTH)"},/area/space)
+"hd" = (/obj/structure/stairs/perspective{icon_state = "p_stair_full"},/obj/structure/platform{dir = 4},/turf/open/floor/almayer,/area/space)
+"hi" = (/obj/structure/machinery/door_control{id = "sh_dropship3"; name = "Dropship Lockdown"; normaldoorcontrol = 3; pixel_y = -19; req_one_access_txt = "3;22"; throw_range = 15},/turf/open/shuttle/dropship{icon_state = "floor8"; tag = "icon-floor8"},/area/shuttle/drop3/sulaco)
+"hm" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "101"},/area/shuttle/drop3/sulaco)
+"hn" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod5)
+"ht" = (/turf/open/shuttle/escapepod{icon_state = "floor11"; tag = "icon-floor11"},/area/almayer/evacuation/pod9)
+"hz" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod16)
+"hL" = (/obj/effect/attach_point/fuel/dropship2{pixel_x = -32},/turf/closed/shuttle/dropship2/transparent{icon_state = "33"},/area/shuttle/drop3/sulaco)
+"hM" = (/obj/structure/window/framed/almayer,/turf/open/floor/plating,/area/space)
+"hQ" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1; tag = "icon-N"},/obj/structure/stairs/perspective{dir = 1; icon_state = "p_stair_sn_full_cap"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer,/area/space)
+"hT" = (/turf/closed/shuttle/dropship2{icon_state = "80"},/area/shuttle/drop3/sulaco)
+"if" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_x = 30},/turf/open/shuttle/escapepod{icon_state = "floor2"; tag = "icon-floor2"},/area/almayer/evacuation/pod8)
+"ih" = (/obj/structure/machinery/camera/autoname/almayer/dropship_two{dir = 8; pixel_x = 16},/turf/open/shuttle/vehicle{icon_state = "floor_1_4"},/area/shuttle/drop3/sulaco)
+"im" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod17)
+"io" = (/turf/closed/shuttle/dropship2,/area/shuttle/drop3/sulaco)
+"iI" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod5)
+"iN" = (/obj/structure/transmitter/rotary{name = "Normandy Telephone"; phone_category = "Dropship"; phone_id = "Normandy"; pixel_x = 11; pixel_y = 16},/obj/structure/blocker/invisible_wall,/obj/structure/machinery/computer/dropship_weapons/dropship3,/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"iO" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "20"},/area/shuttle/drop3/sulaco)
+"iZ" = (/obj/structure/bed/chair/dropship/passenger/shuttle_chair{dir = 8},/turf/open/shuttle/vehicle{icon_state = "floor_1_4"},/area/shuttle/drop3/sulaco)
+"jc" = (/turf/closed/shuttle/dropship2{icon_state = "54"},/area/shuttle/drop3/sulaco)
+"jh" = (/obj/structure/machinery/telecomms/server/presets/medical,/turf/open/floor/plating,/area/space)
+"ju" = (/turf/closed/shuttle/escapepod{icon_state = "wall7"; tag = "icon-wall7"},/area/almayer/evacuation/pod16)
+"jB" = (/obj/structure/machinery/landinglight/ds2/delaytwo{dir = 1; tag = "icon-landingstripe (NORTH)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"ko" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_x = 30},/turf/open/shuttle/escapepod{icon_state = "floor2"; tag = "icon-floor2"},/area/almayer/evacuation/pod5)
+"kp" = (/turf/open/shuttle/escapepod{icon_state = "floor1"; tag = "icon-floor1"},/area/almayer/evacuation/pod10)
+"kz" = (/obj/structure/stairs/perspective{dir = 4; icon_state = "p_stair_sn_full_cap"},/turf/open/floor/plating,/area/space)
+"kH" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod10)
+"kS" = (/turf/closed/shuttle/dropship2{icon_state = "81"},/area/shuttle/drop3/sulaco)
+"kT" = (/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"la" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "89"},/area/shuttle/drop3/sulaco)
+"lk" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock SU-1"},/turf/open/floor/plating,/area/almayer/evacuation/pod10)
+"lq" = (/turf/closed/shuttle/dropship2{icon_state = "14"},/area/shuttle/drop3/sulaco)
+"ls" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "86"},/area/shuttle/drop3/sulaco)
+"ly" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod9)
+"lV" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{dir = 2; name = "\improper Evacuation Airlock SU-3"; req_access = null},/turf/open/floor/plating,/area/space)
+"mi" = (/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/shuttle/distress/arrive_3)
+"mp" = (/turf/open/floor/almayer_hull{dir = 5; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (NORTHEAST)"},/area/space)
+"mr" = (/obj/structure/foamed_metal,/turf/open/space/basic,/area/space)
+"mz" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod7)
+"mF" = (/turf/closed/shuttle/dropship2{icon_state = "78"},/area/shuttle/drop3/sulaco)
+"mG" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 8; pixel_y = 28},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod8)
+"mN" = (/obj/structure/platform{dir = 8; layer = 2.7},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"mZ" = (/turf/open/floor/almayer_hull{icon_state = "outerhull_dir"},/area/space)
+"nj" = (/obj/structure/machinery/telecomms/broadcaster/preset_right,/turf/open/floor/plating,/area/space)
+"nl" = (/obj/structure/machinery/door/poddoor/railing{dir = 8; id = "vehicle_elevator_railing_aux"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"nA" = (/obj/effect/attach_point/weapon/dropship2/left_fore,/turf/closed/shuttle/dropship2/transparent{icon_state = "84"},/area/shuttle/drop3/sulaco)
+"nC" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod9)
+"nH" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod8)
+"nU" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "34"},/area/shuttle/drop3/sulaco)
+"ob" = (/obj/structure/machinery/door/poddoor/railing{id = "vehicle_elevator_railing"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"of" = (/obj/structure/blocker/invisible_wall,/obj/structure/machinery/computer/security/dropship/three,/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"og" = (/obj/structure/disposalpipe/segment,/turf/open/floor/plating/plating_catwalk,/area/space)
+"ol" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_y = 30},/turf/open/shuttle/escapepod{icon_state = "floor0"; tag = "icon-floor0"},/area/almayer/evacuation/pod10)
+"oL" = (/obj/structure/machinery/cm_vending/sorted/tech/comp_storage,/obj/structure/machinery/light{dir = 1},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"oN" = (/turf/closed/shuttle/escapepod{icon_state = "wall14"; tag = "icon-wall14"},/area/almayer/evacuation/pod9)
+"oX" = (/obj/structure/surface/table/almayer,/obj/item/prop/almayer/comp_closed{pixel_x = -6; pixel_y = 10},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"ph" = (/obj/structure/stairs/perspective{icon_state = "p_stair_full"},/turf/open/floor/plating,/area/space)
+"pm" = (/turf/closed/shuttle/dropship2{icon_state = "47"},/area/shuttle/drop3/sulaco)
+"pq" = (/obj/structure/stairs/perspective{icon_state = "p_stair_sn_full_cap"},/turf/open/floor/plating,/area/space)
+"pt" = (/turf/closed/shuttle/escapepod{icon_state = "wall7"; tag = "icon-wall7"},/area/almayer/evacuation/pod17)
+"pw" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod10)
+"py" = (/turf/open/floor/grass,/area/space)
+"pQ" = (/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"pS" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod10)
+"pW" = (/obj/structure/machinery/cm_vending/sorted/tech/tool_storage,/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"pX" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod9)
+"qf" = (/obj/structure/machinery/telecomms/hub/preset,/turf/open/floor/plating,/area/space)
+"qt" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "44"},/area/shuttle/drop3/sulaco)
+"qx" = (/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "vehicle_elevator_railing_aux"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"qC" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod6)
+"qI" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"ri" = (/obj/structure/machinery/conveyor{id = "lower_garbage"},/turf/open/floor/almayer{dir = 4; icon_state = "plating_striped"; tag = "icon-plating_striped (EAST)"},/area/space)
+"rX" = (/turf/open/floor/almayer_hull{dir = 8; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (WEST)"},/area/space)
+"sb" = (/obj/structure/machinery/door/airlock/evacuation{dir = 2; name = "\improper Evacuation Airlock SU-3"},/turf/open/floor/plating,/area/almayer/evacuation/pod8)
+"sc" = (/turf/open/shuttle/escapepod{icon_state = "floor11"; tag = "icon-floor11"},/area/almayer/evacuation/pod8)
+"sf" = (/obj/structure/window/reinforced{dir = 8; health = 80},/obj/structure/machinery/light{dir = 4; tag = "icon-tube1 (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"sg" = (/turf/closed/shuttle/dropship2{icon_state = "52"},/area/shuttle/drop3/sulaco)
+"sq" = (/obj/structure/closet/firecloset,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"st" = (/obj/structure/machinery/landinglight/ds2/delaytwo{tag = "icon-landingstripe"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"sy" = (/obj/structure/machinery/part_fabricator/dropship,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"sC" = (/obj/structure/machinery/telecomms/broadcaster/preset_left,/turf/open/floor/plating,/area/space)
+"sF" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod7)
+"sR" = (/obj/structure/machinery/landinglight/ds2/delaythree{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"sY" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod16)
+"ta" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{dir = 2; name = "\improper Evacuation Airlock PU-5"; req_access = null},/turf/open/floor/plating,/area/space)
+"tg" = (/turf/open/floor/almayer,/area/space)
+"tl" = (/turf/open/shuttle/vehicle{icon_state = "floor_1_4"},/area/shuttle/drop3/sulaco)
+"tn" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_x = 30},/turf/open/shuttle/escapepod{icon_state = "floor2"; tag = "icon-floor2"},/area/almayer/evacuation/pod6)
+"tt" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "35"},/area/shuttle/drop3/sulaco)
+"tw" = (/obj/structure/machinery/landinglight/ds2/delaytwo{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"tC" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod9)
+"tH" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod7)
+"tQ" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 8; pixel_y = 28},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod6)
+"tS" = (/obj/structure/machinery/door/poddoor/shutters/transit/open{dir = 4; icon_state = "shutter"},/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"tZ" = (/obj/structure/stairs/perspective{icon_state = "p_stair_ew_full_cap"; layer = 3.5},/turf/open/floor/plating,/area/space)
+"ut" = (/turf/closed/shuttle/dropship2{icon_state = "99"},/area/shuttle/drop3/sulaco)
+"uK" = (/turf/closed/shuttle/escapepod{icon_state = "wall15"; tag = "icon-wall15"},/area/almayer/evacuation/pod8)
+"uL" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod16)
+"uO" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod5)
+"uY" = (/obj/structure/machinery/recharge_station,/turf/open/floor/almayer{icon_state = "cargo"; tag = "icon-bluecorner (NORTH)"},/area/space)
+"vd" = (/obj/structure/machinery/landinglight/ds2/delaytwo{dir = 4; tag = "icon-landingstripe (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"vi" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{name = "\improper Evacuation Airlock PL-3"; req_access = null},/turf/open/floor/almayer,/area/space)
+"vj" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod17)
+"vk" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "8"},/turf/closed/wall/almayer,/area/space)
+"vr" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod6)
+"vJ" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod8)
+"vM" = (/obj/effect/decal/cleanable/blood/oil,/turf/open/floor/plating,/area/space)
+"vQ" = (/obj/structure/prop/mech/hydralic_clamp,/obj/effect/decal/cleanable/blood/oil,/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/space)
+"vT" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "70"},/area/shuttle/drop3/sulaco)
+"vW" = (/obj/structure/machinery/landinglight/ds2/delaythree{dir = 4; tag = "icon-landingstripe (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"vX" = (/turf/closed/shuttle/dropship2/transparent{density = 0; icon_state = "44"},/area/shuttle/drop3/sulaco)
+"wd" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod10)
+"wp" = (/obj/structure/machinery/door/airlock/almayer/maint,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"wr" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "45"},/area/shuttle/drop3/sulaco)
+"wx" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod16)
+"wz" = (/obj/effect/attach_point/fuel/dropship2,/turf/closed/shuttle/dropship2/transparent{icon_state = "28"},/area/shuttle/drop3/sulaco)
+"wC" = (/obj/effect/decal/warning_stripes{icon_state = "SW-out"; tag = "icon-SW-out"},/obj/structure/machinery/gear{id = "supply_elevator_gear"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"wI" = (/obj/structure/machinery/landinglight/ds1/delaytwo{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"wK" = (/turf/closed/shuttle/escapepod{icon_state = "wall7"; tag = "icon-wall7"},/area/almayer/evacuation/pod7)
+"wN" = (/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"wQ" = (/turf/closed/shuttle/escapepod{icon_state = "wall12"; tag = "icon-wall12"},/area/almayer/evacuation/pod10)
+"xm" = (/turf/closed/shuttle/escapepod{icon_state = "wall12"; tag = "icon-wall12"},/area/almayer/evacuation/pod7)
+"xp" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1; tag = "icon-E"},/obj/structure/platform{dir = 8; layer = 2.7},/obj/item/prop/almayer/flight_recorder,/turf/open/floor/almayer,/area/space)
+"xt" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_x = 30},/turf/open/shuttle/escapepod{icon_state = "floor2"; tag = "icon-floor2"},/area/almayer/evacuation/pod9)
+"xJ" = (/obj/structure/window/reinforced{dir = 8; health = 80},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"xL" = (/turf/closed/shuttle/dropship2{icon_state = "105"},/area/shuttle/drop3/sulaco)
+"xS" = (/obj/effect/landmark/shuttle_loc/marine_src/dropship{name = "3"},/turf/open/floor/plating,/area/space)
+"ya" = (/obj/structure/machinery/telecomms/relay/preset/telecomms{listening_level = 4},/turf/open/floor/plating,/area/space)
+"yf" = (/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage,/obj/structure/machinery/light{dir = 1},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"yo" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "39"},/area/shuttle/drop3/sulaco)
+"yy" = (/turf/closed/shuttle/dropship2{icon_state = "94"},/area/shuttle/drop3/sulaco)
+"yJ" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod6)
+"yP" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod7)
+"yW" = (/obj/structure/machinery/door/poddoor/railing{id = "supply_elevator_railing"},/turf/open/floor/almayer{icon_state = "cargo_arrow"},/area/space)
+"yX" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = -18},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod7)
+"zh" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "66"},/area/shuttle/drop3/sulaco)
+"zr" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod6)
+"zy" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "96"},/area/shuttle/drop3/sulaco)
+"zA" = (/obj/structure/machinery/telecomms/server/presets/common,/turf/open/floor/plating,/area/space)
+"zE" = (/turf/closed/shuttle/dropship2{icon_state = "9"},/area/shuttle/drop3/sulaco)
+"zP" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod16)
+"zY" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod5)
+"Ab" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod5)
+"Ah" = (/turf/closed/shuttle/dropship2{icon_state = "103"},/area/shuttle/drop3/sulaco)
+"Av" = (/obj/structure/machinery/telecomms/processor/preset_one,/turf/open/floor/plating,/area/space)
+"AB" = (/turf/open/shuttle/escapepod{icon_state = "floor5"; tag = "icon-floor5"},/area/almayer/evacuation/pod17)
+"AF" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock PL-3"},/turf/open/floor/plating,/area/almayer/evacuation/pod17)
+"AH" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/plating_catwalk,/area/space)
+"AX" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod9)
+"AY" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "71"},/area/shuttle/drop3/sulaco)
+"Bx" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "5"},/turf/closed/wall/almayer,/area/space)
+"BW" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod17)
+"BZ" = (/turf/open/floor/plating/almayer,/area/space)
+"Cc" = (/obj/effect/attach_point/weapon/dropship2/right_wing,/turf/closed/shuttle/dropship2/transparent{icon_state = "65"},/area/shuttle/drop3/sulaco)
+"Cd" = (/obj/structure/machinery/landinglight/ds1{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"Cg" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "38"},/area/shuttle/drop3/sulaco)
+"Cj" = (/turf/open/shuttle/vehicle{icon_state = "floor_1_10"},/area/shuttle/drop3/sulaco)
+"Ck" = (/obj/structure/machinery/light{dir = 4; tag = "icon-tube1 (NORTH)"},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"Cq" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = -18},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod10)
+"CF" = (/obj/structure/machinery/telecomms/server/presets/security,/turf/open/floor/plating,/area/space)
+"CH" = (/obj/structure/machinery/landinglight/ds2{dir = 4; tag = "icon-landingstripe (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"CL" = (/obj/structure/machinery/conveyor{id = "lower_garbage"},/obj/structure/machinery/recycler,/turf/open/floor/almayer{dir = 4; icon_state = "plating_striped"; tag = "icon-plating_striped (EAST)"},/area/space)
+"Dd" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod6)
+"Dh" = (/obj/structure/machinery/door/poddoor/railing{dir = 2; id = "supply_elevator_railing"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{dir = 1; icon_state = "cargo_arrow"},/area/space)
+"Dl" = (/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"Do" = (/obj/structure/platform{dir = 8; layer = 2.7},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"Ds" = (/obj/structure/machinery/landinglight/ds2/delayone{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"DJ" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod10)
+"DN" = (/turf/closed/shuttle/dropship2/transparent{density = 0; icon_state = "45"},/area/shuttle/drop3/sulaco)
+"Ec" = (/turf/closed/shuttle/escapepod{icon_state = "wall14"; tag = "icon-wall14"},/area/almayer/evacuation/pod6)
+"Ed" = (/turf/closed/shuttle/dropship2{icon_state = "75"},/area/shuttle/drop3/sulaco)
+"Ee" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod17)
+"Eo" = (/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/open/floor/plating/plating_catwalk,/area/space)
+"EC" = (/obj/effect/decal/warning_stripes{icon_state = "NW-out"; pixel_x = -1; pixel_y = 2; tag = "icon-NW-out"},/obj/structure/platform{dir = 4},/obj/structure/stairs/perspective{dir = 1; icon_state = "p_stair_sn_full_cap"},/turf/open/floor/almayer,/area/space)
+"EG" = (/turf/closed/shuttle/escapepod{icon_state = "wall15"; tag = "icon-wall15"},/area/almayer/evacuation/pod5)
+"EH" = (/obj/structure/surface/table/almayer,/obj/structure/dropship_equipment/fuel/cooling_system{pixel_y = 8},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"EI" = (/obj/structure/platform{density = 0; dir = 8; icon_state = "platform_deco"},/obj/structure/machinery/light,/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"EJ" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod17)
+"EL" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "10"},/turf/closed/wall/almayer,/area/space)
+"EZ" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod5)
+"Fd" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod7)
+"Fg" = (/turf/open/floor/almayer_hull{dir = 6; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (SOUTHEAST)"},/area/space)
+"Fn" = (/turf/closed/shuttle/escapepod{icon_state = "wall8"; tag = "icon-wall8"},/area/almayer/evacuation/pod16)
+"Fr" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod7)
+"FA" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{dir = 2; name = "\improper Evacuation Airlock SU-4"; req_access = null},/turf/open/floor/plating,/area/space)
+"FF" = (/obj/structure/machinery/door/poddoor/railing{dir = 8; id = "vehicle_elevator_railing_aux"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"FO" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod8)
+"FS" = (/turf/open/floor/plating,/area/space)
+"Gg" = (/turf/open/shuttle/vehicle{icon_state = "floor_1_8"},/area/shuttle/drop3/sulaco)
+"Gk" = (/obj/structure/machinery/door/poddoor/railing{dir = 8; id = "supply_elevator_railing"},/turf/open/floor/almayer,/area/space)
+"Gl" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod10)
+"Gp" = (/turf/closed/shuttle/dropship2{icon_state = "51"},/area/shuttle/drop3/sulaco)
+"Gx" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod17)
+"GR" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod17)
+"GU" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "16"},/area/shuttle/drop3/sulaco)
+"Hc" = (/obj/effect/attach_point/crew_weapon/dropship2,/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"Hg" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_y = 30},/turf/open/shuttle/escapepod{icon_state = "floor0"; tag = "icon-floor0"},/area/almayer/evacuation/pod7)
+"Hp" = (/turf/open/floor/almayer_hull,/area/space)
+"Hr" = (/obj/structure/platform{dir = 8; layer = 2.7},/obj/structure/prop/mech/armor_booster,/obj/structure/machinery/power/apc/almayer{dir = 1},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"Hw" = (/obj/structure/machinery/gear{id = "vehicle_elevator_gears"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"Hx" = (/turf/closed/wall/almayer/outer,/area/space)
+"Hz" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1; tag = "icon-N"},/obj/structure/stairs/perspective{dir = 1; icon_state = "p_stair_sn_full_cap"},/turf/open/floor/almayer,/area/space)
+"HG" = (/turf/open/shuttle/escapepod{icon_state = "floor10"; tag = "icon-floor10"},/area/almayer/evacuation/pod10)
+"HI" = (/turf/open/floor/almayer_hull{dir = 4; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (EAST)"},/area/space)
+"HL" = (/turf/closed/shuttle/dropship2{icon_state = "104"},/area/shuttle/drop3/sulaco)
+"HY" = (/obj/structure/window/framed/almayer/white,/turf/open/floor/plating,/area/space)
+"Ig" = (/obj/effect/decal/warning_stripes{icon_state = "NE-out"; pixel_x = 1; tag = "icon-NE-out"},/obj/structure/platform{dir = 8; layer = 2.7},/obj/structure/stairs/perspective{dir = 1; icon_state = "p_stair_sn_full_cap"},/turf/open/floor/almayer,/area/space)
+"Ih" = (/turf/open/shuttle/escapepod{icon_state = "floor10"; tag = "icon-floor10"},/area/almayer/evacuation/pod7)
+"Il" = (/turf/closed/shuttle/dropship2{icon_state = "76"},/area/shuttle/drop3/sulaco)
+"It" = (/turf/closed/shuttle/dropship2{icon_state = "68"},/area/shuttle/drop3/sulaco)
+"Ix" = (/obj/structure/machinery/conveyor{id = "lower_garbage"},/obj/structure/plasticflaps,/turf/open/floor/almayer{dir = 4; icon_state = "plating_striped"; tag = "icon-plating_striped (EAST)"},/area/space)
+"IE" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod16)
+"IF" = (/obj/structure/machinery/door/poddoor/railing{id = "vehicle_elevator_railing"},/obj/structure/machinery/computer/supplycomp/vehicle{layer = 3.20},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"II" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod17)
+"IK" = (/obj/structure/machinery/landinglight/ds2{dir = 1; tag = "icon-landingstripe (NORTH)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"IN" = (/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "vehicle_elevator_railing_aux"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"IX" = (/obj/structure/bed/chair/dropship/passenger/shuttle_chair{dir = 4},/turf/open/shuttle/vehicle{icon_state = "floor_3_6"},/area/shuttle/drop3/sulaco)
+"Jm" = (/obj/structure/foamed_metal,/turf/open/floor/plating,/area/space)
+"JM" = (/obj/structure/machinery/door/poddoor/railing{dir = 8; id = "supply_elevator_railing"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer,/area/space)
+"Kj" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "23"},/area/shuttle/drop3/sulaco)
+"Ko" = (/turf/closed/shuttle/dropship2{icon_state = "53"},/area/shuttle/drop3/sulaco)
+"Ku" = (/turf/open/shuttle/vehicle{icon_state = "floor_1_7"},/area/shuttle/drop3/sulaco)
+"Kv" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod7)
+"Kw" = (/obj/structure/machinery/telecomms/receiver/preset,/turf/open/floor/plating,/area/space)
+"KE" = (/obj/structure/stairs/perspective{icon_state = "p_stair_full"},/turf/open/floor/almayer,/area/space)
+"KH" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "6"},/turf/closed/wall/almayer,/area/space)
+"KJ" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{name = "\improper Evacuation Airlock SU-1"; req_access = null},/turf/open/floor/plating,/area/space)
+"KN" = (/obj/structure/machinery/door/airlock/hatch/cockpit/two{req_access = null; req_access_txt = "22"; req_one_access = null},/obj/structure/blocker/forcefield/multitile_vehicles,/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"KR" = (/obj/structure/machinery/telecomms/bus/preset_three,/turf/open/floor/plating,/area/space)
+"Ls" = (/obj/structure/bed/chair/dropship/pilot{dir = 1; tag = "icon-pilot_chair (NORTH)"},/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"Lw" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "17"},/area/shuttle/drop3/sulaco)
+"Lz" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "98"},/area/shuttle/drop3/sulaco)
+"LD" = (/turf/closed/shuttle/escapepod{icon_state = "wall15"; tag = "icon-wall15"},/area/almayer/evacuation/pod9)
+"LH" = (/obj/structure/machinery/landinglight/ds1/delaythree{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"LL" = (/turf/closed/shuttle/escapepod{icon_state = "wall1"; tag = "icon-wall1"},/area/almayer/evacuation/pod8)
+"LY" = (/obj/structure/machinery/telecomms/bus/preset_one,/turf/open/floor/plating,/area/space)
+"Mr" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{dir = 1; icon_state = "cargo_arrow"},/area/space)
+"Mx" = (/obj/effect/landmark/supply_elevator,/turf/open/floor/almayer/empty,/area/supply/station)
+"MG" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod6)
+"MU" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1; tag = "icon-E"},/obj/structure/platform{density = 0; dir = 1; icon_state = "platform_deco"},/obj/structure/machinery/light{dir = 8},/turf/open/floor/almayer,/area/space)
+"MX" = (/obj/structure/surface/table/almayer,/obj/structure/machinery/computer/emails{dir = 1; pixel_y = 2},/obj/structure/machinery/light,/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"Nb" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "32"},/area/shuttle/drop3/sulaco)
+"Nk" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod16)
+"Nl" = (/turf/closed/shuttle/escapepod{icon_state = "wall11"; tag = "icon-wall11"},/area/almayer/evacuation/pod7)
+"NF" = (/turf/closed/wall/almayer/reinforced,/area/space)
+"NI" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod5)
+"NQ" = (/obj/structure/stairs/perspective{dir = 4; icon_state = "p_stair_ew_full_cap"; layer = 3.5},/turf/open/floor/plating,/area/space)
+"NV" = (/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"Oe" = (/obj/structure/machinery/conveyor_switch{id = "lower_garbage"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"Ok" = (/turf/open/shuttle/escapepod{icon_state = "floor1"; tag = "icon-floor1"},/area/almayer/evacuation/pod7)
+"On" = (/obj/structure/machinery/door/airlock/evacuation{dir = 2; name = "\improper Evacuation Airlock PU-6"},/turf/open/floor/plating,/area/almayer/evacuation/pod5)
+"Oo" = (/obj/structure/machinery/landinglight/ds2/delayone{dir = 1; tag = "icon-landingstripe (NORTH)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"OD" = (/obj/structure/machinery/telecomms/server/presets/command,/turf/open/floor/plating,/area/space)
+"OE" = (/obj/structure/machinery/door/poddoor/railing{id = "supply_elevator_railing"},/turf/open/floor/almayer,/area/space)
+"OG" = (/obj/structure/machinery/telecomms/server/presets/squads,/turf/open/floor/plating,/area/space)
+"OR" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 36},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod17)
+"OT" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "26"},/area/shuttle/drop3/sulaco)
+"Pc" = (/turf/open/shuttle/vehicle{icon_state = "floor_1_3"},/area/shuttle/drop3/sulaco)
+"Pg" = (/obj/structure/machinery/door/poddoor/railing{dir = 4; id = "vehicle_elevator_railing_aux"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"Pk" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "97"},/area/shuttle/drop3/sulaco)
+"Pl" = (/obj/structure/machinery/gear{id = "vehicle_elevator_gears"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"Po" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod10)
+"Ps" = (/obj/effect/decal/warning_stripes{icon_state = "W"; layer = 2.5; tag = "icon-W"},/obj/structure/platform{density = 0; icon_state = "platform_deco"},/turf/open/floor/almayer,/area/space)
+"PK" = (/obj/structure/machinery/telecomms/bus/preset_four,/turf/open/floor/plating,/area/space)
+"PN" = (/turf/closed/shuttle/escapepod{icon_state = "wall14"; tag = "icon-wall14"},/area/almayer/evacuation/pod8)
+"Qh" = (/obj/structure/machinery/landinglight/ds2/delayone{tag = "icon-landingstripe"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"Ql" = (/turf/open/floor/almayer_hull{dir = 9; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (NORTHWEST)"},/area/space)
+"Qr" = (/obj/item/device/radio/intercom{frequency = 1443; layer = 3.5; name = "dropship intercom"; pixel_x = 21; pixel_y = 43},/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"QF" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1; tag = "icon-E"},/obj/structure/closet/secure_closet/engineering_welding,/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/space)
+"QP" = (/obj/structure/machinery/telecomms/relay/preset/telecomms{listening_level = 6},/turf/open/floor/plating,/area/space)
+"QZ" = (/obj/structure/machinery/landinglight/ds2{dir = 8; tag = "icon-landingstripe (WEST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"Rm" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod16)
+"Rn" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod9)
+"Rt" = (/turf/open/floor/almayer/empty,/area/space)
+"RD" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod6)
+"RE" = (/turf/closed/wall/almayer/white,/area/space)
+"RJ" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/space)
+"RK" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "41"},/area/shuttle/drop3/sulaco)
+"RP" = (/obj/item/device/radio/intercom{frequency = 1443; name = "dropship intercom"; pixel_y = 24},/turf/open/shuttle/dropship{icon_state = "rasputin5"; tag = "icon-rasputin5"},/area/shuttle/drop3/sulaco)
+"RQ" = (/obj/structure/machinery/telecomms/server/presets/engineering,/turf/open/floor/plating,/area/space)
+"RX" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 8; pixel_y = 28},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod5)
+"RY" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer,/area/space)
+"Sf" = (/turf/closed/shuttle/dropship2{icon_state = "15"},/area/shuttle/drop3/sulaco)
+"Sg" = (/obj/structure/machinery/light{dir = 1; tag = "icon-tube1 (NORTH)"},/obj/structure/disposaloutlet,/obj/structure/disposalpipe/trunk{dir = 4; tag = "icon-pipe-t (EAST)"},/turf/open/floor/almayer{dir = 4; icon_state = "plating_striped"; tag = "icon-plating_striped (EAST)"},/area/space)
+"Sj" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "29"},/area/shuttle/drop3/sulaco)
+"Sl" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_y = 30},/turf/open/shuttle/escapepod{icon_state = "floor4"; tag = "icon-floor4"},/area/almayer/evacuation/pod16)
+"Ss" = (/obj/structure/machinery/door/poddoor/railing{dir = 2; id = "vehicle_elevator_railing"},/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"Sw" = (/turf/closed/shuttle/dropship2{icon_state = "95"},/area/shuttle/drop3/sulaco)
+"Sy" = (/turf/closed/shuttle/dropship2{icon_state = "77"},/area/shuttle/drop3/sulaco)
+"SC" = (/obj/structure/machinery/landinglight/ds2/delaythree{tag = "icon-landingstripe"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"SD" = (/turf/open/floor/almayer/empty,/area/supply/station)
+"SE" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod9)
+"SF" = (/obj/structure/machinery/telecomms/processor/preset_two,/turf/open/floor/plating,/area/space)
+"SI" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod6)
+"SN" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod17)
+"SZ" = (/obj/structure/stairs/perspective{dir = 8; icon_state = "p_stair_full"},/turf/open/floor/plating,/area/space)
+"To" = (/obj/effect/landmark/shuttle_loc/marine_src/evacuation{name = "17"},/turf/closed/wall/almayer,/area/space)
+"Tp" = (/turf/closed/shuttle/escapepod{icon_state = "wall11"; tag = "icon-wall11"},/area/almayer/evacuation/pod10)
+"Tt" = (/obj/structure/prop/almayer/ship_memorial,/turf/open/floor/plating/almayer,/area/space)
+"Tw" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod16)
+"TC" = (/obj/structure/machinery/landinglight/ds2/delaytwo{tag = "icon-landingstripe"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"TU" = (/obj/effect/attach_point/electronics/dropship2{dir = 1},/turf/closed/shuttle/dropship2/transparent{icon_state = "90"},/area/shuttle/drop3/sulaco)
+"Ub" = (/obj/effect/attach_point/electronics/dropship2{dir = 1},/turf/closed/shuttle/dropship2/transparent{icon_state = "85"},/area/shuttle/drop3/sulaco)
+"Uf" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock SU-2"},/turf/open/floor/plating,/area/almayer/evacuation/pod7)
+"Ut" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock PL-3"},/turf/open/floor/plating,/area/almayer/evacuation/pod16)
+"UB" = (/turf/closed/shuttle/dropship2{icon_state = "49"},/area/shuttle/drop3/sulaco)
+"UY" = (/obj/structure/machinery/landinglight/ds2{tag = "icon-landingstripe"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"UZ" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod10)
+"Va" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "40"},/area/shuttle/drop3/sulaco)
+"Vg" = (/turf/open/shuttle/escapepod{icon_state = "floor11"; tag = "icon-floor11"},/area/almayer/evacuation/pod6)
+"Vi" = (/turf/closed/shuttle/escapepod{icon_state = "wall7"; tag = "icon-wall7"},/area/almayer/evacuation/pod10)
+"Vl" = (/obj/structure/stairs/perspective{dir = 1; icon_state = "p_stair_ew_full_cap"; layer = 3.5},/turf/open/floor/plating,/area/space)
+"Vo" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "21"},/area/shuttle/drop3/sulaco)
+"VC" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod9)
+"VL" = (/obj/structure/machinery/door/poddoor/railing{dir = 8; id = "supply_elevator_railing"},/obj/effect/landmark/shuttle_loc/marine_crs/dropship,/turf/open/floor/almayer{dir = 4; icon_state = "cargo_arrow"},/area/space)
+"VT" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{name = "\improper Evacuation Airlock SU-2"; req_access = null},/turf/open/floor/plating,/area/space)
+"VW" = (/obj/effect/decal/warning_stripes{icon_state = "NE-out"; pixel_x = 1; tag = "icon-NE-out"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/space)
+"VX" = (/obj/structure/machinery/door/poddoor/railing{dir = 2; id = "supply_elevator_railing"},/turf/open/floor/almayer,/area/space)
+"Wh" = (/turf/closed/shuttle/escapepod{icon_state = "wall3"; tag = "icon-wall3"},/area/almayer/evacuation/pod16)
+"Wo" = (/turf/closed/shuttle/dropship2{icon_state = "83"},/area/shuttle/drop3/sulaco)
+"Wq" = (/obj/structure/machinery/telecomms/receiver/preset_left,/turf/open/floor/plating,/area/space)
+"WD" = (/obj/structure/machinery/telecomms/processor/preset_four,/turf/open/floor/plating,/area/space)
+"WH" = (/turf/closed/shuttle/dropship2{icon_state = "6"},/area/shuttle/drop3/sulaco)
+"Xl" = (/obj/effect/attach_point/weapon/dropship2/left_wing,/turf/closed/shuttle/dropship2/transparent{icon_state = "61"},/area/shuttle/drop3/sulaco)
+"Xr" = (/obj/structure/stairs/perspective{dir = 4; icon_state = "p_stair_full"},/turf/open/floor/plating,/area/space)
+"Xs" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod6)
+"Xt" = (/turf/closed/shuttle/dropship2{icon_state = "92"},/area/shuttle/drop3/sulaco)
+"Xw" = (/turf/open/shuttle/escapepod{icon_state = "floor12"; tag = "icon-floor12"},/area/almayer/evacuation/pod8)
+"Xz" = (/obj/structure/machinery/door/poddoor/shutters/almayer{id = "pilot_quarters"},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/space)
+"XC" = (/obj/effect/decal/warning_stripes{icon_state = "NW-out"; tag = "icon-NW-out"},/obj/structure/machinery/gear{id = "supply_elevator_gear"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer{icon_state = "mono"},/area/space)
+"XI" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod8)
+"XS" = (/obj/structure/platform{dir = 4; icon_state = "platform_deco"},/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"Yo" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod7)
+"Ys" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 36},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod16)
+"Yu" = (/turf/closed/shuttle/dropship2{icon_state = "106"},/area/shuttle/drop3/sulaco)
+"Yw" = (/turf/open/floor/almayer{icon_state = "tcomms"},/area/space)
+"YC" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod5)
+"YK" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "102"},/area/shuttle/drop3/sulaco)
+"YO" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "27"},/area/shuttle/drop3/sulaco)
+"YR" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod9)
+"Zb" = (/obj/structure/machinery/telecomms/bus/preset_two,/turf/open/floor/plating,/area/space)
+"Zh" = (/turf/closed/shuttle/dropship2{icon_state = "5"},/area/shuttle/drop3/sulaco)
+"Zn" = (/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/closed/wall/almayer,/area/space)
+"Zy" = (/obj/structure/blocker/invisible_wall,/obj/structure/machinery/computer/shuttle_control/dropship3/onboard,/turf/open/shuttle/dropship{icon_state = "rasputin15"; tag = "icon-rasputin15"},/area/shuttle/drop3/sulaco)
+"Zz" = (/obj/structure/machinery/door/poddoor/railing{dir = 2; id = "supply_elevator_railing"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/almayer,/area/space)
+"ZH" = (/obj/structure/machinery/door/airlock/almayer/secure/reinforced{dir = 2; name = "\improper Evacuation Airlock PU-6"; req_access = null},/turf/open/floor/plating,/area/space)
+"ZO" = (/obj/structure/bed/chair/dropship/passenger/shuttle_chair{dir = 8},/turf/open/shuttle/vehicle{icon_state = "floor_3_6"},/area/shuttle/drop3/sulaco)
+"ZS" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_y = 30},/turf/open/shuttle/escapepod{icon_state = "floor4"; tag = "icon-floor4"},/area/almayer/evacuation/pod17)
+"ZV" = (/obj/structure/machinery/telecomms/processor/preset_three,/turf/open/floor/plating,/area/space)
+"ZX" = (/turf/open/floor/plating/plating_catwalk,/area/space)
+"ZZ" = (/turf/closed/shuttle/dropship2/transparent{icon_state = "74"},/area/shuttle/drop3/sulaco)
+
+(1,1,1) = {"
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUQlgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYmpfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUQlgYgYHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpgYgYmpfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxHxHxHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxHxHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSFSfTFSFSFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSfTFSFSFSFSFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTJmJmJmJmJmJmJmJmJmJmJmfTfTfTfTfTfTfTfTfTfTFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxHxFSFSfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTfTfTfTfTfTfTfTfTJmJmJmJmJmJmJmJmJmJmfTFSFSHxHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSFSFSFSfTfTJmJmJmJmJmJmJmJmJmJmJmfTfTfTfTFSFSFSFSFSFSFSfTfTfTfTJmJmJmJmJmJmJmfTfTFSFSFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTfTfTJmJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSFSfTJmJmJmJmJmJmJmJmfTfTfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSfTFSFSFSFSFSFSfTJmJmJmJmJmJmJmJmJmJmfTFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSfTfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTfTFSFSFSFSFSfTfTfTFSFSFSFSFSfTfTJmJmJmJmJmJmJmJmJmfTFSFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmJmJmfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTJmfTfTfTFSFSFSfTFSFSFSFSFSFSfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTFSFSfTFSFSfTFSFSFSfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSfTFSFSFSfTFSFSFSFSFSFSfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTFSFSfTFSFSfTFSFSFSfTFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSfThMhMhMfTFSFSFSFSfTfTfTfTfTFSFSfTFSFSFSfTFSFSFSfTFSFSfTfTfThMhMfThMhMfThMhMhMfTFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSfTJmfTFSFSfTFSFSFSfTFSFSFSfTFSFSfTJmfTFSFSFSFSFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSfTJmfTFSFSfTFSFSFSfTFSFSFSfTFSFSfTJmfTFSFSFSFSFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTFSfTfTfTfTFSFSfTfTfTfTfTfTfTfTfTFSFSfTfTfTfTFSfTfTfTfTfTfTfTfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxFSfTFSFSfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTFShMfTfTfTfTFSfTfTfTfThMFSfTfTfTFSfTfTFSfTfTfTfTfTfTfTfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTfTFSFSFSFSFSFSFSFSFSFSfTJmJmJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSFSfTJmJmJmJmJmfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTFSFSFSFSFSFSFSFSFSFSFSfTJmJmJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTFSFSFSFSmimimiFSFSFSFSfTJmJmJmJmJmfTFSFSFSFSFSfTFSFSFSfTFSFSFSFSFSfTFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSfTfTFSFSmimimimimimimiFSFSfTJmJmJmJmJmfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTFSFSmimimimimimimiFSFSfTJmJmJmJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSFSfTfTFSFSmimimimimimimiFSFSfTJmJmJmJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSmimimimimimimiFSFSfTJmJmJmJmJmJmfTfTfTfTFSFSFSFSFSFSFSfTfTfTfTFSFSFSFSFSFSFSfTJmJmJmJmJmJmJmfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSfTFSFSFSmimimimimimimiFSFSfTJmJmfTfTfTfTfTfTfTfTfTfTFSFSFSfTfTfTJmJmfTfTfTfTfTfTfTfTfTJmJmJmJmJmJmfTfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSmimimimimimimiFSFSfTJmJmfTpypypQpQpQpQpypyfTFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTSgwNfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTfTfTFSFSmimimimimimimiFSFSfTJmJmfTpypypQTtBZpQpypyfTFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTriogfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSmimimimimimimiFSFSfTJmJmfTpypypQpQpQpQpypyhMFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTriogfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSmimimimimimimiFSFSfTJmJmfTpypypypypypypyFSFSFSFSFSfTJmJmJmJmNFNFNFNFNFNFNFJmJmJmJmJmJmJmJmfTriEopQFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSmimimimimimimiFSFSfTJmJmfTpypypypypypypyFSFSFSFSFSfTJmJmJmNFNFFSFSFSFSFSNFNFJmJmJmJmJmJmJmfTIxsfZnFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSmimimimimimimiFSFSfTJmJmfTFSFSFSFSFSFSFSFShMFSFSFSfTJmJmNFNFFSFSFSFSFSFSFSNFNFmrmrmrmrmrmrfTCLxJfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSmimimimimimimiFSFSfTJmJmfTFSFSFSFSFSFSFSFSfTFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSNFJmJmJmJmJmJmfTsqOefTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmfTFSFSFSFSFSFSFSFSFSFSFSfTJmJmfTFSFSFSFSFSFSFSFSfTFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSNFJmJmJmJmJmJmfTfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTfTJmfTFSFSFSFSFSFSFSFSFSFSFSfTJmJmNFNFNFNFNFfTfTfTfTfTFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSNFJmJmJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTNFFSFSFSNFJmJmJmJmfTFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSNFJmJmJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSNFFSFSFSNFJmJmJmJmfTFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSNFJmJmJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSNFFSFSFSNFJmJmJmJmfTFSFSFSfTJmJmNFNFFSFSFSFSFSFSFSNFNFJmJmJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSNFFSFSFSNFJmJmJmJmfTFSFSFSfTJmJmJmNFNFFSFSFSFSFSNFNFJmJmJmJmJmJmJmJmJmJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTfTfTfTfTfTJmJmJmfTFSFSFSFSFSFSNFFSFSFSNFJmJmJmJmfTFSFSFSNFNFNFNFNFNFNFNFFSNFNFNFJmJmJmJmJmJmJmJmJmfTfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSFSfTfTfTfTfTfThMhMfTFSfTNFNFFSNFNFfTfTfTfTfTFSFSFSNFzAjhRQWqFSsCNFFSFSNFJmJmJmJmJmJmJmJmJmfTfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxfTfTfTfTfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSNFFSFSFSFSFSFShMFSFSNFJmJmJmJmJmJmJmJmJmfTFSFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxJmJmJmJmfTFSNFFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSNFKRZbPKLYFSyahMFSFSNFJmJmJmJmJmJmJmJmJmfTFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTfTfTFSNFhMFShMNFhMFShMNFfTfTfTFSFSFSfTfTFSFSfTfTFSFSFSNFqfFSFSFSFSFShMFSFSNFJmJmJmJmJmJmJmJmJmfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTFSFSFSNFFSFSFSNFFSFSFSNFJmJmfTFSFSFSfTFSFSFSFSfTFSFSFSNFSFZVWDAvFSQPhMFSFSNFJmJmJmJmJmJmJmJmJmfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTFSFSFSNFFSFSFSNFFSFSFSNFJmJmNFNFFSNFNFFSFSFSFSfTFSFSFSNFFSFSFSFSFSFShMFSFSNFJmJmJmJmJmJmJmJmJmfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTFSFSfTNFNFNFNFNFNFNFNFNFJmJmNFFSFSFSNFFSFSFSFShMFSFSFSNFODCFOGKwFSnjNFFSFSNFJmfTfTfTfTfTfTfTfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTFSFSFSFSFSFSFSFSFSFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSFSFSFSNFNFhMhMNFFSNFNFFSFSNFfTfTFSFSFSFSFSFSFSFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTFSFSFSfTfTfTfTfTfTFSFSfTJmJmNFFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTfTfTfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmJmfTfTfTFSfTsFFrYotHfTfTFSfTJmJmNFFSFSFSFSFSFSFSFShMFSFSFSFSFSFSFSFSFSFSFSFSFSNFfTfTFSfTfTBWGximvjfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxJmfTfTFSFSfTxmFdHgyPfTFSFSfTJmJmNFFSFSFSNFFSFSFSFSfTFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSFSfTeJZSGREJfTFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTFSFSFSfTNlyXOkUfVTFSFSfTfTfTNFNFNFNFNFfTfTfTfTfTFSFSFSNFNFNFNFNFNFNFNFfTfTfTfTfTFSFSviAFABOREJfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTFSFSFSfTNlFdIhyPfTFSFSfTfenHLLnHvJfTtCRnpXRnAXfTFSFSFSfTEZaSAbaSzYfTDdMGqCMGSIfTFSFSfTeJIIGREJfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTFSFSFSfTKvwKwKmzfTFSFSfTFOXImGXIesfTYRgJecgJVCfTFSFSFSfTdEYCRXYCuOfTfcvrtQvrRDfTFSFSfTEefzptSNfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTFSFSFSdIwdfypSGlfTFSFSfTFOXwscifesfTYRSEhtxtVCfTFSFSFSfTdEhndHkouOfTfczrVgtnRDfTFSFSToTwuLIEWhfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTFSFSFSfTwQkHolPofTFSFSfTbvuKsbPNgCfTnCLDdLoNlyfTFSFSFSfTNIEGOncDiIfTXsgRcoEcyJfTFSFSfTzPSlRmhzfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxJmfTfTFSFSfTTpCqkplkKJFSFSvkfTfTlVfTfTeAfTfTFAfTfTfTFSFSFSBxfTfTZHfTfTKHfTfTtafTfTfTFSFSviUtdUYshzfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxfTfTfTfTFSfTDJkHHGPofTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTzPsYRmhzfTFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSfTpwViViUZfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTwxFnjuNkfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTfTfTELfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTdbfTfTfTfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmfTFSFSFSfTFSFSFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSFSfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmfTFSFSFSFSFSFSFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSFSfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTJmfTFSFSFSfTFSFSFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSfTJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSFSFSFSFSfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSfTJmfTfTfTfTfTFSFSFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSFSFSFSFSfTFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmJmJmfTfTFSfTfTfTfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmJmJmfTFSFSFSFSFSfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmfTfTfTFSFSFSFSFShMFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmfTFSFSFSFSFSFSFShMFSFSFSREREREREREREREREREREREREREREREREREREREREREFSFSFSfTFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmfTFSFSFSFSFSFSFShMFSFSFSREREFSFSFSFSHYFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFShMFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSfTJmJmJmfTFSFSFSFSFSFSFSfTFSFSFSREREFSFSFSFSREFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFShMFSFSFSFSFSFSFSfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxFSfTJmJmJmfTFSFSFSFSFSFSFSFSFSFSFSREREFSFSFSFSFSFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFShMFSFSFSFSFSFSFSfTFSHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSfTJmJmJmfTFSFSFSFSFSFSFSfTFSFSFSREREFSFSFSFSFSFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFShMFSFSFSFSFSFSFSfTFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSfTJmJmJmfTFSFSFSFSFSFSFSfTFSFSFSREREFSFSFSFSREFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFShMFSFSFSFSFSFSFSfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSREREFSFSFSFSHYFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFSfTFSFSNFNFNFNFNFNFNFNFFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSREREFSFSFSFSREFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFSNFNFNFNFNFFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREREREREREREREREREREREFSREREfTFSFSFSREREFSFSFSFSREFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFSNFFSFSFSNFFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREREFSFSFSREFSFSFSFSFSFSFSFSREREFSFSFSREREFSFSFSFSREFSFSFSFSFSFSFSREJmJmJmJmJmREFSFSFSNFFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFSREREREREREREREREFSFSFSFSFSREREJmJmJmJmJmREFSFSFSNFFSFSFSNFFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFSREJmJmJmJmJmJmREFSFSFSFSFSREREREREREREREREFSFSFSNFNFNFNFNFNFNFNFFSNFNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFSREREREREREREREREHYpqphkzHYREFSFSREFSREFSREFSFSFSNFFSFSFSFSFSFSFSFSNFNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSREFSFSFSREFSFSREFSFSREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSREFSFSREFSREFSREFSFSFShMFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSREFSFSFSFSFSREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFSFSFSFSREFSFSFShMFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSREFSFSFSFSFSREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSREREFSREREFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSREFSFSFSFSREFSFSFSREFSFSFSFSFSREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFSREREREREFSFSFShMFSFSFSFSFSFSFSFSFSNFFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSFSHYFSFSREREREREREREREREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSREFSFSFShMFSFSFSFSFSFSFSFSFSNFFSFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSFSHYFSREREFSFSFSFSFSREREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSREFSFSREFSREFSREFSFSFSNFFSFSFSFSFSFSFSFSNFNFfTfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREREREREREREFSREFSFSFSFSFSFSFSREFSFSFSREFSFSFSFSFSFSREREFSFSFSREREFSFSREFSREFSREFSFSFSNFNFNFNFNFNFNFNFNFNFNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSHYFSFSREFSFSFSFSFSFSFSREFSFSFSREREREREREREREREpqphphphkzREREREREREREREREFSFSFSNFFSFSFSFSNFFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSFSFSFSREFSFSFSFSFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFShMFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSHYFSFSREFSFSFSFSFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSREREFSREREFSREFSFSFSREREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREFSFSFSREFSFSREFSFSFSFSFSFSFSREFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREREREREREREFSFSFSFSFSFSFSFSFSFSREpqphkzfTJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmJmfTFSFSFSNFNFFSFSFSFSFSFSFSNFNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSFSFSFSFSFSFSFSREpqphkzfTJmJmJmJmfTfTfTfTfTfTfTJmJmJmJmJmJmJmJmfTFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSREFSFSFSFSFSFSFSREpqphkzfTfTfTfTfTfTFSFSFSFSFSfTfTfTfTfTfTfTfTfTfTFSFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSREFSFSFSFSFSFSFSREFSFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTJmfTfTFSFSFStZFSFSFSFShMFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSHYFSFSFSFSFSFSFSHYFSFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTJmfTFSFSFSFSSZFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTJmfTFSFSFSFSVlFSFSFSFShMFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREREREREREREFSFSHYFSFSFSFSFSFSFSHYpqphkzfTFSFSFSfTFSFSFSFSFSFSFSfTJmfTFSFSFSFSfTfTfTFSFSNFFSFSFSFSFSFSFSFSFSNFJmfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSREFSFSFSFSFSFSFSREpqphkzfTfTfTfTfTFSFSFSFSFSFSFSfTJmfTpqphkzfTfTNFNFFSFSNFNFNFNFNFNFNFNFNFNFNFNFfTFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSREFSFSFSFSFSFSFSREFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTJmfTpqphkzfTJmNFFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSREREREREREFSFSREREFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTJmfTpqphkzfTJmNFFSFSFSFSFSFSdoVXZzDhVXVXwCFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSFSFSFSFSFSFSFSREFSFSFSFSFSFSFSfTFSFSFSFSFSFSFSfTJmfTpqphkzfTJmNFFSFSFSFSFSFSdFSDSDSDSDSDGkFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSFSFSFSFSFSFSFSREfTfTfTfTpqphkzfTfTFSFSFSFSFSfTfTfTfTpqphkzfTfTNFFSFSFSFSFSFSdFSDSDSDSDSDGkFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREREREREREREFSFSREREREREREREFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTpqphkzfTFSNFFSFSFSFSFSFSdGSDSDMxSDSDVLFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSREFSFSFSFSFSFSFSFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFSFSFSdFSDSDSDSDSDJMFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSREFSFSFSFSFSFSFSFSFSFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSNFFSFSFSFSFSFSdFSDSDSDSDSDJMFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSREFSFSFSFSFSFSFSFSFSFSREREFSFSFSpQTCstQhUYSCTCQhUYTCQhUYSCUYpQFSFSFSfTNFNFFSNFNFFSFSefOEOEyWOEOEXCFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSHYFSFSFSFSFSFSFSFSFSFSFSXrFSFSFSvWFSFSFSFSbJhmhmhmYKFSFSFSFSLHFSFSFSfTFSFSFSFSNFFSFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSXrFSFSFSCHFSFSFSFSSwzyPkLzutvMFSFSFSwIFSFSFSfTFSFSFSFSNFFSFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSREREFSFSFSREFSFSFSFSFSFSFSFSFSFSFSNQFSFSFSbmVaRKFSFSXtofZyiNyyFSFSqtwrsRFSFSFSfTFSFSFSFSNFFSFSFSFSFSFSFSFSFSFSNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSREREREREREREfTfTfTfTfTfTfTfTfTfTfTfTFSFSvdnUttnATUlsLsQrLslaUbccCgyotwFSFSfTfTFSFSFSFSNFNFFSFSFSNFNFNFNFNFNFNFFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSFSFSFSFSFSfTfTFSFSFSFSFSFSFSFSFSFSfTFSFSvWwzSjEdIlSymFKNhTkSIlWoNbhLDsFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSFSFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxHxHxFSFSfTFSFSPlSsSsSsSsSsPlFSFSFSFSFSCHaoKjsgIXKuGghiKuGgZOjcOTYOQZFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSFSFSFSqxRtRtRtRtRtFFFSFSFSFSFSbmGULwzEpmbAtlItPciZftUBiOVosRFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSINRtRtRtRtRtFFFSFSFSFSFSvdFSvMFSsgPctlKoPctljcFSFSFStwFSFSfTfTfTfTfThMhMfTfThMhMfTfTfTFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSqxRtRtbRRtRtFFFSFSFSFSFSvWFSFSFStSPctlRPPctltSFSFSFSDsFSFSfTFSFSFSfTFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSPgRtRtRtRtRtFFFSFSFSFSFSCHFSFSFStSPctlNVPctltSFSFSFSQZFSFShMFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSbsRtRtRtRtRtnlFSFSFSFSFSbmFSFSFStSPctlNVPctltSFSFSFSsRFSFShMFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSHwobIFobobobHwFSFSFSFSFSvdFSvXDNtSPctlNVPctltSvXDNFStwFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHxFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTFSFSvWAYnUttsgPctlNVPctljcCgyoZZDsFSFShMFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHxFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTFSFSCHzhwzSjsgCjtlNVPcihjcNbhLvTQZFSFShMFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTFSFSFSFSFSFSFSFSFSFSFSfTFSFSbmXlaoKjzEAhpmNVftAhUBOTYOCcsRFSFSfTFSFSFSfTFSFSFSFSFSFSFSfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSfTfTFSFSFSFSFSFSFSFSFSFSfTFSFSbmvMGULwFSFSsgHcGpFSFSiOVoFSDsFSFSfTFSfTfTfTfTfTfTfTfTfTfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSfTfTfTfTfTfTfTfTfTfTfTfTFSFSvdFSFSFSFSFSzElqSfFSFSFSFSFSQZFSFSfTFSFSfTJmJmJmJmJmJmJmJmfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSvdFSFSFSFSFSFSHLFSFSFSFSFSFSCdFSFSfTFSFSfTfTfTfTfTfTfTfTfTfTFSFSHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSvWxSFSFSiocfYuxLcXZhWHFSFSRJLHFSFSfTFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUHxHxHxHxHxHxHxHxHxHxHxHxFSFSfTFSFSpQOoOojBeIIKOojBeIOojBeIIKOopQFSFSfTFSFSHxHxHxHxHxHxHxHxHxHxHxHxfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSfTfTFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSfTfTFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSFSfTfTFSFSFSFSFSgfFSFSFSFSFSFSFSFSFSfTfTFSFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxFSFSFSFSfTfTfTfTfTfTfTXzXzXzfTfTfTfTfTfTfTFSFSFSFSHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHxHxFSFSFSfTQFsyDlHrCkfTtgtgbcfTMUuYDluYPsfTFSFSFSHxHxHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxHxHxFSwpfIMraODoqIoLtgAHRYyfxpaOtgMrakfTFSHxHxHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHxFSfTVWaCaCDoYwkTtgAHRYpWIghQhQHzECfTFSHxHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHpHpHpHxFSfTKEhdvQmNfqfqtgZXtgkTkTfqfqeWkTfTFSHxHpHpHpHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxFSfTYwEIceXSqIfqtgtgtgkTYwYwoXMXEHfTFSHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxFSfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTfTFSHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHpHxHxHxFSFSFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxHxHpHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHxHxFSFSFSFSFSFSFSFSFSFSFSFSFSHxHxHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHxHxHxHxHxHxHxHxHxHxHxHxHxHxHxHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+"}
