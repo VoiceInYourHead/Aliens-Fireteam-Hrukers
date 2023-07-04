@@ -48,7 +48,11 @@
 		list("ME3 Hand Welder", round(scale * 2), /obj/item/tool/weldingtool/simple, VENDOR_ITEM_REGULAR),
 		list("Screwdriver", round(scale * 4), /obj/item/tool/screwdriver, VENDOR_ITEM_REGULAR),
 		list("Wirecutters", round(scale * 4), /obj/item/tool/wirecutters, VENDOR_ITEM_REGULAR),
-		list("Wrench", round(scale * 4), /obj/item/tool/wrench, VENDOR_ITEM_REGULAR)
+		list("Wrench", round(scale * 4), /obj/item/tool/wrench, VENDOR_ITEM_REGULAR),
+
+		list("UTILITY", -1, null, null),
+		list("Sentry Gun Network Laptop", 4, /obj/item/device/sentry_computer, VENDOR_ITEM_REGULAR),
+		list("Sentry Gun Network Encryption Key", 4, /obj/item/device/encryptionkey/sentry_laptop, VENDOR_ITEM_REGULAR),
 	)
 
 /obj/structure/machinery/cm_vending/sorted/tech/comtech_tools

@@ -117,6 +117,7 @@
 		list("Large Shotgun Shell Pouch", round(scale * 2), /obj/item/storage/pouch/shotgun/large, VENDOR_ITEM_REGULAR),
 
 		list("MISCELLANEOUS", -1, null, null),
+		list("Sentry Gun Network Laptop", 4, /obj/item/device/sentry_computer, VENDOR_ITEM_REGULAR),
 		list("Combat Flashlight", round(scale * 5), /obj/item/device/flashlight/combat, VENDOR_ITEM_REGULAR),
 		list("Entrenching Tool", round(scale * 4), /obj/item/tool/shovel/etool, VENDOR_ITEM_REGULAR),
 		list("Gas Mask", round(scale * 10), /obj/item/clothing/mask/gas, VENDOR_ITEM_REGULAR),
@@ -659,6 +660,7 @@ obj/structure/machinery/cm_vending/sorted/uniform_supply
 		list("JTAC Radio Encryption Key", 5, /obj/item/device/encryptionkey/jtac, VENDOR_ITEM_REGULAR),
 		list("Marine Radio Headset", 5, /obj/item/device/radio/headset/almayer, VENDOR_ITEM_REGULAR),
 		list("Supply Radio Encryption Key", 5, /obj/item/device/encryptionkey/req, VENDOR_ITEM_REGULAR),
+		list("Sentry Gun Network Encryption Key", 8, /obj/item/device/encryptionkey/sentry_laptop, VENDOR_ITEM_REGULAR),
 
 		list("MASKS", -1, null, null, null),
 		list("Gas Mask", 20, /obj/item/clothing/mask/gas, VENDOR_ITEM_REGULAR),

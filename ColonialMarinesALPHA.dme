@@ -10,6 +10,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include "code\_byond_version_compat.dm"
 #include "code\_compile_options.dm"
 #include "code\_macros.dm"
 #include "code\global.dm"
@@ -75,6 +76,7 @@
 #include "code\__DEFINES\qdel.dm"
 #include "code\__DEFINES\radio.dm"
 #include "code\__DEFINES\regex.dm"
+#include "code\__DEFINES\sentry_laptop_configurations.dm"
 #include "code\__DEFINES\shuttles.dm"
 #include "code\__DEFINES\skills.dm"
 #include "code\__DEFINES\sounds.dm"
@@ -1439,6 +1441,7 @@
 #include "code\modules\defenses\handheld.dm"
 #include "code\modules\defenses\planted_flag.dm"
 #include "code\modules\defenses\sentry.dm"
+#include "code\modules\defenses\sentry_computer.dm"
 #include "code\modules\defenses\sentry_flamer.dm"
 #include "code\modules\defenses\tesla_coil.dm"
 #include "code\modules\desert_dam\filtration\consoles.dm"
