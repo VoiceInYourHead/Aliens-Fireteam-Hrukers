@@ -60,6 +60,11 @@
 		message_admins("[key_name(client)] was kicked for sending a huge telemetry payload")
 		qdel(client)
 		return
+
+	var/ckey = client?.ckey
+	if (!ckey)
+		return
+
 	var/list/found
 	for(var/i in 1 to len)
 		if(QDELETED(client))

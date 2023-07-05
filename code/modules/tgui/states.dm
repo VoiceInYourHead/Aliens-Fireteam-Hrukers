@@ -87,7 +87,7 @@
  *
  * return UI_state The state of the UI.
  */
-/mob/living/proc/shared_living_ui_distance(atom/movable/src_object, viewcheck = TRUE)
+/mob/living/proc/shared_living_ui_distance(atom/movable/src_object, viewcheck = TRUE, allow_tk = TRUE)
 	// If the object is obscured, close it.
 	if(viewcheck && !(src_object in view(src)))
 		return UI_CLOSE
