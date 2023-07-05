@@ -124,7 +124,8 @@
 		thrall_gloves.linked_bracer = src
 		thrall_gloves.owner = T
 		thrall_gloves.verbs += /obj/item/clothing/gloves/yautja/proc/buy_thrall_gear
-		T.client?.init_verbs()
+		if(T.client)
+			T.client.init_statbrowser() // quite possibly the worst thing ever, we need to restart their stat panel to get the new verb to appear
 
 		to_chat(user, SPAN_YAUTJABOLD("[icon2html(src)] \The <b>[src]</b> beeps: Your bracer is now linked to your thrall."))
 		if(notification_sound)

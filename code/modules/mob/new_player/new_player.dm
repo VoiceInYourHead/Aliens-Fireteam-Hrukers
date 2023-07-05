@@ -278,7 +278,7 @@
 			if(C.player_data && C.player_data.playtime_loaded && ((round(C.get_total_human_playtime() DECISECONDS_TO_HOURS, 0.1)) <= 5))
 				msg_sea("NEW PLAYER: <b>[key_name(character, 0, 1, 0)] has less than 5 hours as a human. Current role: [get_actual_job_name(character)] - Current location: [get_area(character)]")
 
-	character.client.init_verbs()
+	character.client.init_statbrowser() // init verbs for the late join
 
 	qdel(src)
 
@@ -394,7 +394,9 @@
 
 	new_character.key = key		//Manually transfer the key to log them in
 
-	new_character.client?.change_view(world_view_size)
+	if(new_character.client)
+		new_character.client.change_view(world_view_size)
+		new_character.client.init_statbrowser()
 
 	return new_character
 

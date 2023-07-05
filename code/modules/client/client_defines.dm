@@ -61,8 +61,6 @@
 	var/related_accounts_ip = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this ip
 	var/related_accounts_cid = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this computer id
 
-	var/human_name_ban = FALSE
-
 	var/xeno_prefix = "XX"
 	var/xeno_postfix = ""
 	var/xeno_name_ban = FALSE
@@ -88,8 +86,8 @@
 	/// our current tab
 	var/stat_tab
 
-	///Our object window datum. It stores info about and handles behavior for the object tab
-	var/datum/object_window_info/obj_window
+	/// whether our browser is ready or not yet
+	var/statbrowser_ready = FALSE
 
 	/// list of all tabs
 	var/list/panel_tabs = list()

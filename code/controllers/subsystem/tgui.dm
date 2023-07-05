@@ -28,10 +28,6 @@ SUBSYSTEM_DEF(tgui)
 
 /datum/controller/subsystem/tgui/PreInit()
 	basehtml = file2text('tgui/public/tgui.html')
-	// Inject inline polyfills
-	var/polyfill = file2text('tgui/public/tgui-polyfill.min.js')
-	polyfill = "<script>\n[polyfill]\n</script>"
-	basehtml = replacetextEx(basehtml, "<!-- tgui:inline-polyfill -->", polyfill)
 
 /datum/controller/subsystem/tgui/Shutdown()
 	close_all_uis()
@@ -313,8 +309,8 @@ SUBSYSTEM_DEF(tgui)
 		return FALSE
 	// Remove it from the list of processing UIs.
 	open_uis.Remove(ui)
-	// If the user exists, remove it from them too.
-	if(ui.user)
+	// If the user exists (and they have open UIs), remove it from them too.
+	if(ui.user && ui.user.tgui_open_uis)
 		ui.user.tgui_open_uis.Remove(ui)
 	var/list/uis = open_uis_by_src[key]
 	uis.Remove(ui)

@@ -115,7 +115,6 @@
 	S["toggle_prefs"]		>> toggle_prefs
 	S["toggles_flashing"]	>> toggles_flashing
 	S["toggles_ert"]		>> toggles_ert
-	S["toggles_admin"]		>> toggles_admin
 	S["UI_style"]			>> UI_style
 	S["UI_style_color"]		>> UI_style_color
 	S["UI_style_alpha"]		>> UI_style_alpha
@@ -124,8 +123,6 @@
 	S["fps"]				>> fps
 	S["ghost_vision_pref"]	>> ghost_vision_pref
 	S["ghost_orbit"]		>> ghost_orbit
-
-	S["human_name_ban"] >> human_name_ban
 
 	S["xeno_prefix"]		>> xeno_prefix
 	S["xeno_postfix"]		>> xeno_postfix
@@ -185,7 +182,6 @@
 	toggle_prefs	= sanitize_integer(toggle_prefs, 0, 65535, initial(toggle_prefs))
 	toggles_flashing= sanitize_integer(toggles_flashing, 0, 65535, initial(toggles_flashing))
 	toggles_ert		= sanitize_integer(toggles_ert, 0, 65535, initial(toggles_ert))
-	toggles_admin	= sanitize_integer(toggles_admin, 0, 65535, initial(toggles_admin))
 	UI_style_color	= sanitize_hexcolor(UI_style_color, initial(UI_style_color))
 	UI_style_alpha	= sanitize_integer(UI_style_alpha, 0, 255, initial(UI_style_alpha))
 	window_skin		= sanitize_integer(window_skin, 0, 65535, initial(window_skin))
@@ -273,13 +269,10 @@
 	S["toggle_prefs"]		<< toggle_prefs
 	S["toggles_flashing"]	<< toggles_flashing
 	S["toggles_ert"]		<< toggles_ert
-	S["toggles_admin"]		<< toggles_admin
 	S["window_skin"]		<< window_skin
 	S["fps"]				<< fps
 	S["ghost_vision_pref"]	<< ghost_vision_pref
 	S["ghost_orbit"]		<< ghost_orbit
-
-	S["human_name_ban"] << human_name_ban
 
 	S["xeno_prefix"]		<< xeno_prefix
 	S["xeno_postfix"]		<< xeno_postfix

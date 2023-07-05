@@ -102,7 +102,6 @@ var/list/admin_verbs_debug = list(
 	/client/proc/cmd_debug_toggle_should_check_for_win,
 	/client/proc/enable_debug_verbs,
 	/client/proc/toggledebuglogs,
-	/client/proc/togglestatpanelsplit,
 	/client/proc/togglenichelogs,
 	/client/proc/cmd_admin_change_hivenumber,
 	/client/proc/spawn_wave,
@@ -516,15 +515,6 @@ var/list/roundstart_mod_verbs = list(
 	else
 		to_chat(usr, SPAN_BOLDNOTICE("You will no longer get debug log messages."))
 
-// TODO Port this to Statpanel Options Window probably
-/client/proc/togglestatpanelsplit()
-	set name = "Toggle Split Tabs"
-	set category = "Preferences"
-	prefs.toggles_admin ^= SPLIT_ADMIN_TABS
-	if(prefs.toggles_chat & SPLIT_ADMIN_TABS)
-		to_chat(usr, SPAN_BOLDNOTICE("You enabled split admin tabs in Statpanel."))
-	else
-		to_chat(usr, SPAN_BOLDNOTICE("You disabled split admin tabs in Statpanel."))
 
 /client/proc/togglenichelogs()
 	set name = "Toggle Niche Log Messages"

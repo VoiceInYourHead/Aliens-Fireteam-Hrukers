@@ -70,12 +70,6 @@
 
 #define LATEJOIN_MARINES_PER_LATEJOIN_LARVA 3
 
-//=================================================
-#define SHOW_ITEM_ANIMATIONS_NONE 0 //Do not show any item pickup animations
-#define SHOW_ITEM_ANIMATIONS_HALF 1 //Toggles tg-style item animations on and off, default on.
-#define SHOW_ITEM_ANIMATIONS_ALL 2 //Toggles being able to see animations that occur on the same tile.
-//=================================================
-
 #define BE_ALIEN_AFTER_DEATH	1
 #define BE_AGENT				2
 

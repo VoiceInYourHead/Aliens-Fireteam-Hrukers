@@ -175,7 +175,8 @@
 	if (mods["alt"])
 		var/turf/T = get_turf(src)
 		if(T && user.TurfAdjacent(T) && T.contents.len)
-			user.set_listed_turf(T)
+			user.listed_turf = T
+			user.client << output("[url_encode(json_encode(T.name))];", "statbrowser:create_listedturf")
 
 		return TRUE
 	return FALSE
