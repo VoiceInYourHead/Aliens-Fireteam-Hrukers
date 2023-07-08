@@ -320,27 +320,6 @@
 		SSsound.queue(sfx, targets)
 	to_chat(targets, html = message, type = MESSAGE_TYPE_RADIO)
 
-/// Displays a message to the squad members in chat
-/datum/squad/proc/send_message(text = "", plus_name = 0, only_leader = 0)
-	var/nametext = ""
-	if(plus_name)
-		nametext = "[usr.name] transmits: "
-		text = "[FONT_SIZE_LARGE("<b>[text]<b>")]"
-
-	if(only_leader)
-		if(squad_leader)
-			var/mob/living/carbon/human/SL = squad_leader
-			if(!SL.stat && SL.client)
-				if(plus_name)
-					SL << sound('sound/effects/tech_notification.ogg')
-				to_chat(SL, "[SPAN_BLUE("<B>SL Overwatch:</b> [nametext][text]")]", type = MESSAGE_TYPE_RADIO)
-				return
-	else
-		for(var/mob/living/carbon/human/M in marines_list)
-			if(!M.stat && M.client) //Only living and connected people in our squad
-				if(plus_name)
-					M << sound('sound/effects/tech_notification.ogg')
-				to_chat(M, "[SPAN_BLUE("<B>Overwatch:</b> [nametext][text]")]", type = MESSAGE_TYPE_RADIO)
 
 //Straight-up insert a marine into a squad.
 //This sets their ID, increments the total count, and so on. Everything else is done in job_controller.dm.

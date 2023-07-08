@@ -17,13 +17,6 @@
 
 	can_be_near_defense = TRUE
 
-	choice_categories = list(
-		SENTRY_CATEGORY_IFF = list(FACTION_USCM, FACTION_WEYLAND, FACTION_HUMAN),
-	)
-
-	selected_categories = list(
-		SENTRY_CATEGORY_IFF = FACTION_USCM,
-	)
 
 /obj/structure/machinery/defenses/bell_tower/Initialize()
 	. = ..()

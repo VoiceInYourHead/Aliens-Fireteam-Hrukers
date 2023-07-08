@@ -295,11 +295,6 @@
 	if((W.flags_item & ITEM_ABSTRACT) || isrobot(user))
 		return
 
-	if (istype(W, /obj/item/device/sentry_computer))
-		var/obj/item/device/sentry_computer/computer = W
-		computer.setup(src)
-		return
-
 	if(istype(W, /obj/item/weapon/wristblades))
 		if(rand(0, 2) == 0)
 			playsound(src.loc, 'sound/weapons/wristblades_hit.ogg', 25, 1)

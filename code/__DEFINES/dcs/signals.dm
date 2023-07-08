@@ -489,9 +489,3 @@
 // Checks whether the xeno can build a thick structure regardless of hive weeds
 #define COMSIG_XENO_THICK_RESIN_BYPASS "xeno_thick_resin_bypass"
 	#define COMPONENT_THICK_BYPASS (1<<0)
-
-// sentry laptop
-#define COMSIG_SENTRY_ENGAGED_ALERT "signal_sentry_engaged"
-#define COMSIG_SENTRY_LOW_AMMO_ALERT "signal_sentry_low_ammo"
-#define COMSIG_SENTRY_EMPTY_AMMO_ALERT "signal_sentry_empty_ammo"
-#define COMSIG_SENTRY_DESTROYED_ALERT "signal_sentry_destroyed"
