@@ -65,17 +65,6 @@
 /**
  * public
  *
- * Will force an update on static data for all viewers.
- * Should be done manually whenever something happens to
- * change static data.
- */
-/datum/proc/update_static_data_for_all_viewers()
-	for (var/datum/tgui/window as anything in SStgui.open_uis_by_src[REF(src)])
-		window.send_full_update()
-
-/**
- * public
- *
  * Called on a UI when the UI receieves a href.
  * Think of this as Topic().
  *
@@ -89,7 +78,6 @@
 	// If UI is not interactive or usr calling Topic is not the UI user, bail.
 	if(!ui || ui.status != UI_INTERACTIVE)
 		return TRUE
-
 
 /**
  * public
