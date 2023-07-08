@@ -1,0 +1,6 @@
+{
+    "map_name": "USS Otago",
+    "map_path": "map_files/USS_Otago",
+    "map_file": "USS_Otago.dmm",
+    "traits": [{"Marine Main Ship": true}]
+}

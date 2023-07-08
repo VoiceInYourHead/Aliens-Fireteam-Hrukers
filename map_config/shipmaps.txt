@@ -18,3 +18,7 @@ endmap
 map sevensins
 	default
 endmap
+
+map otago
+	default
+endmap
