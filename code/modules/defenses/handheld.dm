@@ -98,7 +98,7 @@
 	icon = 'icons/obj/structures/machinery/defenses/sentry.dmi'
 	icon_state = "Normal uac_sentry_handheld"
 	defense_type = /obj/structure/machinery/defenses/sentry
-	deployment_time = 10 SECONDS
+	deployment_time = 5 SECONDS
 
 /obj/item/defenses/handheld/sentry/get_upgrade_list()
 	. = list()

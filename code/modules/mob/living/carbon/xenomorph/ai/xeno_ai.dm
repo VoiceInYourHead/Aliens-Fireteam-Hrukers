@@ -192,9 +192,9 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 	var/smallest_distance = INFINITY
 	for(var/l in GLOB.alive_client_human_list)
 		var/mob/living/carbon/human/H = l
-		if(H.species.flags & IS_SYNTHETIC)
-			return pick(viable_humans)
-		if(z != H.z)
+		if(z != H.z || H.species.flags & IS_SYNTHETIC)
+			continue
+		if(H.alpha < 150 && prob(90))
 			continue
 		var/distance = get_dist(src, H)
 
@@ -202,24 +202,24 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 			viable_humans += H
 		smallest_distance = min(distance, smallest_distance)
 
-	for(var/l in GLOB.all_multi_vehicles)
-		var/obj/vehicle/multitile/V = l
-		if(z != V.z)
-			continue
-		var/distance = get_dist(src, V)
-
-		if(distance < ai_range)
-			viable_vehicles += V
-		smallest_distance = min(distance, smallest_distance)
-
 	for(var/l in GLOB.all_defenses)
 		var/obj/structure/machinery/defenses/S = l
-		if(z != S.z)
+		if(z != S.z || !S.turned_on)
 			continue
 		var/distance = get_dist(src, S)
 
 		if(distance < ai_range)
 			viable_defenses += S
+		smallest_distance = min(distance, smallest_distance)
+
+	for(var/l in GLOB.all_multi_vehicles)
+		var/obj/vehicle/multitile/V = l
+		if(z != V.z || V.interior.passengers_taken_slots == 0)
+			continue
+		var/distance = get_dist(src, V)
+
+		if(distance < ai_range)
+			viable_vehicles += V
 		smallest_distance = min(distance, smallest_distance)
 
 
@@ -231,11 +231,11 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 	if(length(viable_humans))
 		return pick(viable_humans)
 
-	if(length(viable_vehicles))
-		return pick(viable_vehicles)
-
 	if(length(viable_defenses))
 		return pick(viable_defenses)
+
+	if(length(viable_vehicles))
+		return pick(viable_vehicles)
 
 /mob/living/carbon/Xenomorph/proc/make_ai()
 	SHOULD_CALL_PARENT(TRUE)
