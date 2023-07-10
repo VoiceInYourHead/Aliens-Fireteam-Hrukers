@@ -111,7 +111,15 @@
 	zone_selected = pick(GLOB.ai_target_limbs)
 	return ..()
 
+
+
+/datum/caste_datum/runner/cat
+	caste_type = XENO_CASTE_CAT
+	melee_damage_lower = 1
+	melee_damage_upper = 2
+
 /mob/living/carbon/Xenomorph/Runner/cat
+	caste_type = XENO_CASTE_CAT
 	name = "Angry Cat"
 	desc = "D'aaawwww"
 	icon = 'icons/mob/hostiles/runner.dmi'
@@ -119,8 +127,8 @@
 	acid_blood_damage = 0
 	mob_size = 1
 
-	melee_damage_lower = 0
-	melee_damage_upper = 0
+	melee_damage_lower = 1
+	melee_damage_upper = 2
 
 	flags_ai = XENO_AI_NO_DESPAWN
 
