@@ -163,6 +163,12 @@
 	ambience_exterior = AMBIENCE_TRIJENT
 	icon_state = "shuttle2"
 
+/area/shuttle/drop3/lv522
+	name = "Chance's Claim - Dropship Turtle Landing Zone"
+	icon_state = "shuttle2"
+	icon = 'icons/turf/area_shiva.dmi'
+	lighting_use_dynamic = TRUE
+
 /area/shuttle/drop3/transit
 	ambience_exterior 	= 'sound/ambience/dropship_ambience_loop.ogg'
 	name = "\improper Dropship Turtle Transit"

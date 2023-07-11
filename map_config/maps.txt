@@ -74,3 +74,6 @@ endmap
 
 map death_wish_ai
 endmap
+
+map LV522_Chances_Claim
+endmap

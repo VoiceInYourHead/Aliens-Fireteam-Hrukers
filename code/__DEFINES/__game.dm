@@ -43,6 +43,7 @@
 #define MAP_RUNTIME "USS Runtime"
 #define MAP_DEATH_WISH "Death Wish"
 #define MAP_DEATH_WISH_AI "Death Wish AI"
+#define MAP_LV522_CHANCES_CLAIM "LV-522 Chance's Claim AI"
 
 
 #define PLAYERCOUNT_LOWPOP_MAP_LIMIT 130 // number of players before we switch to lowpop maps only (LV, BR, Prison)

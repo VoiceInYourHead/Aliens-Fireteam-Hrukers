@@ -18,6 +18,7 @@
 	icon = 'icons/obj/structures/props/drill.dmi'
 	icon_state = "drill"
 	bound_height = 96
+	var/on = FALSE//if this is set to on by default, the drill will start on, doi
 
 /obj/structure/prop/dam/truck
 	name = "truck"
@@ -28,6 +29,30 @@
 	bound_width = 64
 	unslashable = TRUE
 	unacidable = TRUE
+
+/obj/structure/prop/dam/drill/attackby(obj/item/W, mob/user)
+	. = ..()
+	if(isXeno(user))
+		return
+	else if (ishuman(user) && istype(W, /obj/item/tool/wrench))
+		on = !on
+		visible_message("You wrench the controls of \the [src]. The drill jumps to life." , "[user] wrenches the controls of \the [src]. The drill jumps to life.")
+
+		update()
+
+/obj/structure/prop/dam/drill/proc/update()
+	icon_state = "thumper[on ? "-on" : ""]"
+	if(on)
+		SetLuminosity(3)
+		playsound(src, 'sound/machines/turbine_on.ogg')
+	else
+		SetLuminosity(0)
+		playsound(src, 'sound/machines/turbine_off.ogg')
+	return
+
+/obj/structure/prop/dam/drill/Initialize()
+	. = ..()
+	update()
 
 /obj/structure/prop/dam/truck/damaged
 	icon_state = "truck_damaged"
