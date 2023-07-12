@@ -1,6 +1,6 @@
 var/global/max_xeno_per_player = 1
 var/global/threat_level = 1
-var/global/threat_level_gain = 0.01
+var/global/threat_level_gain = 0.008
 
 /datum/game_mode/colonialmarines/ai
 	name = "Outpost Alpha"
@@ -341,8 +341,8 @@ GLOBAL_LIST_INIT(all_ais, list(
 
 	var/list/xenos_to_spawn = list()
 
-	if(threat_level >= 15)
-		threat_level = 20
+	if(threat_level >= 20)
+		threat_level = 30
 	var/spawn_limit_formula = round( length(GLOB.alive_client_human_list)*max_xeno_per_player*length(groups)*(threat_level/10) )
 
 	while(total_amount < spawn_limit_formula)
@@ -357,9 +357,6 @@ GLOBAL_LIST_INIT(all_ais, list(
 		xenos_to_spawn += picked_xeno
 
 	var/list/possible_spawners = GLOB.xeno_ai_spawns.Copy()
-
-	if(threat_level >= 20)
-		threat_level = 5
 
 	for(var/i in GLOB.alive_client_human_list)
 		for(var/l in possible_spawners)
@@ -427,7 +424,11 @@ GLOBAL_LIST_INIT(all_ais, list(
 				XA.RegisterSignal(D, COMSIG_PARENT_QDELETING, /obj/effect/landmark/xeno_ai.proc/handle_xeno_delete)
 				XA.spawned_xenos += D
 
-				threat_level += 0.1
+				if(threat_level >= 30)
+					playsound_z(SSmapping.levels_by_trait(ZTRAIT_GROUND), 'sound/voice/alien_queen_command3.ogg')
+					threat_level = 8
+
+				threat_level += 0.05
 
 #undef XENO_SPAWN_INDEX
 #undef AVERAGE_DISTANCE_INDEX
