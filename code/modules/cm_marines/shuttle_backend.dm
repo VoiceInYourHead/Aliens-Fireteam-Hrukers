@@ -351,7 +351,7 @@ x_pos = 0 1 2 3 4 5 6 7 8 9 101112
 
 	/datum/coords{x_pos=0;y_pos=16}, /datum/coords{x_pos=1;y_pos=16}, /datum/coords{x_pos=4;y_pos=16}, /datum/coords{x_pos=5;y_pos=16}, /datum/coords{x_pos=6;y_pos=16}, /datum/coords{x_pos=7;y_pos=16}, /datum/coords{x_pos=8;y_pos=16}, /datum/coords{x_pos=11;y_pos=16}, /datum/coords{x_pos=12;y_pos=16},
 
-	/datum/coords{x_pos=0;y_pos=15}, /datum/coords{x_pos=1;y_pos=15}, /datum/coords{x_pos=2;y_pos=15}, /datum/coords{x_pos=3;y_pos=15}, /datum/coords{x_pos=4;y_pos=15}, /datum/coords{x_pos=5;y_pos=15}, /datum/coords{x_pos=6;y_pos=15}, /datum/coords{x_pos=7;y_pos=15}, /datum/coords{x_pos=8;y_pos=15}, /datum/coords{x_pos=9;y_pos=15}, /datum/coords{x_pos=10;y_pos=15}, /datum/coords{x_pos=11;y_pos=16}, /datum/coords{x_pos=12;y_pos=16},
+	/datum/coords{x_pos=0;y_pos=15}, /datum/coords{x_pos=1;y_pos=15}, /datum/coords{x_pos=2;y_pos=15}, /datum/coords{x_pos=3;y_pos=15}, /datum/coords{x_pos=4;y_pos=15}, /datum/coords{x_pos=5;y_pos=15}, /datum/coords{x_pos=6;y_pos=15}, /datum/coords{x_pos=7;y_pos=15}, /datum/coords{x_pos=8;y_pos=15}, /datum/coords{x_pos=9;y_pos=15}, /datum/coords{x_pos=10;y_pos=15}, /datum/coords{x_pos=11;y_pos=15}, /datum/coords{x_pos=12;y_pos=15},
 
 	/datum/coords{x_pos=0;y_pos=14}, /datum/coords{x_pos=1;y_pos=14}, /datum/coords{x_pos=2;y_pos=14}, /datum/coords{x_pos=3;y_pos=14}, /datum/coords{x_pos=4;y_pos=14}, /datum/coords{x_pos=5;y_pos=14}, /datum/coords{x_pos=6;y_pos=14}, /datum/coords{x_pos=7;y_pos=14}, /datum/coords{x_pos=8;y_pos=14}, /datum/coords{x_pos=9;y_pos=14}, /datum/coords{x_pos=10;y_pos=14}, /datum/coords{x_pos=11;y_pos=14}, /datum/coords{x_pos=12;y_pos=14},
 
