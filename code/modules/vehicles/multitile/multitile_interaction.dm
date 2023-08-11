@@ -1,3 +1,13 @@
+/obj/vehicle/multitile/get_ai_attack_turf(atom/ai_controlled)
+	var/turf/vehicle_center = get_turf(src)
+	var/attack_direction = get_dir(get_turf(ai_controlled), vehicle_center)
+	return get_step(vehicle_center, turn(attack_direction, 180)) //shitty code fix, but that well enought
+
+/obj/vehicle/multitile/can_ai_target(atom/ai_controlled)
+	return health > 0
+
+/obj/vehicle/multitile/target_kia(atom/ai_controlled)
+	return health > 0
 
 // Special cases abound, handled below or in subclasses
 /obj/vehicle/multitile/attackby(var/obj/item/O, var/mob/user)

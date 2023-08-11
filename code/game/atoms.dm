@@ -87,6 +87,16 @@ directive is properly returned.
 //===========================================================================
 
 
+//atom AI procs
+/atom/proc/get_ai_attack_turf(atom/ai_controlled)
+	return get_turf(src)
+
+/atom/proc/can_ai_target(atom/ai_controlled)
+	return FALSE //stupid benos, no target that atom
+
+/atom/proc/target_kia(atom/ai_controlled)
+	return FALSE
+
 
 //atmos procs
 

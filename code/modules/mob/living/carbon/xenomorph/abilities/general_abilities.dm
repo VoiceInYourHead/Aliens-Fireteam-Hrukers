@@ -233,7 +233,7 @@
 	var/prob_chance = 80
 
 /datum/action/xeno_action/activable/pounce/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) > distance || !DT_PROB(prob_chance, delta_time))
 		return
 
 	var/turf/last_turf = X.loc

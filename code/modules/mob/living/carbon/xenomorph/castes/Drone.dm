@@ -103,13 +103,13 @@
 
 
 		if(!length(valid_turfs))
-			target_turf = get_turf(current_target)
+			target_turf = current_target.get_ai_attack_turf(src)
 		else
 			target_turf = pick(valid_turfs)
 			pursuing_target = FALSE
 		next_search_time = world.time + search_delay
 	else if(!target_turf || get_dist(target_turf, src) <= 0)
-		target_turf = get_turf(current_target)
+		target_turf = current_target.get_ai_attack_turf(src)
 		pursuing_target = TRUE
 
 	if(!target_turf)

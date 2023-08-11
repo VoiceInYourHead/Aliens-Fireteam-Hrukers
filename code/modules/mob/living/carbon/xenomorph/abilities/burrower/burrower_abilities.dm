@@ -14,7 +14,7 @@
 	var/burrow_prob_chance = 20
 
 /datum/action/xeno_action/activable/burrow/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(burrow_prob_chance, delta_time) && get_dist(X, X.current_target) > 2)
+	if(DT_PROB(burrow_prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) > 2)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/burrow/use_ability(atom/A)
@@ -39,7 +39,7 @@
 	var/tremor_prob_chance = 80
 
 /datum/action/xeno_action/onclick/tremor/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(tremor_prob_chance, delta_time) && get_dist(X, X.current_target) <= 3)
+	if(DT_PROB(tremor_prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 3)
 		use_ability_async()
 
 /datum/action/xeno_action/onclick/tremor/use_ability()

@@ -296,6 +296,11 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 /mob/proc/is_mob_incapacitated(ignore_restrained)
 	return (stat || stunned || knocked_down || knocked_out || (!ignore_restrained && is_mob_restrained()))
 
+/mob/can_ai_target(atom/ai_controlled)
+	return is_mob_incapacitated()
+
+/mob/target_kia(atom/ai_controlled)
+	return stat == DEAD
 
 //returns how many non-destroyed legs the mob has (currently only useful for humans)
 /mob/proc/has_legs()

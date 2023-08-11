@@ -52,8 +52,8 @@
 	if(X.throwing)
 		return
 
-	var/turf/T = get_turf(X.current_target)
-	if(get_dist(X, X.current_target) <= 1)
+	var/turf/T = X.current_target.get_ai_attack_turf(X)
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1)
 		var/list/turfs = RANGE_TURFS(1, T)
 		while(length(turfs))
 			T = pick(turfs)
@@ -61,7 +61,7 @@
 			if(!T.density)
 				break
 
-			if(T == get_turf(X.current_target))
+			if(T == X.current_target.get_ai_attack_turf(X))
 				break
 
 

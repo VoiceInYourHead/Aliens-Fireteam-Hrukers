@@ -33,7 +33,7 @@
 	var/prob_chance = 25
 
 /datum/action/xeno_action/activable/fling/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1)
 		use_ability_async(X.current_target)
 
 // Warrior Lunge
@@ -59,7 +59,7 @@
 	prob_chance = 40
 
 /datum/action/xeno_action/activable/pounce/lunge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(X.pulling || get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
+	if(X.pulling || get_dist(X, X.current_target.get_ai_attack_turf(X)) > distance || !DT_PROB(prob_chance, delta_time))
 		return
 
 	var/turf/last_turf = X.loc
@@ -100,7 +100,7 @@
 	var/prob_chance = 75
 
 /datum/action/xeno_action/activable/warrior_punch/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/uppercut
@@ -140,7 +140,7 @@
 
 /datum/action/xeno_action/activable/uppercut/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	if((registered_delegate && (DT_PROB(registered_delegate.ko_counter * prob_chance_scale, delta_time) || registered_delegate.ko_counter == registered_delegate.max_ko_counter))\
-		&& get_dist(X, X.current_target) <= 1)
+		&& get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1)
 		use_ability_async(X.current_target)
 
 
@@ -158,5 +158,5 @@
 	var/prob_chance = 75
 
 /datum/action/xeno_action/activable/jab/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) <= distance && DT_PROB(prob_chance, delta_time))
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) <= distance && DT_PROB(prob_chance, delta_time))
 		use_ability_async(X.current_target)

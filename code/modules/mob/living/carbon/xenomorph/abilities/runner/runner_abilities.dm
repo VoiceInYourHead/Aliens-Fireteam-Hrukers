@@ -58,5 +58,5 @@
 
 /datum/action/xeno_action/activable/acider_for_the_hive/process_ai(mob/living/carbon/Xenomorph/Runner/X, delta_time, game_evaluation)
 	var/datum/behavior_delegate/runner_acider/BD = X.behavior_delegate
-	if(DT_PROB(fth_prob_chance, delta_time) && get_dist(X, X.current_target) <= 2 && BD.acid_amount >= 350)
+	if(DT_PROB(fth_prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 2 && BD.acid_amount >= 350)
 		use_ability_async()

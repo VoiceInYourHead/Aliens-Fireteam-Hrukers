@@ -38,7 +38,7 @@
 		ai_combo_ability = null
 
 /datum/action/xeno_action/activable/pounce/lurker/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if((ai_combo_ability && ai_combo_ability.invis_timer_id == TIMER_ID_NULL) || get_dist(X, X.current_target) > distance || !DT_PROB(prob_chance, delta_time))
+	if((ai_combo_ability && ai_combo_ability.invis_timer_id == TIMER_ID_NULL) || get_dist(X, X.current_target.get_ai_attack_turf(X)) > distance || !DT_PROB(prob_chance, delta_time))
 		return
 
 	var/turf/last_turf = X.loc
@@ -125,5 +125,5 @@
 	var/prob_chance = 50
 
 /datum/action/xeno_action/onclick/lurker_assassinate/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) <= 1 && DT_PROB(prob_chance, delta_time))
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1 && DT_PROB(prob_chance, delta_time))
 		use_ability_async()

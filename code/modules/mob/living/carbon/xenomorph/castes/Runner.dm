@@ -91,7 +91,7 @@
 	return L
 
 /mob/living/carbon/Xenomorph/Runner/ai_move_target(delta_time, game_evaluation)
-	if(throwing)
+	if(throwing || !ismob(current_target))
 		return
 
 	if(pulling)
@@ -101,7 +101,8 @@
 	else
 		..()
 
-	if(get_dist(current_target, src) <= 1 && current_target.is_mob_incapacitated() && !isXeno(current_target.pulledby) && !pulling && DT_PROB(RUNNER_GRAB, delta_time))
+	var/mob/target = current_target
+	if(get_dist(current_target, src) <= 1 && current_target.can_ai_target() && !isXeno(target.pulledby) && !pulling && DT_PROB(RUNNER_GRAB, delta_time))
 		CallAsync(src, /mob.proc/start_pulling, list(current_target))
 		swap_hand()
 

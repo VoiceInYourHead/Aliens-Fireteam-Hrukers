@@ -116,7 +116,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/acid_shotgun/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(acid_shotgun_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 4)
+	if(DT_PROB(acid_shotgun_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 4)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/toggle_long_range/trapper

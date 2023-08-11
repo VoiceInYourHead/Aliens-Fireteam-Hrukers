@@ -39,6 +39,12 @@
 	update_icon()
 	connect()
 
+/obj/structure/machinery/defenses/can_ai_target(atom/ai_controlled)
+	return TRUE
+
+/obj/structure/machinery/defenses/target_kia(atom/ai_controlled)
+	return FALSE
+
 /obj/structure/machinery/defenses/proc/connect()
 	if(static)
 		return FALSE

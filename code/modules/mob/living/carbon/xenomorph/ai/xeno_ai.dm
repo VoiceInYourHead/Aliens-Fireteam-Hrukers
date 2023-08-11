@@ -1,7 +1,7 @@
 /mob/living/carbon/Xenomorph
 	// AI stuff
 	var/flags_ai = NO_FLAGS
-	var/mob/current_target
+	var/atom/current_target
 
 	var/next_path_generation = 0
 	var/list/current_path
@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 		current_path = null
 		return TRUE
 
-	if(QDELETED(current_target) || current_target.stat == DEAD || get_dist(current_target, src) > ai_range)
+	if(QDELETED(current_target) || current_target.target_kia() || get_dist(current_target, src) > ai_range)
 		current_target = get_target(ai_range)
 		if(QDELETED(src))
 			return TRUE
@@ -90,7 +90,7 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 		if(XA.process_ai(src, delta_time, game_evaluation) == PROCESS_KILL)
 			unregister_ai_action(XA)
 
-	if(get_dist(src, current_target) <= 1 && DT_PROB(XENO_SLASH, delta_time))
+	if(get_dist(src, current_target.get_ai_attack_turf(src)) <= 1 && DT_PROB(XENO_SLASH, delta_time))
 		INVOKE_ASYNC(src, /mob.proc/do_click, current_target, "", list())
 
 /** Controls movement when idle. Called by process_ai */

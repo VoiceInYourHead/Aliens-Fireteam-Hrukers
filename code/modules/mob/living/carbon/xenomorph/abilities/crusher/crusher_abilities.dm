@@ -84,7 +84,7 @@
 
 
 /datum/action/xeno_action/activable/pounce/crusher_charge/ai/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) > distance || DT_PROB(prob_chance, delta_time))
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) > distance || DT_PROB(prob_chance, delta_time))
 		var/turf/last_turf = X.loc
 		var/clear = TRUE
 		X.add_temp_pass_flags(PASS_OVER_THROW_MOB)
@@ -125,7 +125,7 @@
 	var/prob_chance = 25
 
 /datum/action/xeno_action/onclick/crusher_stomp/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if((get_dist(X, X.current_target) <= 0 && DT_PROB(prob_chance_on_person, delta_time)) || (get_dist(X, X.current_target) <= 1 && DT_PROB(prob_chance, delta_time)))
+	if((get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 0 && DT_PROB(prob_chance_on_person, delta_time)) || (get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1 && DT_PROB(prob_chance, delta_time)))
 		use_ability_async()
 
 /datum/action/xeno_action/onclick/crusher_stomp/charger
@@ -178,7 +178,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/fling/charger/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(charger_prob_chance, delta_time) && get_dist(X, X.current_target) <= 1)
+	if(DT_PROB(charger_prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 1)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/charger_charge
@@ -357,7 +357,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/tumble/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(tumble_prob_chance, delta_time) && get_dist(X, X.current_target) <= 2)
+	if(DT_PROB(tumble_prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 2)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/tumble/proc/on_end_throw(start_charging)

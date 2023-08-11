@@ -20,7 +20,7 @@
 	prob_chance = 30
 
 /datum/action/xeno_action/activable/pounce/charge/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(get_dist(X, X.current_target) > distance)
+	if(get_dist(X, X.current_target.get_ai_attack_turf(X)) > distance)
 		return
 
 	var/shield_total = 0
@@ -124,7 +124,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/scissor_cut/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target) <= ai_range)
+	if(DT_PROB(prob_chance, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= ai_range)
 		use_ability_async(X.current_target)
 
 
@@ -148,7 +148,7 @@
 	default_ai_action = TRUE
 
 /datum/action/xeno_action/activable/apprehend/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
-	if(DT_PROB(apprehend_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 7)
+	if(DT_PROB(apprehend_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 7)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/clothesline
@@ -172,7 +172,7 @@
 
 /datum/action/xeno_action/activable/clothesline/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	var/datum/behavior_delegate/ravager_berserker/BD = X.behavior_delegate
-	if(DT_PROB(clothesline_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 2 && BD.rage > 3)
+	if(DT_PROB(clothesline_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 2 && BD.rage > 3)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/activable/eviscerate
@@ -198,7 +198,7 @@
 
 /datum/action/xeno_action/activable/eviscerate/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	var/datum/behavior_delegate/ravager_berserker/BD = X.behavior_delegate
-	if(DT_PROB(eviscerate_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 2 && BD.rage > 3)
+	if(DT_PROB(eviscerate_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 2 && BD.rage > 3)
 		use_ability_async()
 
 
@@ -228,7 +228,7 @@
 
 /datum/action/xeno_action/onclick/spike_shield/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	var/datum/behavior_delegate/ravager_hedgehog/BD = X.behavior_delegate
-	if(DT_PROB(spike_shield_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 5 && X.health/X.maxHealth < ai_spike_shield_percentage_activate && BD.shards >= 150)
+	if(DT_PROB(spike_shield_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 5 && X.health/X.maxHealth < ai_spike_shield_percentage_activate && BD.shards >= 150)
 		use_ability_async()
 
 /datum/action/xeno_action/activable/rav_spikes
@@ -250,7 +250,7 @@
 
 /datum/action/xeno_action/activable/rav_spikes/process_ai(mob/living/carbon/Xenomorph/X, delta_time, game_evaluation)
 	var/datum/behavior_delegate/ravager_hedgehog/BD = X.behavior_delegate
-	if(DT_PROB(rav_spikes_chance_per_second, delta_time) && get_dist(X, X.current_target) <= 3 && BD.shards >= 225)
+	if(DT_PROB(rav_spikes_chance_per_second, delta_time) && get_dist(X, X.current_target.get_ai_attack_turf(X)) <= 3 && BD.shards >= 225)
 		use_ability_async(X.current_target)
 
 /datum/action/xeno_action/onclick/spike_shed
