@@ -10,8 +10,8 @@
 	var/ai_move_delay = 0
 	var/path_update_period = 0.5 SECONDS
 	var/no_path_found = FALSE
-	var/ai_range = 16
-	var/max_travel_distance = 24
+	var/ai_range = 24
+	var/max_travel_distance = 32
 
 	var/ai_timeout_time = 0
 	var/ai_timeout_period = 2 SECONDS
