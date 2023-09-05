@@ -4,8 +4,8 @@
 	// Home turf
 	var/next_home_search = 0
 	var/home_search_delay = 5 SECONDS
-	var/max_distance_from_home = 20
-	var/home_locate_range = 20
+	var/max_distance_from_home = 15
+	var/home_locate_range = 15
 	var/turf/home_turf
 
 /datum/xeno_ai_movement/New(var/mob/living/carbon/Xenomorph/parent)

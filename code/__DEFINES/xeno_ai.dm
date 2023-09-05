@@ -112,9 +112,9 @@
 #define MAX_RANGE_TO_SPAWN_XENO 25
 
 /// When a xeno gets despawned if there is no human within a specific range.
-#define RANGE_TO_DESPAWN_XENO 30
+#define RANGE_TO_DESPAWN_XENO 25
 /// When a xeno gets despawned if they can't find a target within a specific amount of time.
-#define XENO_DESPAWN_NO_TARGET_PERIOD 400 SECONDS
+#define XENO_DESPAWN_NO_TARGET_PERIOD 200 SECONDS
 
 // Director flags
 #define XENO_SPAWN_T1 (1<<0)
