@@ -6,8 +6,8 @@
 	scaled = 1
 	supervisors = "the acting commanding officer"
 	selection_class = "job_synth"
-	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_WHITELISTED|ROLE_CUSTOM_SPAWN
-	flags_whitelist = WHITELIST_SYNTHETIC
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_CUSTOM_SPAWN  //|ROLE_WHITELISTED
+//	flags_whitelist = WHITELIST_SYNTHETIC
 	gear_preset = /datum/equipment_preset/synth/uscm
 	entry_message_body = "You are a Synthetic! You are held to a higher standard and are required to obey not only the Server Rules but Marine Law and Synthetic Rules. Failure to do so may result in your White-list Removal. Your primary job is to support and assist all USCM Departments and Personnel on-board. In addition, being a Synthetic gives you knowledge in every field and specialization possible on-board the ship. As a Synthetic you answer to the acting commanding officer. Special circumstances may change this!"
 
@@ -19,7 +19,7 @@
 		"[JOB_SYNTH][WHITELIST_LEADER]" = /datum/equipment_preset/synth/uscm/councillor
 	)
 
-/datum/job/civilian/synthetic/get_whitelist_status(var/list/roles_whitelist, var/client/player)
+/*/datum/job/civilian/synthetic/get_whitelist_status(var/list/roles_whitelist, var/client/player)
 	. = ..()
 	if(!.)
 		return
@@ -29,7 +29,7 @@
 	else if(roles_whitelist[player.ckey] & (WHITELIST_SYNTHETIC_COUNCIL|WHITELIST_SYNTHETIC_COUNCIL_LEGACY))
 		return get_desired_status(player.prefs.synth_status, WHITELIST_COUNCIL)
 	else if(roles_whitelist[player.ckey] & WHITELIST_SYNTHETIC)
-		return get_desired_status(player.prefs.synth_status, WHITELIST_NORMAL)
+		return get_desired_status(player.prefs.synth_status, WHITELIST_NORMAL)*/
 
 /datum/job/civilian/synthetic/set_spawn_positions(var/count)
 	spawn_positions = synth_slot_formula(count)

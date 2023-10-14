@@ -1846,16 +1846,21 @@
 "JE" = (/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "JI" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8},/turf/open/floor/almayer{icon_state = "sterile_green"; tag = "icon-sterile"},/area/otago/medbay/surgery2)
 "JP" = (/obj/structure/pipes/vents/pump,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago/ship_fore)
+"JS" = (/obj/structure/surface/table/almayer,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "JU" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 1},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "JV" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer,/area/otago/hangar/pilot)
+"Kh" = (/obj/structure{desc = "A lightweight support lattice."; dir = 1; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice-simple"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -15},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice2"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = 16},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "Kj" = (/obj/structure/machinery/light{dir = 8},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/otago/hangar/apc)
 "Km" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago/cl_office)
 "Kq" = (/obj/structure/machinery/door/firedoor/border_only/almayer,/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 4; icon_state = "sterile_green_side"; tag = "icon-sterile_green_side (EAST)"},/area/otago/medbay/hangar)
 "Kr" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/firingrange)
 "Kt" = (/obj/structure/target,/obj/structure/machinery/light{dir = 4},/turf/open/floor/almayer{icon_state = "redfull"; tag = "icon-redfull"},/area/otago/hangar/firingrange)
 "Kv" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod7)
+"KA" = (/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice2"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = 16},/obj/structure{desc = "A lightweight support lattice."; dir = 1; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice-simple"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -15},/obj/structure{health = 150; icon = 'icons/obj/pipes/pipes.dmi'; icon_state = "intact-scrubbers"; indestructible = 1; layer = 5.1; pixel_x = 12; projectile_coverage = 0; unacidable = 1},/turf/closed/wall/almayer,/area/otago)
 "KE" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/morgue)
 "KI" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8; tag = "icon-map-supply (WEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/cargo)
+"KJ" = (/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/closed/wall/almayer/outer,/area/otago)
+"KP" = (/obj/structure/surface/table/almayer,/obj/structure/largecrate/random/mini/chest{pixel_x = 5; pixel_y = 7},/obj/structure/largecrate/random/mini/small_case{pixel_x = -3; pixel_y = 28},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "KS" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8; tag = "icon-map-supply (WEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/armory)
 "KT" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/bathroom)
 "Ld" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
@@ -1873,6 +1878,7 @@
 "Mh" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay)
 "Mn" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "sterile_green"; tag = "icon-sterile"},/area/otago/medbay/surgery2)
 "Mo" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer,/area/otago/hangar/apc)
+"Mx" = (/obj/structure/largecrate/random/barrel/blue,/obj/structure/largecrate/random/barrel/red{pixel_x = -13; pixel_y = -13},/obj/structure/blocker/invisible_wall,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "My" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "Mz" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{dir = 8; icon_state = "red"; tag = "icon-red"},/area/otago/ship_aft)
 "MG" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod6)
@@ -1887,12 +1893,14 @@
 "Ns" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/cargo)
 "Nv" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8; tag = "icon-map-supply (WEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/brig)
 "Ny" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/armory)
+"NB" = (/obj/structure/machinery/light/small{dir = 1},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "ND" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/cl_office)
 "NH" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/otago/hangar/apc)
 "NI" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod5)
 "NK" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1; tag = "icon-N"},/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/armory)
 "NM" = (/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "NO" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "dark_sterile"; tag = "icon-sterile"},/area/otago/medbay)
+"NW" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "NX" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay)
 "Od" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "Oh" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/brig)
@@ -1904,18 +1912,23 @@
 "Or" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "Ot" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/co_office)
 "OD" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/apc)
+"OH" = (/obj/structure{desc = "A lightweight support lattice."; dir = 1; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice-simple"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -15},/obj/structure{health = 150; icon = 'icons/obj/pipes/pipes.dmi'; icon_state = "intact-scrubbers"; indestructible = 1; layer = 5.1; pixel_x = 12; projectile_coverage = 0; unacidable = 1},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "OQ" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/otago/hangar/pilot)
 "OR" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 36},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod17)
 "Ph" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/morgue)
+"Pl" = (/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice1"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -8},/obj/structure{health = 150; icon = 'icons/obj/pipes/pipes.dmi'; icon_state = "intact-scrubbers"; indestructible = 1; layer = 5.1; pixel_x = 12; projectile_coverage = 0; unacidable = 1},/turf/closed/wall/almayer,/area/otago)
+"Pm" = (/obj/structure/machinery/light,/turf/open/floor/almayer,/area/otago)
 "Po" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod10)
 "Pr" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/cl_office)
 "Pu" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 4; icon_state = "redcorner"; tag = "icon-redcorner (EAST)"},/area/otago/ship_aft)
 "Px" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 4; icon_state = "sterile_green_corner"; tag = "icon-sterile_green_corner (EAST)"},/area/otago/medbay)
 "Pz" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer,/area/otago/cryo)
+"PK" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/obj/structure/prop/structure_lattice,/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "PN" = (/turf/closed/shuttle/escapepod{icon_state = "wall14"; tag = "icon-wall14"},/area/almayer/evacuation/pod8)
 "PR" = (/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "PS" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer,/area/otago/cryo)
 "PT" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 1},/turf/open/floor/plating/plating_catwalk,/area/otago)
+"PZ" = (/obj/structure/pipes/vents/scrubber,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "Qi" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/bathroom)
 "Ql" = (/turf/open/floor/almayer_hull{dir = 9; icon_state = "outerhull_dir"; tag = "icon-outerhull_dir (NORTHWEST)"},/area/space)
 "Qo" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 6; tag = "icon-intact-supply (SOUTHEAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
@@ -1923,21 +1936,27 @@
 "Qv" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/cl_office)
 "Qx" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{icon_state = "silverfull"},/area/otago/cryo)
 "Qy" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8},/turf/open/floor/almayer{icon_state = "sterile_green"; tag = "icon-sterile"},/area/otago/medbay/surgery1)
+"QB" = (/obj/structure/machinery/light{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "QD" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/corsat{dir = 1; icon_state = "tan"},/area/otago/cryo)
 "QF" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
+"QH" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "QJ" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago)
 "QM" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8; tag = "icon-map-supply (WEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "QP" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 1},/turf/open/floor/plating/plating_catwalk,/area/otago/cryo)
 "QU" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer,/area/otago/hangar/pilot)
 "Rf" = (/obj/structure/machinery/light{dir = 8},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/firingrange)
+"Rk" = (/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice10"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = 16},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice1"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -8},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "Rm" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod16)
 "Rn" = (/turf/closed/shuttle/escapepod{icon_state = "wall2"; tag = "icon-wall2"},/area/almayer/evacuation/pod9)
 "Rt" = (/obj/structure/machinery/door/poddoor/shutters/almayer{id = "pilot_quarters"},/obj/structure/machinery/door/firedoor/border_only/almayer{dir = 1},/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{allow_construction = 0; icon_state = "plate"; tag = "icon-sterile"},/area/otago/hangar/pilot)
 "Rv" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/cl_office)
 "Rw" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/cic)
+"RC" = (/obj/structure/surface/table/almayer,/obj/structure/largecrate/random/case{pixel_y = 19},/obj/structure/largecrate/random/case{pixel_y = 6},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "RD" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod6)
+"RG" = (/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "RJ" = (/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/ship_aft)
 "RP" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/morgue)
+"RU" = (/obj/structure/machinery/light{dir = 1},/turf/open/floor/almayer,/area/otago)
 "RW" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/cic)
 "RX" = (/obj/structure/machinery/cryopod/evacuation,/obj/structure/sign/safety/cryo{pixel_x = 8; pixel_y = 28},/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod5)
 "RZ" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/morgue)
@@ -1958,32 +1977,41 @@
 "SK" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/corsat{dir = 1; icon_state = "tan"},/area/otago/cryo)
 "SL" = (/obj/structure/machinery/cryopod/right{pixel_y = 6},/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "cargo"; tag = "icon-bluecorner (NORTH)"},/area/otago/medbay/cryo)
 "SN" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod17)
+"SO" = (/obj/structure/prop/structure_lattice,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "SQ" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "ST" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 6; tag = "icon-intact-supply (SOUTHEAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/cl_office)
+"Tl" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "Tp" = (/turf/closed/shuttle/escapepod{icon_state = "wall11"; tag = "icon-wall11"},/area/almayer/evacuation/pod10)
 "Tr" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/apc)
 "Tw" = (/turf/closed/shuttle/escapepod{icon_state = "wall13"; tag = "icon-wall13"},/area/almayer/evacuation/pod16)
 "TE" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
+"TH" = (/obj/structure/machinery/light{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "TJ" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{dir = 1; icon_state = "sterile_green_side"; tag = "icon-sterile_green_side (NORTH)"},/area/otago/medbay)
 "TX" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/pilot)
 "Ue" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "Uf" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock SU-2"},/turf/open/floor/plating,/area/almayer/evacuation/pod7)
 "Ul" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 1},/turf/open/floor/almayer{icon_state = "dark_sterile"; tag = "icon-sterile"},/area/otago/medbay)
 "Um" = (/obj/structure/pipes/standard/manifold/hidden/supply,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago/cic)
+"Uo" = (/obj/structure/surface/table/almayer,/obj/item/tool/crowbar/tactical,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "Ut" = (/obj/structure/machinery/door/airlock/evacuation{name = "\improper Evacuation Airlock PL-3"},/turf/open/floor/plating,/area/almayer/evacuation/pod16)
+"Uy" = (/obj/structure/largecrate/random/secure,/obj/structure/largecrate/random/case/small{pixel_y = 17},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "UC" = (/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/medbay)
 "UF" = (/obj/structure/machinery/light{dir = 1},/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 1; icon_state = "red"; tag = "icon-red (NORTH)"},/area/otago/ship_aft)
 "UI" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 8; icon_state = "silver"; tag = "icon-silver (WEST)"},/area/otago/cic)
 "UL" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/ship_aft)
 "UM" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/apc)
 "UN" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/almayer{icon_state = "sterile_green_side"; tag = "icon-sterile"},/area/otago/medbay/hangar)
+"UR" = (/turf/open/floor/almayer,/area/otago)
 "UU" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
+"UW" = (/obj/structure/pipes/standard/simple/hidden/supply,/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "UZ" = (/turf/closed/shuttle/escapepod{icon_state = "wall6"; tag = "icon-wall6"},/area/almayer/evacuation/pod10)
 "Va" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 6; tag = "icon-intact-supply (SOUTHEAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "Vg" = (/turf/open/shuttle/escapepod{icon_state = "floor11"; tag = "icon-floor11"},/area/almayer/evacuation/pod6)
 "Vi" = (/turf/closed/shuttle/escapepod{icon_state = "wall7"; tag = "icon-wall7"},/area/almayer/evacuation/pod10)
 "Vo" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
+"Vs" = (/obj/structure/machinery/door/airlock/almayer/maint{dir = 8},/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "VC" = (/turf/closed/shuttle/escapepod{icon_state = "wall4"; tag = "icon-wall4"},/area/almayer/evacuation/pod9)
+"VE" = (/obj/structure/largecrate/random/barrel/yellow{pixel_x = -6},/obj/structure/blocker/invisible_wall,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "VN" = (/obj/structure/pipes/vents/scrubber,/turf/open/floor/almayer{dir = 8; icon_state = "red"; tag = "icon-red (WEST)"},/area/otago/hangar/firingrange)
 "VZ" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{dir = 5; icon_state = "plating"; tag = "icon-blue (NORTHEAST)"},/area/otago/hangar/apc)
 "Wd" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago)
@@ -1994,12 +2022,16 @@
 "Wx" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "Wz" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/cryo)
 "WA" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/otago)
+"WF" = (/obj/structure/largecrate/random/barrel/yellow,/obj/structure/blocker/invisible_wall,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "WK" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "tcomms"},/area/otago/hangar/pilot)
 "WR" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago/brig)
 "WV" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/almayer{dir = 1; icon_state = "redcorner"; tag = "icon-redcorner (NORTH)"},/area/otago/ship_aft)
+"WW" = (/obj/structure/machinery/door/airlock/almayer/maint{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "WX" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 10; tag = "icon-intact-supply (SOUTHWEST)"},/turf/open/floor/almayer{dir = 1; icon_state = "sterile_green_corner"; tag = "icon-sterile_green_corner (NORTH)"},/area/otago/medbay/hangar)
 "WZ" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 6; tag = "icon-intact-supply (SOUTHEAST)"},/turf/open/floor/corsat{dir = 8; icon_state = "whitetan"},/area/otago/cryo)
 "Xa" = (/obj/structure/pipes/vents/pump,/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago/ship_aft)
+"Xb" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer,/area/otago)
+"Xd" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice1"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -8},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "Xf" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/hangar)
 "Xh" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/almayer,/area/otago/cryo)
 "Xs" = (/turf/closed/shuttle/escapepod{icon_state = "wall9"; tag = "icon-wall9"},/area/almayer/evacuation/pod6)
@@ -2013,6 +2045,7 @@
 "XN" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/cryo)
 "XR" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/almayer{icon_state = "silver"; tag = "icon-silver"},/area/otago/bathroom)
 "XU" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/co_office)
+"XX" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/obj/structure{desc = "A lightweight support lattice."; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice12"; layer = 5.1; name = "overhead lattice"; pixel_y = 16},/turf/open/floor/plating/plating_catwalk,/area/otago)
 "Ya" = (/obj/structure/machinery/door/firedoor/border_only/almayer{dir = 1},/obj/structure/machinery/door/airlock/almayer/maint/autoname{dir = 1},/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/ship_aft)
 "Yg" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "Yk" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago)
@@ -2024,6 +2057,7 @@
 "YB" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 1},/turf/open/floor/plating/plating_catwalk,/area/otago/ship_fore)
 "YC" = (/obj/structure/machinery/cryopod/evacuation,/turf/open/shuttle/escapepod,/area/almayer/evacuation/pod5)
 "YJ" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/medbay/hangar)
+"YM" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "YN" = (/obj/structure/pipes/standard/manifold/fourway/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/hangar/firingrange)
 "YP" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/corsat{dir = 4; icon_state = "whitetan"},/area/otago/cryo)
 "YR" = (/turf/closed/shuttle/escapepod{icon_state = "wall10"; tag = "icon-wall10"},/area/almayer/evacuation/pod9)
@@ -2040,10 +2074,12 @@
 "Zx" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/plating/plating_catwalk,/area/otago/bathroom)
 "Zy" = (/obj/effect/decal/cleanable/dirt,/obj/structure/pipes/standard/simple/hidden/supply{dir = 9; tag = "icon-intact-supply (NORTHWEST)"},/turf/open/floor/almayer{icon_state = "tcomms"},/area/otago/hangar/pilot)
 "Zz" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 4; tag = "icon-intact-supply (EAST)"},/turf/open/floor/plating/plating_catwalk,/area/otago/brig)
+"ZK" = (/obj/structure{desc = "A lightweight support lattice."; dir = 1; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice-simple"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -15},/obj/structure{health = 150; icon = 'icons/obj/pipes/pipes.dmi'; icon_state = "intact-scrubbers"; indestructible = 1; layer = 5.1; pixel_x = 12; projectile_coverage = 0; unacidable = 1},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 "ZO" = (/obj/structure/pipes/standard/simple/hidden/supply{dir = 5; tag = "icon-intact-supply (EAST)"},/turf/open/floor/corsat{dir = 1; icon_state = "tan"},/area/otago/cryo)
 "ZQ" = (/obj/structure/pipes/standard/simple/hidden/supply,/turf/open/floor/almayer{icon_state = "sterile_green_side"; tag = "icon-sterile"},/area/otago/medbay/chemistry)
 "ZS" = (/obj/structure/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{pixel_y = 30},/turf/open/shuttle/escapepod{icon_state = "floor4"; tag = "icon-floor4"},/area/almayer/evacuation/pod17)
 "ZT" = (/obj/structure/pipes/standard/manifold/hidden/supply{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/otago/court)
+"ZY" = (/obj/structure{desc = "A lightweight support lattice."; dir = 1; icon = 'icons/obj/structures/props/smoothlattice.dmi'; icon_state = "lattice-simple"; layer = 5.1; name = "overhead lattice"; pixel_x = 16; pixel_y = -15},/turf/open/floor/almayer{icon_state = "plate"; tag = "icon-sterile"},/area/otago)
 
 (1,1,1) = {"
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
@@ -2079,8 +2115,8 @@ fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaMcadadadadadadad
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaaaaaVaWxadaeaeaeaeaeaeaeaeaeaeaeaeaeaeafafafafafafafafafaeaeaeaeaeaeaeaeaeaeadWdLSaaaaaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaVaYkYkWxadadaeaeaeaeaeaeaeaeaeaeaeafafafafagahaiajaiakalafafafafaeaeaeaeaeaeaeadadWdYkYkLSaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaVaWxadadadadaeaeaeaeaeaeaeaeaeaeaeaeafamanaoapaqarasaratauavawaxafaeaeaeaeaeaeaeaeadadadPRWdLSaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeafayazazaAaBaCaDaCaEaAazazaFafaeaeaeaeaeaeaeaeaeaeadPRadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaMcadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeafafaGaAazaHaIaJafaJaKaLazaAaMafafaeaeaeaeaeaeaeaeaeadPRPRMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaUWRGadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeafayazazaAaBaCaDaCaEaAazazaFafaeaeaeaeaeaeaeaeaeaeadPRadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaMcadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeafafaGaAazaHaIaJafaJaKaLazaAaMafafaeaeaeaeaeaeaeaeaeadRGRGUWaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaVaWxadaeaeaeaNaNaNaNaNaNaNaNaNaNaNaNafaJaOaPazaQaRafafafaTaUazaVaWaJafaXaXaXaXaXaXaXaXaXaXaXPRWdLSaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadaeaNaNaNaYaZaYaNbabbbcbdbebfaNafbgaObhazbiaIaJafaJaKbjazbhaWbkafaXblbmaXblbnaXblboblaXaXaXMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeaNbpaNaYbqbraNbsbsbsbsbsbsaNafaJaObhaAaAbtbubwbubxaAaAbhaWaJafaXblbyaXblbyaXbzblbAaXbBaXMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
@@ -2091,23 +2127,23 @@ fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMccJcJcJaNaNaNaNaNaNaNcKaNaN
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMccJcQcRcJcScTcTcTcTcTcUcTcTcTcTcTcTcTcTcTcUcTcTcTcVcTcTcTcWcTcUcTcTcTcTcTcUcTcTcTcTcTcTcTcTcXcJMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaaaWAcYcZdbcYdbdbdbdbdbdbdcdbdbdbdbdbdbdddbdedfdbdbdddbdbdbdddbdbdfdedbdddbdedfdbdbdbdddbdbdbdbdbcYZoaaaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaVaYkWxadadadadadadadadadadadadadadadadadcJcJdgdhcJcJcJcJdicJcJcJcJdhdgcJcJdjdkdjdjdkdjdjadadadadadadWdYkLSaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadadacacacacacacacacacacadaeaeaeaeaecJdlcUcTcTcTdmdndadodpcTcTcTcUdqcJdrdsdtdudvdwdjaeaeaeaeaeadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadacacacacacacacacacacacadaeaeaeaeaecJdxdydbdbdzdAdBdCdDdFdGdbdbdIdJcJdKdsdMdNdvdOdjaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadacacacacmimimiacacacacadaeaeaeaeaecJdPdQdQdQdRcJdSdTdVcJdRdQdQdQdWcJdXdYdZeadvebdjaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaMcadadacacmimimimimimimiacacadaeaeaeaeaecJcJeddaeeefegdbdedbegeheedaeicJcJejekelemdvendjaeaeaeaeaeaeaeadMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaPRMcadadacacmimimimimimimiacacadaeaeaeaeaeaecJeodacJepdQdQdRdQdQeqcJdaeidjereteuevewdvexdjaeaeaeaeaeaeaeadMcacaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaPRMcadadacacmimimimimimimiacacadaeaeaeaeaeaecJeyezeAeBdadadRdadaeCeAezeDdjeEeFeGeHeIdveKdjaeaeaeaeaeaeaeadMcacaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaVaYkQJabacacacmimimimimimimiacacadaeaeaeaeaeaecJcJcJcJeLeAeAdReAeMeNcJcJcJdjeOePeQeRdueSeTdjaeaeaeaeaeaeaeadWdYkLSaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRPRadacacacmimimimimimimiacacadaeaeeUeUeUeUeUeUeUcJcJcJeVeWeVcJcJcJaeaedjdjdjdjdjdjdjdjdjaeaeaeaeaeaeadadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcabababacacacmimimimimimimiacacadaeaeeUeXeYeZeZeZeZeYfaeUfbfffgadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfhfiadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadadadacacmimimimimimimiacacadaeaeeUfjfaeZfkfleZfmfneUfofffpadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfqfradMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacmimimimimimimiacacadaeaeeUfmfaeZfsfteZeYeXfufvfffvadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfqfradMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacmimimimimimimiacacadaeaeeUeYfweYfxeYeYfafAfBfCfffpadaeaeaeaefDfDfEfEfEfDfDaeaeaeaeaeaeaeaeadfqfFfGMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacmimimimimimimiacacadaeaeeUeYeYfaeYeYfmeYfAfHfIfffpadaeaeaefDfDfJfKfLfLfMfDfDaeaeaeaeaeaeaeadfNfOfPMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacmimimimimimimiacacadaeaeeUfQfAfAfAfAfAfAfAfufofffpadaeaefDfDfRfSfTfVfTfWfXfDfDfYfYfYfYfYfYadfZgaadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacmimimimimimimiacacadaeaeeUgbfAgcgcgcgcfAgdeUfofffpadaeaefDgegfggghgigjgkglgefDaeaeaeaeaeaeadgmgnadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadacacacacacacacacacacacadaeaeeUgofAgpgpgqgpfAgreUfofffpadaeaefDgsgtgufSgvfWgwgxgsfDaeaeaeaeaeaeadadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadaeadacacacacacacacacacacacadaeaegygygygygyeUeUeUeUeUfofffpadaeaefDgzgAgBgggDgEgFgGgHfDaeaeaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadadRUURURURURURURURRUabadaeaeaeaeaecJdlcUcTcTcTdmdndadodpcTcTcTcUdqcJdrdsdtdudvdwdjaeaeaeaeaeadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadabURURPRPRPRPRPRURURabadaeaeaeaeaecJdxdydbdbdzdAdBdCdDdFdGdbdbdIdJcJdKdsdMdNdvdOdjaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadabPRPRPRmimimiPRPRPRabadaeaeaeaeaecJdPdQdQdQdRcJdSdTdVcJdRdQdQdQdWcJdXdYdZeadvebdjaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaMcadadabPZmimimimimimimiPRabadaeaeaeaeaecJcJeddaeeefegdbdedbegeheedaeicJcJejekelemdvendjaeaeaeaeaeaeaeadMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaPRMcadadQBMcmimimimimimimiabTHadaeaeaeaeaeaecJeodacJepdQdQdRdQdQeqcJdaeidjereteuevewdvexdjaeaeaeaeaeaeaeadMcacaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaPRMcadadabQHmimimimimimimiPRabadaeaeaeaeaeaecJeyezeAeBdadadRdadaeCeAezeDdjeEeFeGeHeIdveKdjaeaeaeaeaeaeaeadMcacaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaVaYkQJVsXbYkYMmimimimimimimiPRabadaeaeaeaeaeaecJcJcJcJeLeAeAdReAeMeNcJcJcJdjeOePeQeRdueSeTdjaeaeaeaeaeaeaeadWdYkLSaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRPRadURabQHmimimimimimimiPRabadaeaeeUeUeUeUeUeUeUcJcJcJeVeWeVcJcJcJaeaedjdjdjdjdjdjdjdjdjaeaeaeaeaeaeadadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcababWWURabQHmimimimimimimiPRabadaeaeeUeXeYeZeZeZeZeYfaeUfbfffgadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfhfiadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadadadabQHmimimimimimimiPRabadaeaeeUfjfaeZfkfleZfmfneUfofffpadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfqfradMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadQBQHmimimimimimimiPRTHadaeaeeUfmfaeZfsfteZeYeXfufvfffvadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadfqfradMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadabQHmimimimimimimiPRabadaeaeeUeYfweYfxeYeYfafAfBfCfffpadaeaeaeaefDfDfEfEfEfDfDaeaeaeaeaeaeaeaeadfqfFfGMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadabQHmimimimimimimiPRabadaeaeeUeYeYfaeYeYfmeYfAfHfIfffpadaeaeaefDfDfJfKfLfLfMfDfDaeaeaeaeaeaeaeadfNfOfPMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadabMcmimimimimimimiababadaeaeeUfQfAfAfAfAfAfAfAfufofffpadaeaefDfDfRfSfTfVfTfWfXfDfDfYfYfYfYfYfYadfZgaadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadabPZmimimimimimimiPRabadaeaeeUgbfAgcgcgcgcfAgdeUfofffpadaeaefDgegfggghgigjgkglgefDaeaeaeaeaeaeadgmgnadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadaeaeadabPRPRPRPRPRPRPRPRPRabadaeaeeUgofAgpgpgqgpfAgreUfofffpadaeaefDgsgtgufSgvfWgwgxgsfDaeaeaeaeaeaeadadadadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcadadaeadabPmURURURURURURURPmabadaeaegygygygygyeUeUeUeUeUfofffpadaeaefDgzgAgBgggDgEgFgGgHfDaeaeaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRadaeadadadadadadadadgIgIgIgIgIgIgIgKgLgMgNgKgOgOgOgOgPfbfffgadaeaefDgQgsgtgSgTgUgxgsgVfDaeaeaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRadaeaeaeaeaeaeaeaeaegIgWgXgXgZhahbgKhchdhegKgOgOgOgOgPfofffpadaeaefDgVgsgtgSfDgUgxgsgVfDaeaeaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaMcPRadaeaeaeaeaeaeaeaeaegIhfhghhhihjhkgKhlhdhegKgOgOgOgOgPfofffpadaeaefDfDgsgtgShmgUgxgsfDfDaeaeaeaeaeaeaeaeaeadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
@@ -2123,13 +2159,13 @@ fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeaeadPRMcadihihihihihihihihihiF
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeaeadPRWdPTYkYkYkYkYkYkYkLSjviFiFihjwhUjxjyjzhUhUNvjAkajBjChGhGjDjDhGjEhGhGjejfhGadadVaYkYkYkYkYkYkYkYkZoaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeaeadPRPRMcadadadadadadacMcjviFiFihjFjGjHjIjzjbjbjJjKjLffjChGjMjNjOjPjQjRjQjSkcjTYkYkZoPRadadadadadadPRMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeaeadadadMcadsFFrYotHjvjvYajviFiFihjVhUjxjWjzjbjbjXjkjYjZkakbkckckdkckckckckekfhGjvjvjUjvjvBWGximvjadVaWxaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaaeadadPRMcadxmFdHgyPjvkgkhjviFiFihkikjkkihklkmknkqgPjYffkrhGksktkukvkvkvkvkwkxhGiFjvkykzjveJZSGREJadMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadPRPRMcadNlyXOkUfkAfCULjvjvjvihihihihihgPgPgPgPgPkBffkChGhGhGhGhGhGhGhGhGhGhGjvjvULfCkDAFABOREJadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadPRPRMcadNlFdIhyPjvfvMfjvfenHLLnHvJjvtCRnpXRnAXjvjYffkrjvEZaSAbaSzYjvDdMGqCMGSIjvMzfvjveJIIGREJadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadababMcadKvwKwKmzjvfvMfjvFOXImGXIesjvYRgJecgJVCjvjYffkEjvdEYCRXYCuOjvfcvrtQvrRDjvMzfvjvEefzptSNadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadPRPRMckFwdfypSGljvfvMfjvFOXwscifesjvYRSEhtxtVCjvjYffkrjvdEhndHkouOjvfczrVgtnRDjvMzfvkGTwuLIEWhadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadPRPRMcadwQkHolPojvfvMfjvbvuKsbPNgCjvnCLDdLoNlyjvjYffkrjvNIEGOncDiIjvXsgRcoEcyJjvMzfvjvzPSlRmhzadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadadPRMcadTpCqkplkkIfCULkJjvjvkKjvjvkLjvjvkMjvjvjvkBffkNkOjvjvkPjvjvkQjvjvkRjvjvjvULfCkDUtdUYshzadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaaeadKAPRMcadxmFdHgyPjvkgkhjviFiFihkikjkkihklkmknkqgPjYffkrhGksktkukvkvkvkvkwkxhGiFjvkykzjveJZSGREJadMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadZKPRMcadNlyXOkUfkAfCULjvjvjvihihihihihgPgPgPgPgPkBffkChGhGhGhGhGhGhGhGhGhGhGjvjvULfCkDAFABOREJadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadZKPRMcadNlFdIhyPjvfvMfjvfenHLLnHvJjvtCRnpXRnAXjvjYffkrjvEZaSAbaSzYjvDdMGqCMGSIjvMzfvjveJIIGREJadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadOHabMcadKvwKwKmzjvfvMfjvFOXImGXIesjvYRgJecgJVCjvjYffkEjvdEYCRXYCuOjvfcvrtQvrRDjvMzfvjvEefzptSNadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadZKPRMckFwdfypSGljvfvMfjvFOXwscifesjvYRSEhtxtVCjvjYffkrjvdEhndHkouOjvfczrVgtnRDjvMzfvkGTwuLIEWhadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadZKPRMcadwQkHolPojvfvMfjvbvuKsbPNgCjvnCLDdLoNlyjvjYffkrjvNIEGOncDiIjvXsgRcoEcyJjvMzfvjvzPSlRmhzadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaeadPlPRMcadTpCqkplkkIfCULkJjvjvkKjvjvkLjvjvkMjvjvjvkBffkNkOjvjvkPjvjvkQjvjvkRjvjvjvULfCkDUtdUYshzadMcaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaadadadadMcadDJkHHGPojvkSkTkUkVkUkakUkUkUUFkUkakUUFkUkWRJPukUUFkUkakUUFkUkUkUkakUkVkUWVkXjvzPsYRmhzadMcaaaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaPRVaYkYkYkWxadpwViViUZjvfvfvfvSnfvfCfvfvfvfvfvfCfvfvfvfvfffvfvfvfvfCfvfvfvfvfvfCfvXafvfvfvjvwxFnjuNkadMcPRaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaPRMcJAkYkYkYkZkYkYkYkYkYkYkYkYjvjvjvjvjvjvjvjvjvjvjvjvjljmjljvjvjvjvjvjvjvjvjvjvjvjvlalalalblalalalalaMcPRaafUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
@@ -2190,7 +2226,7 @@ fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUaaaaaaaaaaPRMcDtKjEzEzEzEzEzEzEzEAEzEy
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRWAEUNHEVEWEXEXEXEXEXEWEYFaEBECFbCWFcFeFfFhFiFjFkFlFmFoFpFqFsDhzIEpFtFuFvFwFvFvFvFxFxFyFxFzFAzgMcaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtGwEzFCFDFDFDFDFDFESpFFEBECzIFGBVCABVEFFlFjFHFlFjENBVBVBVDIFIDKFJFJFJFJFJFKFKFJFJFKFKFJFJadMcaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtGFFLFMFDFDFDFDFDFEZpMoFNXfTEDZBVBVBVFPFlFjFQFlFjFPBVBVBVEoZtCbFJFRFSFTFJRfFUFVFWFXFXKtFJVaWxaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtFZGaGbFDFDGcFDFDFEGdFFEBECzICuBVBVBVFPFlFjGeFlFjFPBVGfGgGhzICbGiGjGkGmGnGoGoGpFXFXGqGrFJMcPRaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtFZGaGbFDFDGcFDFDFEGdFFEBECzICuBVBVBVFPFlFjGeFlFjFPBVGfGgGhzICbGiGjGkGmGnGoGoGpFXFXGqGrFJUWRGaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtGFGsGtFDFDFDFDFDFEODFaEBECzICWBVBVBVFPFlFjGeFlFjFPBVBVBVDhzICbGiGuGkGmGvFXFXFXFYFXFXFXFJMcPRaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpaaPRMcDtGwEzGyFDFDFDFDFDGzSpEyEBECzIDvBVGAGBFPFlFjGeFlFjFPGAGBBVDIQMXfGCYNLzGkGDGkGkGkGkGkGkGEFJMcPRaaHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpaaPRMcDtGFGGGHGIGJGKGIGLGHODGMDtGNzIDZGODwDxEFFlFjGeFlFjENDGDHGPGQzICbGiGuKrGmGvFXFXFXFYFXFXFXFJMcPRaaHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
@@ -2212,9 +2248,9 @@ fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpHp
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHpHpHpaaMcIyJhJiJjJkOQJmIGJnIGJoJbJlJlJpJbIyMcaaHpHpHpHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaMcIyWKJqJrJsZyJlJtJuJvJbJaJaJwJxJyIyMcaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaMcIyIyIyIyIyIyIyIyIyIyIyIyIyIyIyIyIyMcaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaWdYkYkYkLSPRPRPRPRPRPRPRPRPRVaYkYkYkWxaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHpaaaaaaPRPRWdLSPRPRPRPRPRPRPRVaWxPRPRaaaaaaHpHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
-fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaaaPRPRWdYkYkYkYkYkYkYkWxPRPRaaaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaWdYkYkYkLSNBKhJSWFMxJSRCUoNBVaYkYkYkWxaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdmZHpHpaaaaaaSOPRWdLSZYKPVEPRPRPRPRVaWxPRPRaaaaaaHpHpmZFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
+fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpaaKJUyRGXXXdNWNWNWPKNWNWTlRGRkaaaaHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUrXHpHpHpHpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHpHpHpHpHIfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU
 fUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfdHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpHpFgfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfUfU

@@ -3,8 +3,8 @@
 	title = JOB_CO
 	supervisors = "USCM high command"
 	selection_class = "job_co"
-	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_WHITELISTED
-	flags_whitelist = WHITELIST_COMMANDER
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY  //|ROLE_WHITELISTED
+//	flags_whitelist = WHITELIST_COMMANDER
 	gear_preset = /datum/equipment_preset/uscm_ship/commander
 	entry_message_body = "You are the Commanding Officer of the USS Almayer as well as the operation. Your goal is to lead the Marines on their mission as well as protect and command the ship and her crew. Your job involves heavy roleplay and requires you to behave like a high-ranking officer and to stay in character at all times. As the Commanding Officer your only superior is High Command itself. You must abide by the <a href='"+URL_WIKI_CO_RULES+"'>Captain's Code of Conduct</a>. Failure to do so may result in punitive action against you. Godspeed."
 
@@ -16,7 +16,7 @@
 		"[JOB_CO][WHITELIST_LEADER]" = /datum/equipment_preset/uscm_ship/commander/council/plus
 	)
 
-/datum/job/command/commander/get_whitelist_status(var/list/roles_whitelist, var/client/player)
+/*/datum/job/command/commander/get_whitelist_status(var/list/roles_whitelist, var/client/player)
 	. = ..()
 	if(!.)
 		return
@@ -26,7 +26,7 @@
 	else if(roles_whitelist[player.ckey] & (WHITELIST_COMMANDER_COUNCIL|WHITELIST_COMMANDER_COUNCIL_LEGACY))
 		return get_desired_status(player.prefs.commander_status, WHITELIST_COUNCIL)
 	else if(roles_whitelist[player.ckey] & WHITELIST_COMMANDER)
-		return get_desired_status(player.prefs.commander_status, WHITELIST_NORMAL)
+		return get_desired_status(player.prefs.commander_status, WHITELIST_NORMAL)*/
 
 /datum/job/command/commander/announce_entry_message(mob/living/carbon/human/H)
 	addtimer(CALLBACK(src, .proc/do_announce_entry_message, H), 1.5 SECONDS)

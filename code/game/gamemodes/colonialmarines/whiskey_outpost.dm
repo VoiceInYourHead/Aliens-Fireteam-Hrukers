@@ -87,6 +87,8 @@
 	return 1
 
 /datum/game_mode/whiskey_outpost/pre_setup()
+	RegisterSignal(SSdcs, COMSIG_GLOB_XENO_SPAWN, .proc/handle_xeno_spawn)
+
 	for(var/obj/effect/landmark/whiskey_outpost/xenospawn/X)
 		xeno_spawns += X.loc
 	for(var/obj/effect/landmark/whiskey_outpost/supplydrops/S)
@@ -242,6 +244,10 @@
 	if (randomtime >= maxovertime)
 		return maxovertime
 	return randomtime
+
+/datum/game_mode/whiskey_outpost/proc/handle_xeno_spawn(var/datum/source, var/mob/living/carbon/Xenomorph/X)
+	SIGNAL_HANDLER
+	X.make_ai()
 
 ///////////////////////////////
 //Checks if the round is over//

@@ -1,6 +1,6 @@
-var/global/max_xeno_per_player = 1
+var/global/max_xeno_per_player = 2
 var/global/threat_level = 1
-var/global/threat_level_gain = 0.008
+var/global/threat_level_gain = 0.01
 
 /datum/game_mode/colonialmarines/ai
 	name = "Outpost Alpha"
@@ -17,6 +17,27 @@ var/global/threat_level_gain = 0.008
 		/obj/item/roller/medevac,
 		/obj/item/roller,
 	)*/
+
+	role_mappings = list(
+					/datum/job/command/commander = JOB_CO,
+					/datum/job/command/executive = JOB_XO,
+					/datum/job/civilian/synthetic = JOB_SYNTH,
+					/datum/job/command/bridge = JOB_SO,
+					/datum/job/command/tank_crew = JOB_CREWMAN,
+					/datum/job/command/pilot = JOB_PILOT,
+					/datum/job/logistics/requisition = JOB_CHIEF_REQUISITION,
+					/datum/job/civilian/professor = JOB_CMO,
+					/datum/job/civilian/doctor = JOB_DOCTOR,
+					/datum/job/logistics/cargo = JOB_CARGO_TECH,
+					/datum/job/civilian/liaison = JOB_CORPORATE_LIAISON,
+					/datum/job/marine/leader = JOB_SQUAD_LEADER,
+					/datum/job/marine/specialist = JOB_SQUAD_SPECIALIST,
+					/datum/job/marine/rto = JOB_SQUAD_RTO,
+					/datum/job/marine/smartgunner = JOB_SQUAD_SMARTGUN,
+					/datum/job/marine/medic = JOB_SQUAD_MEDIC,
+					/datum/job/marine/engineer = JOB_SQUAD_ENGI,
+					/datum/job/marine/standard = JOB_SQUAD_MARINE
+	)
 
 	var/list/squad_limit = list(
 		SQUAD_MARINE_1
@@ -58,6 +79,9 @@ var/global/threat_level_gain = 0.008
 
 /*/datum/game_mode/colonialmarines/ai/load_maps(var/list/FailedZs)
 	SSmapping.LoadGroup(FailedZs, "The Hive", endgame_map_path, endgame_map_file, endgame_map_traits, ZTRAITS_HIVE, TRUE)*/
+
+/datum/game_mode/colonialmarines/ai/get_roles_list()
+	return ROLES_AI
 
 /datum/game_mode/colonialmarines/ai/can_start()
 	if(readied_players <= 0)

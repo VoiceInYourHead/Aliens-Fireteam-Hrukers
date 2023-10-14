@@ -58,7 +58,7 @@
 "bf" = (/obj/effect/decal/medical_decals/permanent{icon_state = "triagedecalbottom"},/obj/effect/decal/medical_decals/permanent{icon_state = "docdecal2"; pixel_x = -5; pixel_y = 16},/obj/structure/machinery/iv_drip,/turf/open/shuttle/vehicle/med{icon_state = "dark_sterile_green_5"},/area/vehicle/apc)
 "bg" = (/obj/effect/decal/medical_decals/permanent{icon_state = "triagedecaltopright"},/obj/effect/decal/medical_decals/permanent{icon_state = "triagedecalbottom"},/turf/open/shuttle/vehicle/med{icon_state = "dark_sterile_green_14"},/area/vehicle/apc)
 "bh" = (/turf/open/shuttle/vehicle{icon_state = "floor_3_7_1"},/area/vehicle/apc)
-"bi" = (/obj/effect/landmark/interior/spawn/vehicle_support_gunner_seat/second,/obj/structure/prop/vehicle/firing_port_weapon,/turf/open/shuttle/vehicle{icon_state = "floor_1_10"},/area/vehicle/apc)
+"bi" = (/obj/effect/landmark/interior/spawn/vehicle_support_gunner_seat/second,/obj/structure/prop/vehicle/firing_port_weapon{layer = 4.1; name = "Right M56 FPW handle"; pixel_y = 2},/turf/open/shuttle/vehicle{icon_state = "floor_1_10"},/area/vehicle/apc)
 "bj" = (/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = 8},/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = -8},/turf/open/shuttle/vehicle{icon_state = "floor_3_5"},/area/vehicle/apc)
 "bk" = (/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = 8},/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = -8},/turf/open/shuttle/vehicle{icon_state = "floor_3_9_1"},/area/vehicle/apc)
 "bl" = (/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = -7},/obj/structure/bed/chair/vehicle{dir = 1; pixel_x = 8},/turf/open/shuttle/vehicle/med{icon_state = "floor_3"},/area/vehicle/apc)
